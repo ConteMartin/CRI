@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRI - Bienvenido</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRI - Landing Page</title>
+  <!-- Incluye Tailwind CSS desde su CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Opcional: para animaciones, puedes incluir AOS -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
 </head>
-<body>
-    <h1>Hola, este es el sitio de CRI</h1>
-    <p>Pronto estará listo 🚀</p>
+<body class="bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x1080');">
+  <div class="flex items-center justify-center h-screen bg-black bg-opacity-50">
+    <div class="text-center text-white" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="text-5xl font-bold mb-4">Bienvenido a CRI</h1>
+      <p class="text-xl mb-8">Una experiencia única para potenciar tu marca.</p>
+      <a href="#contacto" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
+        Contáctanos
+      </a>
+    </div>
+  </div>
+
+  <!-- Opcional: sección de contacto u otros contenidos -->
+  <!-- <section id="contacto" class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+    <p class="text-lg">Envianos un mensaje para saber más.</p>
+  </section> -->
+
+  <!-- Opcional: inicializar AOS -->
+  <!-- <script>
+    AOS.init();
+  </script> -->
 </body>
 </html>
