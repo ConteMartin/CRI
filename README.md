@@ -1,2 +1,0 @@
-# CRI
-Conte Representaciones Industriales

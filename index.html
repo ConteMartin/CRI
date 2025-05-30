@@ -1,35 +1,1089 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Conte Representaciones Industrial Landing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta property="og:title" content="Conte Representaciones Industrial Landing">
+<meta property="og:description" content="Built with Magic Loops">
+<meta property="og:image" content="https://magicloops.dev/images/preview.png">
+<meta property="og:url" content="https://61sb3.magicloops.app">
+<meta name="twitter:card" content="https://magicloops.dev/images/preview.png">
+<style>
+body {
+margin: 0; padding: 0;
+overflow: hidden;
+font-family: 'Poppins', sans-serif;
+}
+iframe {
+border: none;
+width: 100%;
+height: 100vh;
+}
+.hidden-iframe {
+display: none;
+width: 0; height: 0;
+}
+.service-detail {
+transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+max-height: 0;
+overflow: hidden;
+opacity: 0;
+transform: translateY(-20px);
+}
+.service-detail.active {
+max-height: 1000px;
+opacity: 1;
+transform: translateY(0);
+}
+.service-card {
+transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
+position: relative;
+overflow: visible;
+}
+.service-card.expanded {
+position: absolute;
+z-index: 1000;
+width: 200%;
+left: -50%;
+top: 0;
+transform: scale(1.05);
+box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+background: white;
+border-radius: 15px;
+min-height: 600px;
+}
+.service-card.expanded .service-detail {
+margin-top: 20px;
+padding: 25px;
+background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+border-radius: 12px;
+border: none;
+box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+}
+.service-carousel {
+margin-bottom: 20px;
+border-radius: 10px;
+overflow: hidden;
+}
+.service-carousel .carousel-item img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 10px;
+}
+.service-carousel .carousel-control-prev,
+.service-carousel .carousel-control-next {
+width: 40px;
+height: 40px;
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 50%;
+top: 50%;
+transform: translateY(-50%);
+}
+.service-carousel .carousel-control-prev {
+left: 10px;
+}
+.service-carousel .carousel-control-next {
+right: 10px;
+}
+.service-carousel .carousel-control-prev-icon,
+.service-carousel .carousel-control-next-icon {
+width: 20px;
+height: 20px;
+background-size: 100%;
+}
+.service-carousel .carousel-indicators {
+bottom: 10px;
+}
+.service-carousel .carousel-indicators button {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+margin: 0 3px;
+}
+.expanded-text {
+background: white;
+padding: 20px;
+border-radius: 10px;
+border-left: 4px solid #FFD700;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.expanded-text h4 {
+color: #333;
+margin-bottom: 15px;
+font-size: 1.3rem;
+font-weight: 600;
+}
+.expanded-text p {
+color: #555;
+line-height: 1.6;
+margin-bottom: 12px;
+font-size: 0.95rem;
+}
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.service-detail.active .service-carousel,
+.service-detail.active .expanded-text {
+animation: fadeInUp 0.6s ease-out;
+}
+@media (max-width: 768px) {
+.service-card.expanded {
+width: 150%;
+left: -25%;
+min-height: 500px;
+transform: scale(1.02);
+}
+.service-carousel .carousel-item img {
+height: 200px;
+}
+.expanded-text {
+padding: 15px;
+}
+.expanded-text h4 {
+font-size: 1.2rem;
+}
+.expanded-text p {
+font-size: 0.9rem;
+}
+}
+@media (max-width: 576px) {
+.service-card.expanded {
+width: 130%;
+left: -15%;
+min-height: 450px;
+}
+.service-carousel .carousel-item img {
+height: 180px;
+}
+}
+</style>
+</head>
+<body>
+<iframe
+srcdoc='<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CRI - Landing Page</title>
-  <!-- Incluye Tailwind CSS desde su CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Opcional: para animaciones, puedes incluir AOS -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Conte Representaciones Industriales</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style id="app-style">
+:root {
+--primary: #FFD700;
+--dark-gray: #333333;
+--medium-gray: #666666;
+--light-gray: #F4F4F4;
+--white: #FFFFFF;
+}
+body {
+font-family: "Roboto", sans-serif;
+color: var(--dark-gray);
+overflow-x: hidden;
+}
+.navbar {
+padding: 1rem 0;
+background-color: var(--white);
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-brand img {
+max-height: 50px;
+}
+.nav-link {
+color: var(--dark-gray);
+font-weight: 500;
+margin: 0 1rem;
+transition: color 0.3s;
+}
+.nav-link:hover {
+color: var(--primary);
+}
+.hero {
+position: relative;
+height: 80vh;
+min-height: 500px;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.hero-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+}
+.hero-content {
+position: relative;
+z-index: 1;
+text-align: center;
+color: var(--white);
+}
+.hero-title {
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 1.5rem;
+}
+.btn-primary {
+background-color: var(--primary);
+border-color: var(--primary);
+color: var(--dark-gray);
+font-weight: 500;
+padding: 0.75rem 2rem;
+border-radius: 50px;
+transition: all 0.3s;
+}
+.btn-primary:hover {
+background-color: #e6c200;
+border-color: #e6c200;
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+section {
+padding: 5rem 0;
+}
+.section-title {
+text-align: center;
+margin-bottom: 3rem;
+position: relative;
+}
+.section-title::after {
+content: "";
+display: block;
+width: 50px;
+height: 3px;
+background-color: var(--primary);
+margin: 0.5rem auto;
+}
+.service-card {
+background-color: var(--white);
+border-radius: 10px;
+padding: 2rem;
+height: 100%;
+transition: transform 0.3s, box-shadow 0.3s;
+border: 1px solid rgba(0,0,0,0.1);
+overflow: visible;
+}
+.service-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.service-icon {
+font-size: 2.5rem;
+color: var(--primary);
+margin-bottom: 1rem;
+}
+.service-title {
+font-weight: 500;
+margin-bottom: 0.75rem;
+}
+.service-link {
+color: var(--primary);
+font-weight: 500;
+text-decoration: none;
+display: inline-block;
+margin-top: 1rem;
+}
+.service-link:hover {
+text-decoration: underline;
+}
+.project-carousel {
+margin-bottom: 2rem;
+}
+.carousel-item img {
+border-radius: 10px;
+height: 400px;
+object-fit: cover;
+}
+.carousel-caption {
+background-color: rgba(0,0,0,0.6);
+border-radius: 5px;
+padding: 1rem;
+}
+.contact-form {
+background-color: var(--light-gray);
+padding: 3rem;
+border-radius: 10px;
+}
+.form-control {
+padding: 0.75rem;
+border: 1px solid rgba(0,0,0,0.1);
+border-radius: 5px;
+margin-bottom: 1.5rem;
+}
+footer {
+background-color: var(--dark-gray);
+color: var(--white);
+padding: 3rem 0;
+}
+footer a {
+color: var(--white);
+text-decoration: none;
+}
+footer a:hover {
+color: var(--primary);
+}
+.social-icons {
+font-size: 1.5rem;
+margin-top: 1rem;
+}
+.social-icons a {
+margin-right: 1rem;
+}
+@media (max-width: 992px) {
+.hero-title {
+font-size: 2.5rem;
+}
+}
+@media (max-width: 768px) {
+.hero-title {
+font-size: 2rem;
+}
+.service-card {
+margin-bottom: 2rem;
+}
+}
+.success-message {
+display: none;
+background-color: #4CAF50;
+color: white;
+padding: 15px;
+border-radius: 5px;
+margin-top: 15px;
+text-align: center;
+}
+</style>
 </head>
-<body class="bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x1080');">
-  <div class="flex items-center justify-center h-screen bg-black bg-opacity-50">
-    <div class="text-center text-white" data-aos="fade-up" data-aos-duration="1000">
-      <h1 class="text-5xl font-bold mb-4">Bienvenido a CRI</h1>
-      <p class="text-xl mb-8">Una experiencia única para potenciar tu marca.</p>
-      <a href="#contacto" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded">
-        Contáctanos
-      </a>
-    </div>
-  </div>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+<div class="container">
+<a class="navbar-brand" href="javascript:void(0)">
+<img alt="Conte Representaciones Industriales Logo" src="https://cdn.pixabay.com/photo/2017/01/31/13/14/industrial-2023901_960_720.png"/>
+</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#servicios">Servicios</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#proyectos">Proyectos</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contacto">Contacto</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
 
-  <!-- Opcional: sección de contacto u otros contenidos -->
-  <!-- <section id="contacto" class="py-20 text-center">
-    <h2 class="text-3xl font-bold mb-4">Contacto</h2>
-    <p class="text-lg">Envianos un mensaje para saber más.</p>
-  </section> -->
+<section class="hero" style="background-image: url(images/Banner1-PostesIndustriales.JPG);">
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<h1 class="hero-title">Soluciones integrales para la industria moderna</h1>
+<a class="btn btn-primary btn-lg" href="#contacto">Solicita tu presupuesto</a>
+</div>
+</section>
 
-  <!-- Opcional: inicializar AOS -->
-  <!-- <script>
-    AOS.init();
-  </script> -->
+<section class="bg-light" id="servicios">
+<div class="container">
+<h2 class="section-title">Nuestros Servicios</h2>
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-cut"></i>
+</div>
+<h3 class="service-title">Corte y Plegado de Metales</h3>
+<p>Servicios precisos de corte y plegado para aplicaciones industriales.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel1">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" class="d-block w-100" alt="Corte láser industrial">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Plegado de metales">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Maquinaria de corte">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Productos terminados">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel1" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel1" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Precisión en Corte y Plegado Industrial</h4>
+<p>Nuestro servicio de corte y plegado de metales utiliza tecnología de vanguardia para garantizar la máxima precisión en cada proyecto.</p>
+<p>Trabajamos con acero al carbono, acero inoxidable, aluminio y otros metales especiales.</p>
+<p>Capacidad de procesamiento desde láminas de 0.5mm hasta placas de 50mm de espesor.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-truck-loading"></i>
+</div>
+<h3 class="service-title">Izaje Industrial</h3>
+<p>Soluciones de elevación seguras para proyectos industriales.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel2">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" class="d-block w-100" alt="Grúa industrial">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Izaje de maquinaria">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Equipo de izaje">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" class="d-block w-100" alt="Operación de izaje">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel2" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel2" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Servicios de Izaje Especializado</h4>
+<p>Ofrecemos servicios completos de izaje industrial con equipos certificados y personal altamente capacitado.</p>
+<p>Realizamos montaje de estructuras metálicas, instalación de maquinaria pesada, y traslado de equipos industriales.</p>
+<p>Disponemos de grúas todo terreno, grúas sobre orugas y equipos especializados para espacios reducidos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-balance-scale"></i>
+</div>
+<h3 class="service-title">Pesaje Industrial</h3>
+<p>Sistemas de pesaje precisos para procesos industriales.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel3">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Báscula industrial">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Sistema de pesaje">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Calibración de básculas">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" class="d-block w-100" alt="Control de peso">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel3" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel3" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Soluciones Integrales de Pesaje</h4>
+<p>Instalamos y mantenemos sistemas de pesaje industrial de alta precisión para control de procesos.</p>
+<p>Nuestros sistemas incluyen básculas de plataforma, básculas para camiones, sistemas de pesaje en movimiento.</p>
+<p>Ofrecemos calibración certificada, mantenimiento preventivo y soporte técnico especializado.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-layer-group"></i>
+</div>
+<h3 class="service-title">Pisos Industriales</h3>
+<p>Soluciones duraderas para pisos de alto tránsito industrial.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel4">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Piso industrial epóxico">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Instalación de pisos">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" class="d-block w-100" alt="Piso de concreto pulido">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Acabado industrial">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel4" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel4" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Pisos Industriales de Alta Resistencia</h4>
+<p>Especializados en pisos industriales resistentes a químicos, impactos y tránsito pesado.</p>
+<p>Ofrecemos pisos epóxicos, poliuretano, concreto pulido, y sistemas multicapa.</p>
+<p>Garantía extendida en todos nuestros trabajos. Mantenimiento preventivo y reparaciones especializadas.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-tools"></i>
+</div>
+<h3 class="service-title">Suministros de Ferretería</h3>
+<p>Herramientas y suministros de calidad para uso industrial.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel5">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Herramientas industriales">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" class="d-block w-100" alt="Suministros de ferretería">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Almacén de herramientas">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Equipos especializados">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel5" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel5" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Suministros Industriales de Primera Calidad</h4>
+<p>Proveemos herramientas, insumos y ferretería industrial de las mejores marcas del mercado.</p>
+<p>Trabajamos con marcas reconocidas internacionalmente y ofrecemos asesoramiento técnico.</p>
+<p>Servicio de mantenimiento y reparación de herramientas. Programas de suministro continuo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-drafting-compass"></i>
+</div>
+<h3 class="service-title">Servicios de Ingeniería</h3>
+<p>Asesoramiento experto en proyectos de ingeniería industrial.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel6">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Diseño de ingeniería">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Planos industriales">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Consultoría técnica">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" class="d-block w-100" alt="Supervisión de obra">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel6" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel6" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Consultoría y Desarrollo de Proyectos</h4>
+<p>Nuestro equipo de ingenieros especializados ofrece consultoría integral y desarrollo de proyectos industriales.</p>
+<p>Servicios de diseño estructural, análisis de procesos, optimización de plantas industriales.</p>
+<p>Supervisión técnica de obras, gestión de proyectos y control de calidad.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-industry"></i>
+</div>
+<h3 class="service-title">Postes publicitarios</h3>
+<p>Soluciones de automatización para optimizar procesos productivos.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel7">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Sistemas automatizados">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Control industrial">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" class="d-block w-100" alt="Robótica industrial">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Panel de control">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel7" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel7" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Automatización y Control de Procesos</h4>
+<p>Implementamos sistemas de automatización industrial para mejorar la eficiencia y reducir costos.</p>
+<p>Instalación de PLC, sistemas SCADA, robótica industrial y redes de comunicación industrial.</p>
+<p>Programación especializada, puesta en marcha y capacitación de personal.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-solar-panel"></i>
+</div>
+<h3 class="service-title">Montaje de Galpones y Naves industriales </h3>
+<p>Soluciones en energía solar y eficiencia energética.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel8">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Paneles solares industriales">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" class="d-block w-100" alt="Instalación solar">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Sistema de energía">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Monitoreo energético">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel8" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel8" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Soluciones de Energía Sostenible</h4>
+<p>Instalación y mantenimiento de sistemas de energía renovable para la industria.</p>
+<p>Diseño de sistemas fotovoltaicos industriales, sistemas de almacenamiento de energía.</p>
+<p>Monitoreo en tiempo real del rendimiento energético. Mantenimiento preventivo especializado.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="service-card">
+<div class="service-icon">
+<i class="fas fa-recycle"></i>
+</div>
+<h3 class="service-title">Gestión de Residuos</h3>
+<p>Soluciones integrales para la gestión y reciclaje de residuos industriales.</p>
+<a class="service-link" href="javascript:void(0)">Más info</a>
+<div class="service-detail d-none">
+<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel9">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop" class="d-block w-100" alt="Gestión de residuos">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Reciclaje industrial">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=600&h=400&fit=crop" class="d-block w-100" alt="Tratamiento de residuos">
+</div>
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" class="d-block w-100" alt="Contenedores especializados">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel9" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel9" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<div class="expanded-text">
+<h4>Gestión Responsable de Residuos</h4>
+<p>Ofrecemos servicios integrales de recolección, tratamiento y reciclaje de residuos industriales.</p>
+<p>Clasificación especializada de residuos peligrosos y no peligrosos, tratamiento in-situ.</p>
+<p>Planes de gestión ambiental personalizados, auditorías de residuos y capacitación.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="proyectos">
+<div class="container">
+<h2 class="section-title">Nuestros Proyectos</h2>
+<div class="carousel slide project-carousel" data-bs-ride="carousel" id="projectCarousel">
+<div class="carousel-indicators">
+<button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#projectCarousel" type="button"></button>
+<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#projectCarousel" type="button"></button>
+<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#projectCarousel" type="button"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img alt="Proyecto Industrial 1" class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/04/14/10/27/industrial-4126908_960_720.jpg"/>
+<div class="carousel-caption d-none d-md-block">
+<h5>Planta Industrial TecnoMet</h5>
+<p>"Conte nos ayudó a optimizar nuestra línea de producción con soluciones de vanguardia." - Director de Operaciones</p>
+</div>
+</div>
+<div class="carousel-item">
+<img alt="Proyecto Industrial 2" class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/12/10/17/40/prague-3010407_960_720.jpg"/>
+<div class="carousel-caption d-none d-md-block">
+<h5>Reestructuración Fábrica Química</h5>
+<p>"El equipo de Conte demostró profesionalismo y conocimiento técnico en todo momento." - Gerente de Planta</p>
+</div>
+</div>
+<div class="carousel-item">
+<img alt="Proyecto Industrial 3" class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/03/12/04/09/industry-3218609_960_720.jpg"/>
+<div class="carousel-caption d-none d-md-block">
+<h5>Sistema de Izaje Especializado</h5>
+<p>"Incrementamos nuestra eficiencia en un 30% gracias a las soluciones implementadas." - Jefe de Logística</p>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#projectCarousel" type="button">
+<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#projectCarousel" type="button">
+<span aria-hidden="true" class="carousel-control-next-icon"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</section>
+
+<section class="bg-light" id="contacto">
+<div class="container">
+<h2 class="section-title">Contáctanos</h2>
+<div class="row">
+<div class="col-lg-8 mx-auto">
+<div class="contact-form">
+<form id="contactForm">
+<div class="row">
+<div class="col-md-6">
+<div class="mb-3">
+<label class="form-label" for="nombre">Nombre</label>
+<input class="form-control" id="nombre" required="" type="text"/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="mb-3">
+<label class="form-label" for="empresa">Empresa</label>
+<input class="form-control" id="empresa" type="text"/>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="mb-3">
+<label class="form-label" for="email">Correo electrónico</label>
+<input class="form-control" id="email" required="" type="email"/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="mb-3">
+<label class="form-label" for="telefono">Teléfono</label>
+<input class="form-control" id="telefono" type="tel"/>
+</div>
+</div>
+</div>
+<div class="mb-3">
+<label class="form-label" for="mensaje">Mensaje</label>
+<textarea class="form-control" id="mensaje" required="" rows="5"></textarea>
+</div>
+<div class="text-center">
+<button class="btn btn-primary" type="submit">Enviar consulta</button>
+</div>
+<div class="success-message" id="successMessage">
+¡Gracias por contactarnos! Responderemos a tu consulta a la brevedad.
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4 mb-md-0">
+<h4>Conte Representaciones Industriales</h4>
+<p><i class="fas fa-map-marker-alt me-2"></i> Funes Santa Fe, Argentina.</p>
+<p><i class="fas fa-phone me-2"></i> +54 9 3413440179</p>
+</div>
+<div class="col-md-4 mb-4 mb-md-0">
+<h4>Enlaces rápidos</h4>
+<ul class="list-unstyled">
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#proyectos">Proyectos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="javascript:void(0)">Política de Privacidad</a></li>
+<li><a href="javascript:void(0)">Términos de Uso</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<h4>Síguenos</h4>
+<div class="social-icons">
+<a href="javascript:void(0)"><i class="fab fa-facebook"></i></a>
+<a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
+<a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+<a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+</div>
+<p class="mt-4">© 2025 Conte Representaciones Industriales. Todos los derechos reservados.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script id="app-script">
+// Form submission handling
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+e.preventDefault();
+document.getElementById("successMessage").style.display = "block";
+this.reset();
+setTimeout(function() {
+document.getElementById("successMessage").style.display = "none";
+}, 5000);
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll("a[href^=\"#\"]").forEach(anchor => {
+anchor.addEventListener("click", function(e) {
+e.preventDefault();
+const targetId = this.getAttribute("href");
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 70,
+behavior: "smooth"
+});
+}
+});
+});
+
+// Función para expandir tarjetas
+function toggleCard(card) {
+const isExpanded = card.classList.contains("expanded");
+
+// Cerrar todas las tarjetas expandidas
+document.querySelectorAll(".service-card.expanded").forEach(expandedCard => {
+expandedCard.classList.remove("expanded");
+expandedCard.querySelector(".service-detail").classList.remove("active");
+expandedCard.querySelector(".service-detail").classList.add("d-none");
+});
+
+// Si la tarjeta no estaba expandida, expandirla
+if (!isExpanded) {
+card.classList.add("expanded");
+const detail = card.querySelector(".service-detail");
+detail.classList.remove("d-none");
+setTimeout(() => {
+detail.classList.add("active");
+}, 10);
+
+// Scroll suave hacia la tarjeta expandida
+setTimeout(() => {
+card.scrollIntoView({
+behavior: "smooth",
+block: "start"
+});
+}, 100);
+}
+}
+
+// Event listeners para las tarjetas
+document.querySelectorAll(".service-link").forEach(link => {
+link.addEventListener("click", function(e) {
+e.preventDefault();
+e
+.stopPropagation();
+toggleCard(this.closest(".service-card"));
+});
+});
+
+// Permitir expandir también al clickear la tarjeta completa
+document.querySelectorAll(".service-card").forEach(card => {
+card.addEventListener("click", function(e) {
+// Evitar doble ejecución si el click fue en el link o carousel
+if (e.target.classList.contains("service-link") ||
+if (e.target.classList.contains("service-link") || 
+    e.target.closest(".service-detail") ||
+    e.target.closest(".carousel-control-prev") ||
+    e.target.closest(".carousel-control-next") ||
+    e.target.closest(".carousel-indicators")) return;
+    
+toggleCard(this);
+});
+});
+
+// Cerrar tarjeta al hacer clic fuera de ella
+document.addEventListener("click", function(event) {
+const expandedCard = document.querySelector(".service-card.expanded");
+if (expandedCard && !expandedCard.contains(event.target)) {
+const detail = expandedCard.querySelector(".service-detail");
+detail.classList.remove("active");
+setTimeout(() => {
+detail.classList.add("d-none");
+expandedCard.classList.remove("expanded");
+}, 500);
+}
+});
+
+// Cerrar con tecla Escape
+document.addEventListener("keydown", function(event) {
+if (event.key === "Escape") {
+const expandedCard = document.querySelector(".service-card.expanded");
+if (expandedCard) {
+const detail = expandedCard.querySelector(".service-detail");
+detail.classList.remove("active");
+setTimeout(() => {
+detail.classList.add("d-none");
+expandedCard.classList.remove("expanded");
+}, 500);
+}
+}
+});
+</script>
+</body>
+</html>'
+sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-modals allow-downloads allow-popups">
+</iframe>
 </body>
 </html>
