@@ -1,176 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>Conte Representaciones Industrial Landing</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<meta property="og:title" content="Conte Representaciones Industrial Landing">
-<meta property="og:description" content="Built with Magic Loops">
-<meta property="og:image" content="https://magicloops.dev/images/preview.png">
-<meta property="og:url" content="https://61sb3.magicloops.app">
-<meta name="twitter:card" content="https://magicloops.dev/images/preview.png">
-<style>
-body {
-margin: 0; padding: 0;
-overflow: hidden;
-font-family: 'Poppins', sans-serif;
-}
-iframe {
-border: none;
-width: 100%;
-height: 100vh;
-}
-.hidden-iframe {
-display: none;
-width: 0; height: 0;
-}
-.service-detail {
-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-max-height: 0;
-overflow: hidden;
-opacity: 0;
-transform: translateY(-20px);
-}
-.service-detail.active {
-max-height: 1000px;
-opacity: 1;
-transform: translateY(0);
-}
-.service-card {
-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-cursor: pointer;
-position: relative;
-overflow: visible;
-}
-.service-card.expanded {
-position: absolute;
-z-index: 1000;
-width: 200%;
-left: -50%;
-top: 0;
-transform: scale(1.05);
-box-shadow: 0 25px 80px rgba(0,0,0,0.3);
-background: white;
-border-radius: 15px;
-min-height: 600px;
-}
-.service-card.expanded .service-detail {
-margin-top: 20px;
-padding: 25px;
-background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-border-radius: 12px;
-border: none;
-box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
-}
-.service-carousel {
-margin-bottom: 20px;
-border-radius: 10px;
-overflow: hidden;
-}
-.service-carousel .carousel-item img {
-width: 100%;
-height: 300px;
-object-fit: cover;
-border-radius: 10px;
-}
-.service-carousel .carousel-control-prev,
-.service-carousel .carousel-control-next {
-width: 40px;
-height: 40px;
-background-color: rgba(255, 255, 255, 0.8);
-border-radius: 50%;
-top: 50%;
-transform: translateY(-50%);
-}
-.service-carousel .carousel-control-prev {
-left: 10px;
-}
-.service-carousel .carousel-control-next {
-right: 10px;
-}
-.service-carousel .carousel-control-prev-icon,
-.service-carousel .carousel-control-next-icon {
-width: 20px;
-height: 20px;
-background-size: 100%;
-}
-.service-carousel .carousel-indicators {
-bottom: 10px;
-}
-.service-carousel .carousel-indicators button {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-margin: 0 3px;
-}
-.expanded-text {
-background: white;
-padding: 20px;
-border-radius: 10px;
-border-left: 4px solid #FFD700;
-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-.expanded-text h4 {
-color: #333;
-margin-bottom: 15px;
-font-size: 1.3rem;
-font-weight: 600;
-}
-.expanded-text p {
-color: #555;
-line-height: 1.6;
-margin-bottom: 12px;
-font-size: 0.95rem;
-}
-@keyframes fadeInUp {
-from {
-opacity: 0;
-transform: translateY(20px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-.service-detail.active .service-carousel,
-.service-detail.active .expanded-text {
-animation: fadeInUp 0.6s ease-out;
-}
-@media (max-width: 768px) {
-.service-card.expanded {
-width: 150%;
-left: -25%;
-min-height: 500px;
-transform: scale(1.02);
-}
-.service-carousel .carousel-item img {
-height: 200px;
-}
-.expanded-text {
-padding: 15px;
-}
-.expanded-text h4 {
-font-size: 1.2rem;
-}
-.expanded-text p {
-font-size: 0.9rem;
-}
-}
-@media (max-width: 576px) {
-.service-card.expanded {
-width: 130%;
-left: -15%;
-min-height: 450px;
-}
-.service-carousel .carousel-item img {
-height: 180px;
-}
-}
-</style>
-</head>
-<body>
-<iframe
-srcdoc='<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
@@ -700,7 +530,7 @@ text-align: center;
 <div class="service-icon">
 <i class="fas fa-industry"></i>
 </div>
-<h3 class="service-title">Postes publicitarios</h3>
+<h3 class="service-title">Automatización Industrial</h3>
 <p>Soluciones de automatización para optimizar procesos productivos.</p>
 <a class="service-link" href="javascript:void(0)">Más info</a>
 <div class="service-detail d-none">
@@ -748,7 +578,7 @@ text-align: center;
 <div class="service-icon">
 <i class="fas fa-solar-panel"></i>
 </div>
-<h3 class="service-title">Montaje de Galpones y Naves industriales </h3>
+<h3 class="service-title">Energía Renovable</h3>
 <p>Soluciones en energía solar y eficiencia energética.</p>
 <a class="service-link" href="javascript:void(0)">Más info</a>
 <div class="service-detail d-none">
@@ -944,8 +774,9 @@ text-align: center;
 <div class="row">
 <div class="col-md-4 mb-4 mb-md-0">
 <h4>Conte Representaciones Industriales</h4>
-<p><i class="fas fa-map-marker-alt me-2"></i> Funes Santa Fe, Argentina.</p>
-<p><i class="fas fa-phone me-2"></i> +54 9 3413440179</p>
+<p><i class="fas fa-map-marker-alt me-2"></i> Av. Industria 1234, Buenos Aires, Argentina</p>
+<p><i class="fas fa-phone me-2"></i> +54 11 1234-5678</p>
+<p><i class="fas fa-envelope me-2"></i> info@conterepresentaciones.com</p>
 </div>
 <div class="col-md-4 mb-4 mb-md-0">
 <h4>Enlaces rápidos</h4>
@@ -1042,7 +873,6 @@ toggleCard(this.closest(".service-card"));
 document.querySelectorAll(".service-card").forEach(card => {
 card.addEventListener("click", function(e) {
 // Evitar doble ejecución si el click fue en el link o carousel
-if (e.target.classList.contains("service-link") ||
 if (e.target.classList.contains("service-link") || 
     e.target.closest(".service-detail") ||
     e.target.closest(".carousel-control-prev") ||
@@ -1081,9 +911,5 @@ expandedCard.classList.remove("expanded");
 }
 });
 </script>
-</body>
-</html>'
-sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-modals allow-downloads allow-popups">
-</iframe>
 </body>
 </html>
