@@ -723,7 +723,44 @@ text-align: center;
 <div class="row">
 <div class="col-lg-8 mx-auto">
 <div class="contact-form">
-<form id="contactForm">
+<form action="https://formsubmit.co/1contemartin@gmail.com" method="POST">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label class="form-label" for="nombre">Nombre</label>
+        <input class="form-control" id="nombre" name="nombre" required type="text" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label class="form-label" for="empresa">Empresa</label>
+        <input class="form-control" id="empresa" name="empresa" type="text" />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label class="form-label" for="email">Correo electrónico</label>
+        <input class="form-control" id="email" name="email" required type="email" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label class="form-label" for="telefono">Teléfono</label>
+        <input class="form-control" id="telefono" name="telefono" type="tel" />
+      </div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="mensaje">Mensaje</label>
+    <textarea class="form-control" id="mensaje" name="mensaje" required rows="5"></textarea>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-primary" type="submit">Enviar consulta</button>
+  </div>
+</form>
+
 <div class="row">
 <div class="col-md-6">
 <div class="mb-3">
