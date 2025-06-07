@@ -149,15 +149,28 @@ margin-bottom: 1.5rem;
 .service-card.expanded .service-detail.active {
   flex-direction: row-reverse;
 }
-.carousel-caption {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
+.carousel-item {
+  position: relative; /* Necesario para que el caption se posicione respecto a este contenedor */
 }
+
+.carousel-caption {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 70%;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  font-size: 0.5rem;
+  text-align: center;
+  color: white;
+}
+
 @media (max-width: 768px) {
-  .carousel-caption {
-    width: 70%; /* 40% más chico */
-    bottom: 2rem;
-    left: 50%;
+  .carousel-caption {    bottom: 3%; 
+    width: 70%; /* 40% más chico */    left: 50%;
     transform: translateX(-50%); /* centrar horizontalmente */
     padding: 0.5rem;
     background-color: rgba(0, 0, 0, 0.6);
@@ -365,6 +378,7 @@ box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 .service-card.expanded p {
   text-align: left;
+
 }
 
 .service-detail .expanded-text {
@@ -1150,7 +1164,7 @@ text-align: center;
 <div class="carousel-item active">
 <img alt="Puente Grua Rosario" class="d-block w-100" src="images/banner/1.2.png">
 <div class="carousel-caption">
-<h5>BÁSCULA PARA CAMIONES EN INGRESO ZONA FRANCA Bs.As.</h5>
+<h5>BÁSCULA PARA CAMIONES EN ACCESO PARQUE INDUSTRIAL Bs.As.</h5>
 <p>"La gestión de Conte Representaciones fue estupenda y nos ha ahorrado tiempo sin duda" - Victor.R - Director de Operaciones</p>
 </div>
 </div>
