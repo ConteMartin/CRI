@@ -176,28 +176,42 @@ margin-bottom: 1.5rem;
   text-align: center;
   color: white;
 }
-
+#proyectos .container {
+  margin-bottom: 5%; /* Ajustá según necesidad */
+}
+/* Estilos para mobile */
 @media (max-width: 768px) {
-  .carousel-caption {    bottom: 3%; 
-    width: 70%; /* 40% más chico */    left: 50%;
-    transform: translateX(-50%); /* centrar horizontalmente */
+  .carousel-caption {
+    bottom: 0.5rem; /* ← antes era 3%, ahora está más abajo */
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 0.5rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 6px;
-    font-size: 0.5rem; /* 50% más chico aprox. */
+    font-size: 0.5rem;
     text-align: center;
   }
 
   .carousel-caption h5 {
-    font-size: 0.75rem; /* más chico */
+    font-size: 0.75rem;
     margin-bottom: 0.25rem;
   }
 
   .carousel-caption p {
-    font-size: 0.7rem;
-    margin: 0;
+    font-size: 0.65rem;
+    line-height: 1.4;
   }
 }
+
+/* Estilos para escritorio */
+@media (min-width: 769px) {
+  .carousel-caption p {
+    font-size: 0.95rem !important;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 768px) {
   #proyectos {
     padding-top: 0rem;
@@ -223,6 +237,14 @@ margin-bottom: 1.5rem;
     transform: none;
   }
 }
+.video-ajustado {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;      /* ← clave para eliminar esa línea fantasma */
+  vertical-align: bottom;   /* ← previene espacio adicional por line-height */
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -1164,19 +1186,35 @@ text-align: center;
 <h2 class="section-title">Nuestros Proyectos</h2>
 <div class="carousel slide project-carousel" data-bs-ride="carousel" id="projectCarousel">
 <div class="carousel-indicators">
-<button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#projectCarousel" type="button"></button>
-<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#projectCarousel" type="button"></button>
-<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#projectCarousel" type="button"></button>
+  <button class="active" data-bs-slide-to="0" data-bs-target="#projectCarousel" type="button" aria-label="Slide 1" aria-current="true"></button>
+  <button data-bs-slide-to="1" data-bs-target="#projectCarousel" type="button" aria-label="Slide 2"></button>
+  <button data-bs-slide-to="2" data-bs-target="#projectCarousel" type="button" aria-label="Slide 3"></button>
+  <button data-bs-slide-to="3" data-bs-target="#projectCarousel" type="button" aria-label="Slide 4"></button>
+  <button data-bs-slide-to="4" data-bs-target="#projectCarousel" type="button" aria-label="Slide 5"></button>
 </div>
+
 <div class="carousel-inner">
 
 <div class="carousel-item active">
+  <video class="d-block w-100 video-ajustado" autoplay muted loop playsinline>
+   <source src="VIDEOS/PUENTEGRUA1.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <div class="carousel-caption">
+    <h5>PRIMER PUENTE GRÚA DE 10 TONELADAS INSTALADO EN MEFA INGENIERÍA</h5>
+    <p>Proyecto en San Lorenzo, Santa Fe: se completó con éxito la instalación del primer puente grúa de 10 Tn. A la espera de la colocación del segundo equipo.</p>
+  </div>
+</div>
+
+<div class="carousel-item">
 <img alt="Puente Grua Rosario" class="d-block w-100" src="images/banner/1.2.png">
 <div class="carousel-caption">
 <h5>BÁSCULA PARA CAMIONES EN ACCESO PARQUE INDUSTRIAL Bs.As.</h5>
 <p>"La gestión de Conte Representaciones fue estupenda y nos ha ahorrado tiempo sin duda" - Victor.R - Director de Operaciones</p>
 </div>
 </div>
+
 <div class="carousel-item">
 <img alt="Poste publicitario santa fe" class="d-block w-100" src="images/banner/2.2.png"/>
 <div class="carousel-caption">
@@ -1184,13 +1222,17 @@ text-align: center;
 <p>"Es complejo encontrar soluciones que abarquen todas nuestras necesidades y CRI ha estado a la altura." - Eduardo C. Gerente de la Nueva Planta</p>
 </div>
 </div>
+
+
 <div class="carousel-item">
-<img alt="Proyecto Industrial 3" class="d-block w-100" src="images/banner/3.2.png"/>
-<div class="carousel-caption">
-<h5>DOBLE PUENTE GRÚA EN LÍNEA PARA ANEXO DE NUEVA FÁBRICA AUTOMOTRIZ</h5>
-<p>Fabricación y montaje de doble puente grúa para una importante empresa automotriz del litoral.</p>
-</div>
-</div>
+  <video class="d-block w-100 video-ajustado" autoplay muted loop playsinline>
+    <source src="VIDEOS/PUENTEGRUA2.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+  <div class="carousel-caption">
+    <h5>PUENTE GRÚA NUEVO EN PARQUE INDUSTRIAL SAN LORENZO</h5>
+    <p>Este puente grúa fue instalado en una constructora del Parque Industrial de San Lorenzo, mejorando la eficiencia y seguridad en el manejo de materiales.</p>
+  </div>
 </div>
 <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#projectCarousel" type="button">
 <span aria-hidden="true" class="carousel-control-prev-icon"></span>
