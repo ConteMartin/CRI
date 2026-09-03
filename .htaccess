@@ -6,6 +6,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^cotizacion/?$ cotizacion.html [L]
 
+# Si entra a /gracias redirige internamente a gracias.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^gracias/?$ gracias.html [L]
+
 # Forzar HTTPS si está disponible
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTPS} off
