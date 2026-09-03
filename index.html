@@ -7,1347 +7,2372 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-KVCEZWJLBT');
 </script> 
 <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="KFCH7v5fUozNyl" async></script>
 <link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
 
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-<title>Conte Representaciones Industriales</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+<title>Conte Representaciones Industriales | Soluciones Integrales para la Industria</title>
+<meta name="description" content="Especialistas en montaje de galpones, corte y plegado CNC, puentes grúa, sistemas de izaje, pesaje industrial, pisos de alta resistencia y suministros metalúrgicos."/>
+
+<!-- Fonts & Frameworks -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+
 <style id="app-style">
 :root {
---primary: #e8c753;
---dark-gray: #333333;
---medium-gray: #666666;
---light-gray: #F4F4F4;
---white: #FFFFFF;
+  --primary: #e8c753;
+  --primary-hover: #d8b642;
+  --primary-glow: rgba(232, 199, 83, 0.35);
+  --primary-light: #fff9e6;
+  --dark-bg: #0f1115;
+  --dark-card: #181b22;
+  --dark-card-hover: #222631;
+  --dark-surface: #13161c;
+  --dark-gray: #1f232b;
+  --medium-gray: #717b8c;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --light-gray: #f8f9fc;
+  --white: #ffffff;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 25px rgba(232, 199, 83, 0.3);
 }
+
 body {
-font-family: "Roboto", sans-serif;
-color: var(--dark-gray);
-overflow-x: hidden;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #2b303a;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* NAVBAR */
 .navbar {
-  padding: 1rem 0;
-  background: linear-gradient(to bottom, #171717, #121212);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-.navbar-brand span {
-  font-family: 'DM Sans', sans-serif !important;
-}
-
-.navbar-brand img {
-max-height: 50px;
-}
-.nav-link {
-  color: #f6f5f5 !important;
-  font-weight: 500;
-  margin: 0 1rem;
-  transition: color 0.3s;
+  padding: 0.85rem 0;
+  background: rgba(15, 17, 21, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(232, 199, 83, 0.15);
+  transition: all 0.3s ease;
 }
 .site-title {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-  color: #ffffff;
+  font-family: 'DM Sans', sans-serif !important;
+  font-weight: 700;
+  color: #ffffff !important;
   letter-spacing: 0.5px;
+  font-size: 1.15rem;
+  line-height: 1.2;
 }
-
-
-.nav-link:hover {
-  color: var(--primary); /* o cualquier otro color de hover */
-}
-#servicios .row > .col-md-6:nth-of-type(1) .service-card {
-  background-image: url(images/service-cards/plegado.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(2) .service-card {
-  background-image: url(images/service-cards/izaje.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(3) .service-card {
-  background-image: url(images/service-cards/pesaje.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(4) .service-card {
-  background-image: url(images/service-cards/pisos.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(5) .service-card {
-  background-image: url(images/service-cards/ferre.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(6) .service-card {
-  background-image: url(images/service-cards/poste.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(7) .service-card {
-  background-image: url(images/service-cards/galpon.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(8) .service-card {
-  background-image: url(images/service-cards/insumos\ construcc.jpeg);
-}
-#servicios .row > .col-md-6:nth-of-type(9) .service-card {
-  background-image: url(images/service-cards/mantenimiento.jpeg);
-}
-
-/* En todos los casos: que se vean de fondo */
-#servicios .service-card {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.service-detail .expanded-text,
-.service-detail .carousel {
-  padding: 1rem 1.5rem;
-  box-sizing: border-box;
-}
-
-/* Asegura que el contenedor general también respete márgenes */
-.service-detail.active {
-  padding: 2rem;
-  gap: 2rem;
-}
-
-/* Mejora en desktop: intercambio orden al expandir */
-.service-card.expanded .service-detail.active {
-  flex-direction: row-reverse;
-}
-.hero {
-position: relative;
-height: 80vh;
-min-height: 500px;
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.hero-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0,0,0,0.5);
-}
-.hero-content {
-position: relative;
-z-index: 1;
-text-align: center;
-color: var(--white);
-}
-.hero-title {
-font-size: 3rem;
-font-weight: 700;
-margin-bottom: 1.5rem;
-}
-.service-detail .row {
-  display: flex;
-  align-items: center; /* Centra los elementos verticalmente */
-  justify-content: space-between; /* Separa las columnas */
-}
-
-.service-detail .text-container {
-  width: 50%;
-  padding: 10px;
-}
-
-.service-detail .carousel {
-  max-width: 600px;
-  flex: 1 1 50%;
-}
-.service-card.expanded .service-detail.active {
-  flex-direction: row-reverse;
-}
-.carousel-item {
-  position: relative; /* Necesario para que el caption se posicione respecto a este contenedor */
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  width: 70%;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 6px;
-  font-size: 0.5rem;
-  text-align: center;
-  color: white;
-}
-#proyectos .container {
-  margin-bottom: 5%; /* Ajustá según necesidad */
-}
-/* Estilos para mobile */
-@media (max-width: 768px) {
-  .carousel-caption {
-    bottom: 0.5rem; /* ← antes era 3%, ahora está más abajo */
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 6px;
-    font-size: 0.5rem;
-    text-align: center;
-  }
-
-  .carousel-caption h5 {
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.65rem;
-    line-height: 1.4;
-  }
-}
-
-/* Estilos para escritorio */
-@media (min-width: 769px) {
-  .carousel-caption p {
-    font-size: 0.95rem !important;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 768px) {
-  #proyectos {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-
-  #proyectos .section-title {
-    margin-bottom: 0rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .service-card.expanded .service-detail.active {
-    max-height: none !important;
-    opacity: 1;
-    overflow: visible;
-  }
-
-  .service-card.expanded .expanded-text p {
-    display: block;
-    opacity: 1;
-    height: auto;
-    transform: none;
-  }
-}
-.video-ajustado {
+.site-subtitle {
+  font-size: 0.72rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
   display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: -1px;      /* ← clave para eliminar esa línea fantasma */
-  vertical-align: bottom;   /* ← previene espacio adicional por line-height */
 }
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-@media (max-width: 768px) {
-  .navbar-brand {
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-}
-
-service-detail .expanded-text .service-link {
-  display: inline-block;
-  margin-top: 1rem;
-  align-self: flex-start;
-  text-align: left;
-}
-
-.service-detail img {
-  max-width: 100%; 
-  height: auto;
-  border-radius: 10px; /* Opcional para darle mejor estética */
-}
-.btn-primary {
-background-color: var(--primary);
-border-color: var(--primary);
-color: var(--dark-gray);
-font-weight: 500;
-padding: 0.75rem 2rem;
-border-radius: 50px;
-transition: all 0.3s;
-}
-.btn-primary:hover {
-background-color: #e6c200;
-border-color: #e6c200;
-transform: translateY(-3px);
-box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-section {
-padding: 5rem 0;
-}
-.section-title {
-text-align: center;
-margin-bottom: 3rem;
-position: relative;
-}
-.section-title::after {
-content: "";
-display: block;
-width: 50px;
-height: 3px;
-background-color: var(--primary);
-margin: 0.5rem auto;
-}
-.service-card {
+.nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 0.75rem;
+  transition: all 0.25s ease;
   position: relative;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--primary) !important;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-nav-cta {
+  background: linear-gradient(135deg, var(--primary) 0%, #d8b642 100%);
+  color: #121418 !important;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px var(--primary-glow);
+  transition: all 0.3s ease;
+  border: none;
+}
+.btn-nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 199, 83, 0.5);
+  color: #000 !important;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 86vh;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
-  padding: 2rem;
-  height: 100%;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.3s ease;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  padding: 5rem 0;
 }
-.service-card::before {
-  content: "";
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7); 
-  z-index: 0;
-  transition: background-color 0.3s ease, opacity 0.7s ease;
+  background: linear-gradient(135deg, rgba(15, 17, 21, 0.92) 0%, rgba(15, 17, 21, 0.78) 60%, rgba(15, 17, 21, 0.88) 100%);
 }
-
-/* Asegura que el contenido esté por encima */
-.service-card > * {
+.hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  color: var(--white);
 }
-.service-card h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #fff; /* blanco para que se vea sobre imagen */
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(232, 199, 83, 0.12);
+  border: 1px solid rgba(232, 199, 83, 0.4);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 1.1rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+.hero-title span {
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+.hero-desc {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 680px;
+  margin: 0 auto 2.2rem;
+  line-height: 1.6;
+}
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.hero-feature-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hero-feature-item i {
+  color: var(--primary);
 }
 
-.service-card:not(.expanded) h4,
-.service-card:not(.expanded) p {
-  opacity: 0;
-  transform: translateY(10px);
-  height: 0;
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--primary) 0%, #d8b642 100%);
+  color: #121418;
+  font-weight: 700;
+  padding: 0.85rem 2.2rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  border: none;
+  box-shadow: 0 8px 25px var(--primary-glow);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+.btn-primary-custom:hover {
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(232, 199, 83, 0.5);
+}
+.btn-outline-custom {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+.btn-outline-custom:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* STATS COUNTER BAR */
+.stats-bar {
+  background: #15181e;
+  border-top: 1px solid rgba(232, 199, 83, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2.2rem 0;
+}
+.stat-card {
+  text-align: center;
+  padding: 1rem;
+}
+.stat-number {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 0.35rem;
+}
+.stat-label {
+  font-size: 0.92rem;
+  color: #a0aec0;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* LOGO MARQUEE */
+.brands-section {
+  padding: 2.5rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid #edf2f7;
+}
+.brands-title {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #718096;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.slider-container {
   overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
-
-.service-card.expanded h4,
-.service-card.expanded p {
-  opacity: 1;
-  transform: none;
-  height: auto;
+.slider-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  align-items: center;
+  animation: scrollLogos 24s linear infinite;
 }
-
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  background-color: rgba(240, 241, 77, 0.2); /* fondo translúcido */
-  backdrop-filter: blur(2px); /* opcional: efecto más suave */
+.slider-track:hover {
+  animation-play-state: paused;
+}
+.slider-track img {
+  height: 48px;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.65;
   transition: all 0.3s ease;
 }
-.service-card:hover::before {
-  background-color: rgba(255, 215, 0, 0.8); /* capa amarilla */
-}
-.service-card:hover .service-icon img {
-  width: 50px; /* opcional, si querés hacerlo más chico */
-  filter: brightness(0); /* esto lo vuelve negro */
-}
-
-
-.service-card:hover h3 {
-  color: #000; /* negro */
-}
-
-
-.service-card:hover h4,
-.service-card:hover p {
+.slider-track img:hover {
+  filter: grayscale(0%);
   opacity: 1;
-  transform: translateY(0);
-  height: auto;
+  transform: scale(1.08);
 }
-.service-card.expanded {
-transform: none;
-box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-}
-.service-card.expanded::before {
-  background-color: #ffffff; /* o #f4f4f4 si querés gris claro */
-  opacity: 1;
-}
-.service-card.expanded:hover::before {
-  background-color: #fff !important;
+@keyframes scrollLogos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.service-card.expanded h3,
-.service-card.expanded h4,
-.service-card.expanded p {
-  opacity: 1;
-  transform: none;
-  height: auto;
-  transition: none;
+/* SECTION TITLES */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
 }
-.service-card.expanded p {
-  text-align: left;
+.section-tag {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #997300;
+  background: #fff8e1;
+  border: 1px solid rgba(232, 199, 83, 0.4);
+  padding: 0.3rem 0.9rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.75rem;
+}
+.section-title-modern {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 0.75rem;
+}
+.section-subtitle-modern {
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 620px;
+  margin: 0 auto;
+}
 
+/* SERVICES FILTERS */
+.services-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.8rem;
+}
+.filter-btn {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+}
+.filter-btn:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+.filter-btn.active {
+  background: #15181e;
+  color: var(--primary);
+  border-color: #15181e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.service-detail .expanded-text {
-  flex: 1 1 300px;
-  max-width: 600px;
+/* ENHANCED SERVICE CARDS */
+.service-box {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
 }
-.service-icon img {
-  width: 80px;
-  filter: brightness(0) invert(1); /* vuelve el ícono blanco */
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(232, 199, 83, 0.6);
+}
+.service-img-wrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: #15181e;
+}
+.service-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.service-box:hover .service-img-wrapper img {
+  transform: scale(1.08);
+}
+.service-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(15, 17, 21, 0.85);
+  backdrop-filter: blur(6px);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  border: 1px solid rgba(232, 199, 83, 0.35);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.service-icon-floating {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  width: 44px;
+  height: 44px;
+  background: rgba(15, 17, 21, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
   transition: all 0.3s ease;
-  margin-bottom: 1rem;
 }
-.service-card .service-icon img {
-  filter: brightness(0) invert(1); /* blanco por defecto */
-  width: 80px;
-  transition: all 0.3s ease;
+.service-box:hover .service-icon-floating {
+  background: rgba(232, 199, 83, 0.25);
+  border-color: var(--primary);
+  transform: scale(1.06);
 }
-
-.service-card.expanded .service-icon img {
-  filter: none; /* negro */
-  width: 80px;  /* no se achica al hacer hover */
+.service-icon-floating img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
-.service-card.expanded:hover .service-icon img {
-  filter: none;
-  width: 80px;
+.service-content {
+  padding: 1.4rem 1.4rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-.service-card.expanded h3 {
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+.service-desc-short {
+  font-size: 0.92rem;
+  color: #4a5568;
+  line-height: 1.55;
+  margin-bottom: 1.2rem;
+}
+.service-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  font-size: 0.85rem;
+  color: #2d3748;
+}
+.service-features-list li {
+  position: relative;
+  padding-left: 1.35rem;
+  margin-bottom: 0.45rem;
+}
+.service-features-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #d8b642;
+  font-weight: bold;
+}
+.service-card-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.btn-card-detail {
+  flex: 1;
+  background: #f8f9fa;
+  color: #1a202c;
+  border: 1px solid #cbd5e1;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.btn-card-detail:hover {
+  background: #e2e8f0;
+  color: #000;
+}
+.btn-card-quote {
+  background: var(--primary);
+  color: #121418;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.btn-card-quote:hover {
+  background: #d8b642;
   color: #000;
 }
 
-.service-card h3,
-.service-icon img {
-  opacity: 1;
-  transform: none;
-  height: auto;
+/* LEAD MAGNET WIZARD SECTION */
+.lead-magnet-section {
+  background: linear-gradient(145deg, #111419 0%, #171b23 100%);
+  padding: 5.5rem 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-top: 2px solid rgba(232, 199, 83, 0.2);
+  border-bottom: 2px solid rgba(232, 199, 83, 0.2);
+}
+.lead-magnet-section::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(232, 199, 83, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.wizard-box {
+  background: rgba(26, 30, 39, 0.95);
+  border: 1px solid rgba(232, 199, 83, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 2.8rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+}
+.wizard-progress-wrapper {
+  margin-bottom: 2.2rem;
+}
+.wizard-steps-indicator {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.step-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+  z-index: 2;
+}
+.step-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #252a35;
+  border: 2px solid #3c4353;
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
 }
-.service-title {
-font-weight: 500;
-margin-bottom: 0.75rem;
+.step-node.active .step-circle {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #121418;
+  box-shadow: 0 0 15px var(--primary-glow);
 }
-.service-link {
-color: var(--primary);
-font-weight: 500;
-text-decoration: none;
-display: inline-block;
-margin-top: 1rem;
+.step-node.completed .step-circle {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #ffffff;
 }
-.service-link:hover {
-text-decoration: underline;
+.step-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
-.service-detail .image-box {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1 / 1;
+.step-node.active .step-label {
+  color: var(--primary);
+}
+.wizard-bar {
+  height: 4px;
+  background: #252a35;
+  border-radius: 10px;
   overflow: hidden;
-  margin: 0 auto 1rem;
+}
+.wizard-bar-fill {
+  height: 100%;
+  width: 33%;
+  background: linear-gradient(90deg, var(--primary) 0%, #22c55e 100%);
+  transition: width 0.4s ease;
 }
 
-.service-detail .image-box img {
+/* WIZARD OPTIONS CARDS */
+.wizard-question-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+.wizard-question-sub {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  margin-bottom: 1.8rem;
+}
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.quiz-card {
+  background: #20242e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  user-select: none;
+}
+.quiz-card:hover {
+  background: #292f3c;
+  border-color: rgba(232, 199, 83, 0.5);
+  transform: translateY(-3px);
+}
+.quiz-card.selected {
+  background: rgba(232, 199, 83, 0.12);
+  border-color: var(--primary);
+  box-shadow: 0 0 16px rgba(232, 199, 83, 0.25);
+}
+.quiz-icon {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+.quiz-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.quiz-desc {
+  font-size: 0.78rem;
+  color: #a0aec0;
+  line-height: 1.4;
+}
+
+/* RESULT VIEW */
+.match-result-box {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+}
+.match-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.summary-pill {
+  background: #181c24;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.summary-pill strong {
+  color: var(--primary);
+}
+
+.btn-whatsapp-action {
+  background: #25d366;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  border: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  width: 100%;
+}
+.btn-whatsapp-action:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+}
+
+.btn-email-toggle {
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  padding: 0.75rem 1.4rem;
+  border-radius: 50px;
+  font-size: 0.92rem;
+  transition: all 0.25s ease;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+.btn-email-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+/* PROYECTOS SECTION */
+#proyectos {
+  padding: 5.5rem 0;
+  background: #f8f9fc;
+}
+.project-carousel {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.project-carousel .carousel-item {
+  height: 520px;
+  background-color: #000;
+}
+.project-carousel .carousel-item img,
+.project-carousel .carousel-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.service-detail {
-margin-top: 1rem;
-opacity: 0;
-max-height: 0;
-overflow: hidden;
-transition: all 0.5s ease;
-}
-.service-detail.active {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: center;
-  opacity: 1;
-  max-height: 2000px; /* mayor si querés más margen */
-  transition: all 0.5s ease;
-  padding-top: 1rem;
-}
-.service-card .service-link {
-  margin-top: auto;
-  align-self: center; /* o flex-end si lo querés a la derecha */
-}
-
-.project-carousel {
-margin-bottom: 2rem;
-}
-.carousel-item img {
+.project-carousel .carousel-caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  aspect-ratio: 4 / 3; /* o 16/9 si es más panorámica */
-  object-fit: cover;
+  padding: 2.5rem 2rem 2rem;
+  border-radius: 0;
+  text-align: left;
+}
+.project-carousel .carousel-caption h5 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+.project-carousel .carousel-caption p {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  margin-bottom: 0;
+  max-width: 800px;
+}
+
+/* CONTACT SECTION */
+#contacto {
+  padding: 5.5rem 0;
+  background: #ffffff;
+}
+.contact-info-card {
+  background: #15181e;
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  height: 100%;
+  border: 1px solid rgba(232, 199, 83, 0.2);
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+.contact-icon-box {
+  width: 46px;
+  height: 46px;
   border-radius: 10px;
+  background: rgba(232, 199, 83, 0.12);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.contact-form-modern {
+  background: #f8f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.4rem;
+}
+.form-control-modern {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  background-color: #ffffff;
+}
+.form-control-modern:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(232, 199, 83, 0.2);
+  outline: none;
 }
 
-
-.carousel-caption {
-background-color: rgba(0,0,0,0.6);
-border-radius: 5px;
-padding: 1rem;
-}
-.contact-form {
-background-color: var(--light-gray);
-padding: 3rem;
-border-radius: 10px;
-}
-.form-control {
-padding: 0.75rem;
-border: 1px solid rgba(0,0,0,0.1);
-border-radius: 5px;
-margin-bottom: 1.5rem;
-}
+/* FOOTER */
 footer {
-background-color: var(--dark-gray);
-color: var(--white);
-padding: 3rem 0;
+  background-color: #0b0d10;
+  color: #a0aec0;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+footer h4 {
+  color: #ffffff;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
 }
 footer a {
-color: var(--white);
-text-decoration: none;
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.25s;
 }
 footer a:hover {
-color: var(--primary);
-}
-.service-card.expanded .expanded-text h4 {
-  text-align: left;
-}
-
-.service-card.expanded .expanded-text .service-link {
-  display: inline-block;
-  text-align: left;
-  margin-top: 1rem;
-  padding-left: 0;
-}
-.social-icons {
-font-size: 1.5rem;
-margin-top: 1rem;
+  color: var(--primary);
 }
 .social-icons a {
-margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #181b22;
+  border-radius: 8px;
+  margin-right: 0.6rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
-@media (min-width: 992px) {
-  .col-lg-4.expanded-col {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+.social-icons a:hover {
+  background: var(--primary);
+  color: #121418;
+  transform: translateY(-2px);
 }
-@media (max-width: 768px) {
-  .service-detail.active {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .service-detail .carousel,
-  .service-detail .expanded-text {
-    max-width: 100%;
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-   .service-detail .expanded-text p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
+/* FLOATING WHATSAPP BUTTON */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #ffffff !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+  z-index: 9999;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.floating-whatsapp:hover {
+  transform: scale(1.1) translateY(-3px);
+  color: #ffffff !important;
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+.whatsapp-badge-pulse {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  background-color: #ff3b30;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: pulsePing 2s infinite;
+}
+@keyframes pulsePing {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(255, 59, 48, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
+}
+
+/* MODAL DETALLE DE SERVICIO */
+.modal-content-tech {
+  background: #14171d;
+  color: #ffffff;
+  border: 1px solid rgba(232, 199, 83, 0.3);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.modal-content-tech .btn-close {
+  filter: invert(1);
+}
+.tech-modal-carousel {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  height: 340px;
+}
+.tech-modal-carousel img {
+  height: 340px;
+  object-fit: cover;
+  width: 100%;
+}
+.normative-pill {
+  display: inline-block;
+  background: rgba(232, 199, 83, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(232, 199, 83, 0.4);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  margin-right: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 992px) {
-.hero-title {
-font-size: 2.5rem;
+  .hero-title { font-size: 2.6rem; }
+  .wizard-box { padding: 1.8rem; }
+  .project-carousel .carousel-item { height: 380px; }
 }
-}
-@media (max-width: 768px) {
-.hero-title {
-font-size: 2rem;
-}
-.service-card {
-  display: flex;
-  flex-direction: column;
-}
-
-}
-.service-card.expanded .service-link {
-  margin-top: auto;
-  align-self: center;
-}
-
-
-.slider-wrapper {
-      margin: 20px 0; /* Margen superior e inferior */
-    }
-
-.slider-container {
-    overflow: hidden;
-    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
-    border: none;
-    position: relative;
-  }
-.site-title {
-  font-family: 'DM Sans', sans-serif !important;
-  font-weight: 500;
-  color: #ffffff !important;
-  letter-spacing: 0.5px;
-}
-
-.nav-helvetica {
-  font-family: 'Helvetica', 'Arial', sans-serif !important;
-}
-.slider-track {
-    display: flex;
-    gap: 40px;           /* separación homogénea */
-    width: fit-content;  /* ajusta al total de 24 iconos */
-  }
-
-.slider-track img {
-    width: 120px;        /* ancho definitivo */
-    height: auto;
-    object-fit: contain;
-  }
-.success-message {
-display: none;
-background-color: #4CAF50;
-color: white;
-padding: 15px;
-border-radius: 5px;
-margin-top: 15px;
-text-align: center;
-}
-@media (max-width: 768px) {
-  /* Reduce altura de imagen en mobile */
-  .carousel-item img {
-    aspect-ratio: 4 / 3;
-    height: auto;
-    max-height: 250px;
-    object-fit: cover;
-  }
-
-  /* Reduce márgenes y paddings de contenedores */
-  .service-detail.active {
-    padding: 1rem 0.5rem !important;
-    gap: 1rem;
-  }
-
-  .expanded-text {
-    padding: 0.5rem 1rem !important;
-  }
-
-  .expanded-text p {
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-  .carousel-item img {
-  aspect-ratio: 10/8;
-  height: auto;
-  max-height: 250px;
-  object-fit: cover;
-}
-
-
-  .service-card.expanded .service-detail.active {
-    max-height: none;
-    overflow: visible;
-  }
+@media (max-width: 576px) {
+  .hero-title { font-size: 2rem; }
+  .stat-number { font-size: 2rem; }
+  .option-grid { grid-template-columns: 1fr; }
+  .project-carousel .carousel-item { height: 300px; }
 }
 </style>
 </head>
 <body>
+
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="javascript:void(0)">
-      <img src="images/LOGOCSINNOMBRE.png" alt="Conte Representaciones Industriales Logo" style="max-height: 50px;">
-      <span class="site-title d-none d-lg-inline">CONTE REPRESENTACIONES INDUSTRIALES</span>
-      <span class="site-title d-inline d-lg-none">REPRESENTACIONES INDUSTRIALES</span>
-
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="images/LOGOCSINNOMBRE.png" alt="Logo Conte Representaciones" style="max-height: 46px;">
+      <div>
+        <span class="site-title d-block">CONTE</span>
+        <span class="site-subtitle">Representaciones Industriales</span>
+      </div>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars text-white fs-4"></i>
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link nav-helvetica" href="#servicios">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link nav-helvetica" href="#proyectos">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link nav-helvetica" href="#contacto">Contacto</a></li>
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cotizador">Cotizador Express</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="btn btn-nav-cta" href="#cotizador">
+            <i class="fas fa-calculator me-1"></i> Cotizar en 3 Clics
+          </a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
-<section class="hero" style="background-image: url(images/Banner1-PostesIndustriales.JPG);">
-<div class="hero-overlay"></div>
-<div class="container hero-content">
-<h1 class="hero-title">Soluciones integrales para la industria.</h1>
-<a class="btn btn-primary btn-lg" href="#contacto">Solicita tu presupuesto</a>
-</div>
-</section>
-<!-- Título arriba del carrusel -->
-<div class="container" style="margin-top: 2rem;">
-  <h2 class="section-title">Confiaron en nosotros</h2>
-</div>
 
-<!-- Carrusel de marcas -->
-<div class="slider-container">
-  <div class="slider-track">
-    <!-- Repetí las imágenes dos veces para bucle infinito -->
-    <img src="iconos/ICONOS CARROUSEL/1ok.png" alt="Marca 1">
-    <img src="iconos/ICONOS CARROUSEL/2ok.png" alt="Marca 2">
-    <img src="iconos/ICONOS CARROUSEL/3ok.png" alt="Marca 3">
-    <img src="iconos/ICONOS CARROUSEL/4ok.png" alt="Marca 4">
-    <img src="iconos/ICONOS CARROUSEL/5ok.png" alt="Marca 5">
-    <img src="iconos/ICONOS CARROUSEL/6ok.png" alt="Marca 6">
-    <img src="iconos/ICONOS CARROUSEL/7ok.png" alt="Marca 7">
-    <img src="iconos/ICONOS CARROUSEL/8ok.png" alt="Marca 8">
+<!-- HERO SECTION -->
+<section class="hero" style="background-image: url('images/Banner1-PostesIndustriales.JPG');">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content text-center">
+    <div class="hero-badge">
+      <i class="fas fa-shield-halved"></i> Soluciones Industriales de Alto Estándar
+    </div>
+    <h1 class="hero-title">
+      Ingeniería, Montaje y Suministros<br/>
+      <span>para la Industria Argentina</span>
+    </h1>
+    <p class="hero-desc">
+      Desde corte y plegado CNC, naves industriales y puentes grúa hasta pisos de alta resistencia y pesaje de precisión. Respondemos con respaldo técnico y cumplimiento en todo el país.
+    </p>
     
-    <!-- Repetición -->
-    <img src="iconos/ICONOS CARROUSEL/1ok.png" alt="Marca 1">
-    <img src="iconos/ICONOS CARROUSEL/2ok.png" alt="Marca 2">
-    <img src="iconos/ICONOS CARROUSEL/3ok.png" alt="Marca 3">
-    <img src="iconos/ICONOS CARROUSEL/4ok.png" alt="Marca 4">
-    <img src="iconos/ICONOS CARROUSEL/5ok.png" alt="Marca 5">
-    <img src="iconos/ICONOS CARROUSEL/6ok.png" alt="Marca 6">
-    <img src="iconos/ICONOS CARROUSEL/7ok.png" alt="Marca 7">
-    <img src="iconos/ICONOS CARROUSEL/8ok.png" alt="Marca 8">
-    <!-- Repetición -->
-    <img src="iconos/ICONOS CARROUSEL/1ok.png" alt="Marca 1">
-    <img src="iconos/ICONOS CARROUSEL/2ok.png" alt="Marca 2">
-    <img src="iconos/ICONOS CARROUSEL/3ok.png" alt="Marca 3">
-    <img src="iconos/ICONOS CARROUSEL/4ok.png" alt="Marca 4">
-    <img src="iconos/ICONOS CARROUSEL/5ok.png" alt="Marca 5">
-    <img src="iconos/ICONOS CARROUSEL/6ok.png" alt="Marca 6">
-    <img src="iconos/ICONOS CARROUSEL/7ok.png" alt="Marca 7">
-    <img src="iconos/ICONOS CARROUSEL/8ok.png" alt="Marca 8">
-    
+    <div class="hero-features">
+      <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Normas ASME VIII & API</div>
+      <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Relevamiento Técnico en Planta</div>
+      <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Respuesta en menos de 24hs</div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a class="btn-primary-custom" href="#cotizador">
+        <i class="fas fa-bolt"></i> Cotizador & Asesor Express
+      </a>
+      <a class="btn-outline-custom" href="#servicios">
+        <i class="fas fa-layer-group"></i> Explorar Servicios
+      </a>
+    </div>
   </div>
-</div>
-
-
-<section class="bg-light" id="servicios">
-<div class="container">
-<h2 class="section-title">Nuestros Servicios</h2>
-<div class="row">
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/corte y plegado.png" alt="corte y plegado" width="50">
-</div>
-<h3 class="service-title">Corte, Plegado y Cilindrado de Metales</h3>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-
-<p>Servicios precisos de corte y plegado para aplicaciones industriales.</p>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel1">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/CORTE Y PLEGADO/1.png" class="d-block w-100" alt="Corte láser industrial">
-</div>
-<div class="carousel-item">
-<img src="images/CORTE Y PLEGADO/2.png" class="d-block w-100" alt="Plegado de metales">
-</div>
-<div class="carousel-item">
-<img src="images/CORTE Y PLEGADO/3.png" class="d-block w-100" alt="Maquinaria de corte">
-</div>
-<div class="carousel-item">
-<img src="images/CORTE Y PLEGADO/4.png" class="d-block w-100" alt="Productos terminados">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel1" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel1" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-
-<div class="expanded-text">
-<h4>Ingeniería y Fabricación Industrial</h4>
-<p>Realizamos ingeniería, fabricación y ensayos de recipientes sometidos a presión bajo normas ASME VIII y API. Diseñamos y construimos estructuras metálicas, piping prefabricado, accesos industriales (escaleras, pasarelas, plataformas) y repuestos críticos para plantas de Crushing, oleoquímicas y petroquímicas.</p> <p>Somos especialistas en transporte de sólidos: fabricamos redlers, norias, helicoidales, caídas revestidas con ATPU, amortiguadores de flujo y cuchillas manuales o automatizadas. Integramos soluciones en aspiración industrial y control de polvo: ciclones, ductos con cerámica antidesgaste, ventiladores, chimeneas y sistemas de aspiración con filtros de manga o ciclónicos.</p> <p>Contamos con tecnología de punta para corte láser CNC, plasma pantógrafo, plegado y cilindrado de chapas de hasta 12 mm en acero inoxidable o al carbono. También fabricamos gabinetes industriales especiales para instrumentación, adaptados a las necesidades de cada planta o proyecto.</p>
-</div>
-</div>
-</div>
-
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/puente grua.png" alt="Izaje" width="50">
-</div>
-<h3 class="service-title">Izaje Industrial</h3>
-<p>Soluciones de elevación seguras para proyectos industriales.</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel2">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/IZAJE/1.png" class="d-block w-100" alt="Grúa industrial">
-</div>
-<div class="carousel-item">
-<img src="images/IZAJE/2.png" class="d-block w-100" alt="Izaje de maquinaria">
-</div>
-<div class="carousel-item">
-<img src="images/IZAJE/3.png" class="d-block w-100" alt="Equipo de izaje">
-</div>
-<div class="carousel-item">
-<img src="images/IZAJE/4.png" class="d-block w-100" alt="Operación de izaje">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel2" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel2" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Puentes Grúa y Sistemas de Izaje especializados</h4>
-<p>Diseñamos, fabricamos e instalamos puentes grúa a medida para industrias de todos los sectores. Integramos grúas pluma, pórticos, malacates y sistemas de izaje especializados, asegurando adaptación total a las necesidades de cada planta. Nuestros proyectos incluyen cálculos estructurales, planos constructivos y ejecución integral bajo normas de seguridad vigentes.</p> <p>Proveemos soluciones llave en mano, desde el diseño hasta el mantenimiento postinstalación. Brindamos soporte técnico continuo, modernización de equipos existentes y asesoramiento especializado para garantizar eficiencia, confiabilidad y cumplimiento normativo en todas las operaciones de izaje.</p> <p>Complementamos nuestra oferta con ingeniería aplicada al desarrollo de máquinas especiales para elevación, automatización de procesos de carga y transporte de materiales. Aplicamos tecnologías de posicionamiento, ensamblaje y seguridad, optimizando tiempos y reduciendo riesgos operativos con soluciones inteligentes adaptadas a cada entorno industrial.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/basculas.png" alt="Pesaje Industrial" width="50">
-</div>
-<h3 class="service-title">Pesaje Industrial</h3>
-<p>Sistemas de pesaje precisos para procesos industriales.</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel3">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/pesaje/1.png" class="d-block w-100" alt="Báscula industrial">
-</div>
-<div class="carousel-item">
-<img src="images/pesaje/2.png" class="d-block w-100" alt="Sistema de pesaje">
-</div>
-<div class="carousel-item">
-<img src="images/pesaje/3.png" class="d-block w-100" alt="Calibración de básculas">
-</div>
-<div class="carousel-item">
-<img src="images/pesaje/4.png" class="d-block w-100" alt="Control de peso">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel3" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel3" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Soluciones Integrales de Pesaje</h4>
-<p>Ofrecemos soluciones integrales de pesaje industrial diseñadas para brindar precisión, confiabilidad y trazabilidad en cada etapa del proceso productivo. Instalamos básculas de plataforma, básculas para camiones, tolvas dosificadoras y sistemas de pesaje dinámico para líneas en movimiento, adaptándonos a los requerimientos de cada industria y normativa vigente.</p> <p>Todos nuestros sistemas cuentan con tecnología robusta y sensores calibrados de alta sensibilidad, permitiendo control exacto de materias primas, productos terminados o cargas a granel. Ofrecemos además servicios de mantenimiento preventivo, calibración certificada y verificación periódica para asegurar el correcto funcionamiento de los equipos.</p> <p>Complementamos nuestra oferta con asesoramiento técnico especializado, integración con sistemas SCADA o ERP, y desarrollo de soluciones a medida para automatizar tareas de control de peso, mejorar la eficiencia operativa y minimizar errores humanos en entornos exigentes. Una inversión clave en calidad y productividad.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/suelo.png" alt="Pisos Industriales" width="50">
-</div>
-<h3 class="service-title">Pisos Industriales</h3>
-<p>Soluciones duraderas para pisos de alto tránsito industrial.</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel4">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/pisos/1.png" class="d-block w-100" alt="Piso industrial epóxico">
-</div>
-<div class="carousel-item">
-<img src="images/pisos/2.png" class="d-block w-100" alt="Instalación de pisos">
-</div>
-<div class="carousel-item">
-<img src="images/pisos/3.png" class="d-block w-100" alt="Piso de concreto pulido">
-</div>
-<div class="carousel-item">
-<img src="images/pisos/4.png" class="d-block w-100" alt="Acabado industrial">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel4" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel4" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Pisos Industriales de Alta Resistencia</h4>
-<p>Nos especializamos en la construcción y renovación de pisos industriales capaces de soportar tránsito intenso, exposición química, humedad y abrasión. Ofrecemos soluciones en pisos epóxicos, de poliuretano, multicapa, y concreto pulido, adaptadas a las condiciones operativas de cada planta, galpón o centro logístico.</p> <p>Nuestro servicio abarca desde la preparación del sustrato hasta el tratamiento final, asegurando máxima adherencia, terminaciones prolijas y durabilidad certificada. Contamos con equipos especializados para brindar mantenimiento preventivo, reparaciones correctivas y aplicación de revestimientos antideslizantes o de alta resistencia química.</p> <p>Integramos áreas técnicas específicas: **PISOS INDUSTRIALES** para fábricas y depósitos; **CONCRETAR** para obras civiles de gran porte; **PULEX** para pulido extremo de pisos de hormigón; y **INFINITY**, orientado a pisos continuos decorativos para hogares y comercios. Cada unidad ofrece soluciones personalizadas con garantía extendida y acabados de alto estándar.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/tools.png" alt="Suministros de Ferretería" width="50">
-</div>
-<h3 class="service-title">Suministros de Ferretería</h3>
-<p>Herramientas, Insumos y Materiales de ferretería general.</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel5">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel5" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/ferreteria/1.png" class="d-block w-100" alt="Herramientas industriales">
-</div>
-<div class="carousel-item">
-<img src="images/ferreteria/2.png" class="d-block w-100" alt="Suministros de ferretería">
-</div>
-<div class="carousel-item">
-<img src="images/ferreteria/3.png" class="d-block w-100" alt="Almacén de herramientas">
-</div>
-<div class="carousel-item">
-<img src="images/ferreteria/4.png" class="d-block w-100" alt="Equipos especializados">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel5" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel5" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Stock permanente, variedad y precios competitivos</h4>
-<p>Ofrecemos un amplio surtido de productos de ferretería y corralón para atender las demandas de la industria, la construcción y el comercio. Trabajamos con marcas reconocidas y garantizamos asesoramiento técnico especializado para cada tipo de obra o proyecto. Nuestro stock permanente permite respuestas rápidas y soluciones eficaces para profesionales y particulares.</p> <p>Contamos con herramientas manuales y eléctricas, discos, tornillos, alambres, cerraduras, adhesivos, cintas, tenazas, espátulas, lijas, soldadura, elementos de seguridad, herrajes, materiales para plomería, jardinería y más. También ofrecemos insumos para carpintería, decoración, metalúrgica ligera y trabajos de mantenimiento o refacción general.</p> <p>Además, disponemos de artículos de corralón como chapas, perfiles, hierros ADN, mallas, carretillas, baldes, cucharas, palas, polietilenos y tejidos. Brindamos soluciones completas para estructuras metálicas, galpones, tinglados, herrería de obra y todo tipo de construcciones. Un solo proveedor, múltiples soluciones para cada etapa del trabajo.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/billboard.png" alt="Columnas Publicitarias" width="50">
-</div>
-<h3 class="service-title">Columnas Publicitarias</h3>
-<p>Visibilidad garantizada con estructuras seguras y duraderas para publicidad exterior.</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel6">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel6" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/POSTES PUBLICITARIOS/1.png" class="d-block w-100" alt="Diseño de ingeniería">
-</div>
-<div class="carousel-item">
-<img src="images/POSTES PUBLICITARIOS/2.png" class="d-block w-100" alt="Planos industriales">
-</div>
-<div class="carousel-item">
-<img src="images/POSTES PUBLICITARIOS/3.png" class="d-block w-100" alt="Consultoría técnica">
-</div>
-<div class="carousel-item">
-<img src="images/POSTES PUBLICITARIOS/4.png" class="d-block w-100" alt="Supervisión de obra">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel6" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel6" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Fabricación y Montaje de Columnas Publicitarias</h4>
-<p>Diseñamos, fabricamos y montamos <strong>columnas publicitarias</strong> metálicas de alta resistencia, adaptadas a las condiciones de cada obra y entorno. Ofrecemos soluciones llave en mano que incluyen ingeniería estructural, cálculo de cargas, construcción de bases, fijaciones seguras y elevación con equipos de izaje propios, cumpliendo con normativas técnicas y de seguridad vigentes.</p> <p>Contamos con amplia experiencia en proyectos de gran escala, integrando creatividad, planificación y ejecución eficiente. Nos distingue la capacidad de asumir desafíos complejos con profesionalismo, respetando el medio ambiente y optimizando recursos. Nuestro equipo técnico acompaña cada etapa del proyecto con compromiso y asesoramiento permanente.</p> <p>Además de fabricar y montar estructuras nuevas, ofrecemos espacios publicitarios disponibles sobre <strong>columnas publicitarias</strong> ya instaladas, brindando a nuestros clientes la posibilidad de maximizar visibilidad de marca en ubicaciones estratégicas. Una solución integral que combina infraestructura y comunicación efectiva.</p></div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/box.png" alt="Izaje" width="50">
-</div>
-<h3 class="service-title">Montaje de Galpones y Naves Industriales</h3>
-<p>Montajes Industriales de Alta Precisión</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel7">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel7" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/MONTAJE GALPONES/1.png" class="d-block w-100" alt="Sistemas automatizados">
-</div>
-<div class="carousel-item">
-<img src="images/MONTAJE GALPONES/2.png" class="d-block w-100" alt="Control industrial">
-</div>
-<div class="carousel-item">
-<img src="images/MONTAJE GALPONES/3.png" class="d-block w-100" alt="Robótica industrial">
-</div>
-<div class="carousel-item">
-<img src="images/MONTAJE GALPONES/4.png" class="d-block w-100" alt="Panel de control">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel7" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel7" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Planificació, Desarrollo y Montaje de Naves Nuevas  o Ampliaciónes</h4>
-<p>Diseñamos, fabricamos y montamos estructuras metálicas industriales que combinan funcionalidad, seguridad y eficiencia. Nuestros galpones y naves son desarrollados a medida, adaptándose a cada tipo de operación, desde pequeños talleres hasta grandes centros logísticos o plantas productivas.</p>
-<p>Contamos con equipos especializados y materiales certificados, lo que garantiza una ejecución robusta, precisa y con altos estándares de calidad. Nuestro personal técnico supervisa cada etapa del proceso, asegurando el cumplimiento estricto de los plazos y requisitos técnicos.</p>
-<p>Ofrecemos un servicio integral que abarca desde la ingeniería inicial y la planificación, hasta el montaje final y la entrega llave en mano. En Conte Representaciones Industriales, transformamos proyectos en soluciones sólidas, duraderas y listas para operar.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/iron-bar.png" alt="construcción" width="50">
-</div>
-<h3 class="service-title">Materiales Siderurgicos y Ferretería Mayorista</h3>
-<p>Materiales y Soluciones en Acero</p>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel8">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel8" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/construccion/1.png" class="d-block w-100" alt="Paneles solares industriales">
-</div>
-<div class="carousel-item">
-<img src="images/construccion/2.png" class="d-block w-100" alt="Instalación solar">
-</div>
-<div class="carousel-item">
-<img src="images/construccion/3.png" class="d-block w-100" alt="Sistema de energía">
-</div>
-<div class="carousel-item">
-<img src="images/construccion/4.png" class="d-block w-100" alt="Monitoreo energético">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel8" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel8" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Materiales e Insumos de Construcción</h4>
-<p>Ofrecemos una amplia variedad de materiales de acero para la industria y la construcción, incluyendo chapas lisas y estampadas, chapas para techos, perfiles estructurales como IPN, UPN y C galvanizado o negro. También disponemos de caños estructurales, ángulos, planchuelas y hierros para obra.</p>
-<p>Contamos con soluciones pensadas para cada etapa del proyecto: mallas electrosoldadas, sistemas de cerramiento, aislantes, membranas, alambres, zinguería y cumbreras. Todos nuestros productos cumplen con normas de calidad y resistencia.</p>
-<p>Brindamos asesoramiento técnico personalizado y entregas eficientes. Además, disponemos de un stock permanente en artículos de ferretería, elementos de seguridad y herramientas para acompañar cada necesidad constructiva e industrial.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4">
-<div class="service-card">
-<div class="service-icon">
-<img src="iconos/mechanic.png" alt="Mantenimiento" width="32">
-</div>
-<h3 class="service-title">Mantenimiento Industrial de Puentes Grúa</h3>
-<a class="service-link" href="javascript:void(0)">Más info</a>
-<div class="service-detail d-none">
-<div class="carousel slide service-carousel" data-bs-ride="false" id="serviceCarousel9">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="2" aria-label="Slide 3"></button>
-<button type="button" data-bs-target="#serviceCarousel9" data-bs-slide-to="3" aria-label="Slide 4"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active">
-<img src="images/mantenimientoi/1.png" class="d-block w-100" alt="Gestión de residuos">
-</div>
-<div class="carousel-item">
-<img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" class="d-block w-100" alt="Reciclaje industrial">
-</div>
-<div class="carousel-item">
-<img src="images/mantenimientoi/3.png" class="d-block w-100" alt="Tratamiento de residuos">
-</div>
-<div class="carousel-item">
-<img src="images/mantenimientoi/3.png" class="d-block w-100" alt="Contenedores especializados">
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel9" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel9" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<div class="expanded-text">
-<h4>Seguridad, eficiencia y continuidad operativa en el mantenimiento de puentes grúa.</h4>
-<p>Brindamos servicios especializados en mantenimiento industrial de puentes grúa y sistemas de izaje, con foco en la seguridad operativa, la eficiencia productiva y la continuidad de los procesos.</p>
-<p>Realizamos mantenimiento preventivo y correctivo, incluyendo inspecciones técnicas, reparaciones mecánicas y eléctricas, calibraciones, ajustes estructurales y modernización de equipos, todo bajo normativas vigentes y estándares industriales.</p>
-<p>Nuestro objetivo es maximizar la vida útil de los equipos, reducir paradas no planificadas y garantizar un funcionamiento confiable en entornos exigentes. Ofrecemos asistencia técnica personalizada y respuesta rápida ante cualquier eventualidad.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 
+<!-- STATS BAR -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">+15</div>
+          <p class="stat-label">Años de Trayectoria</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">+250</div>
+          <p class="stat-label">Proyectos Industriales</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <p class="stat-label">Normas y Seguridad</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-card">
+          <div class="stat-number">&lt; 24hs</div>
+          <p class="stat-label">Respuesta Técnica</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS MARQUEE -->
+<section class="brands-section">
+  <div class="container">
+    <div class="brands-title">Empresas e Industrias que confían en nuestras soluciones</div>
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="iconos/ICONOS CARROUSEL/1ok.png" alt="Marca 1">
+        <img src="iconos/ICONOS CARROUSEL/2ok.png" alt="Marca 2">
+        <img src="iconos/ICONOS CARROUSEL/3ok.png" alt="Marca 3">
+        <img src="iconos/ICONOS CARROUSEL/4ok.png" alt="Marca 4">
+        <img src="iconos/ICONOS CARROUSEL/5ok.png" alt="Marca 5">
+        <img src="iconos/ICONOS CARROUSEL/6ok.png" alt="Marca 6">
+        <img src="iconos/ICONOS CARROUSEL/7ok.png" alt="Marca 7">
+        <img src="iconos/ICONOS CARROUSEL/8ok.png" alt="Marca 8">
+        <!-- Loop duplicate -->
+        <img src="iconos/ICONOS CARROUSEL/1ok.png" alt="Marca 1">
+        <img src="iconos/ICONOS CARROUSEL/2ok.png" alt="Marca 2">
+        <img src="iconos/ICONOS CARROUSEL/3ok.png" alt="Marca 3">
+        <img src="iconos/ICONOS CARROUSEL/4ok.png" alt="Marca 4">
+        <img src="iconos/ICONOS CARROUSEL/5ok.png" alt="Marca 5">
+        <img src="iconos/ICONOS CARROUSEL/6ok.png" alt="Marca 6">
+        <img src="iconos/ICONOS CARROUSEL/7ok.png" alt="Marca 7">
+        <img src="iconos/ICONOS CARROUSEL/8ok.png" alt="Marca 8">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUESTROS SERVICIOS -->
+<section id="servicios" class="py-5">
+  <div class="container py-4">
+    <div class="section-header">
+      <span class="section-tag">Capacidad Operativa y Técnica</span>
+      <h2 class="section-title-modern">Nuestros Servicios Industriales</h2>
+      <p class="section-subtitle-modern">
+        Soluciones integrales de ingeniería, mecanizado, izaje y abastecimiento diseñadas para maximizar la continuidad operativa de su planta.
+      </p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="services-tabs">
+      <button class="filter-btn active" data-filter="all">Todos los Servicios</button>
+      <button class="filter-btn" data-filter="metalurgica">Corte & Metalúrgica</button>
+      <button class="filter-btn" data-filter="izaje">Izaje & Mantenimiento</button>
+      <button class="filter-btn" data-filter="estructuras">Naves & Estructuras</button>
+      <button class="filter-btn" data-filter="infraestructura">Pesaje & Pisos</button>
+      <button class="filter-btn" data-filter="suministros">Suministros & Acero</button>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="row g-4" id="servicesGrid">
+
+      <!-- Servicio 1: Corte y Plegado -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="metalurgica">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/plegado.jpeg" alt="Corte y Plegado CNC">
+            <span class="service-badge">CNC Hasta 12mm</span>
+            <div class="service-icon-floating">
+              <img src="iconos/corte y plegado.png" alt="Icono Corte">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Corte, Plegado y Cilindrado CNC</h3>
+            <p class="service-desc-short">
+              Corte por láser CNC y plasma pantógrafo con precisión milimétrica en acero inoxidable o al carbono. Fabricación bajo normas ASME VIII y API.
+            </p>
+            <ul class="service-features-list">
+              <li>Plegado y cilindrado de chapas hasta 12 mm</li>
+              <li>Piping prefabricado y recipientes a presión</li>
+              <li>Redlers, norias y transporte de sólidos</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(1)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('corte')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 2: Izaje Industrial -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="izaje">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/izaje.jpeg" alt="Izaje Industrial">
+            <span class="service-badge">Hasta 50 Tn</span>
+            <div class="service-icon-floating">
+              <img src="iconos/puente grua.png" alt="Icono Izaje">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Puentes Grúa y Sistemas de Izaje</h3>
+            <p class="service-desc-short">
+              Diseño, cálculo estructural, fabricación e instalación llave en mano de puentes grúa, pórticos, grúas pluma y malacates especiales.
+            </p>
+            <ul class="service-features-list">
+              <li>Cálculos estructurales y planos constructivos</li>
+              <li>Sistemas de elevación seguros bajo normativas</li>
+              <li>Automatización y máquinas especiales de carga</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(2)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('izaje')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 3: Pesaje Industrial -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="infraestructura">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/pesaje.jpeg" alt="Pesaje Industrial">
+            <span class="service-badge">Certificación INTI</span>
+            <div class="service-icon-floating">
+              <img src="iconos/basculas.png" alt="Icono Pesaje">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Básculas y Pesaje Industrial</h3>
+            <p class="service-desc-short">
+              Básculas para camiones, plataformas de pesaje, tolvas dosificadoras y sistemas de pesaje dinámico para líneas de producción en movimiento.
+            </p>
+            <ul class="service-features-list">
+              <li>Sensores de alta sensibilidad y precisión</li>
+              <li>Integración con sistemas SCADA o ERP de planta</li>
+              <li>Calibración certificada y mantenimiento periódico</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(3)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('pesaje')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 4: Pisos Industriales -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="infraestructura">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/pisos.jpeg" alt="Pisos Industriales">
+            <span class="service-badge">Alto Tránsito</span>
+            <div class="service-icon-floating">
+              <img src="iconos/suelo.png" alt="Icono Pisos">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Pisos Industriales de Alta Resistencia</h3>
+            <p class="service-desc-short">
+              Pisos epóxicos, poliuretánicos, multicapa y concreto pulido capaces de soportar tránsito pesado, exposición química, choque térmico y abrasión.
+            </p>
+            <ul class="service-features-list">
+              <li>Tratamiento de sustrato y pulido diamantado</li>
+              <li>Recubrimientos antideslizantes y químicos</li>
+              <li>Unidades técnicas especializadas (Pisos & Concretar)</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(4)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('pisos')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 5: Suministros de Ferretería -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="suministros">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/ferre.jpeg" alt="Ferretería Industrial">
+            <span class="service-badge">Stock Permanente</span>
+            <div class="service-icon-floating">
+              <img src="iconos/tools.png" alt="Icono Ferretería">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Ferretería y Suministros Industriales</h3>
+            <p class="service-desc-short">
+              Herramientas manuales y eléctricas, insumos para soldadura, fijaciones, bulonería de alta resistencia y elementos de protección personal (EPP).
+            </p>
+            <ul class="service-features-list">
+              <li>Marcas líderes del mercado nacional e importado</li>
+              <li>Precios competitivos por volumen para plantas</li>
+              <li>Asesoramiento técnico directo en cada pedido</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(5)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('ferreteria')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 6: Columnas Publicitarias -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="estructuras">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/poste.jpeg" alt="Columnas Publicitarias">
+            <span class="service-badge">Gran Porte</span>
+            <div class="service-icon-floating">
+              <img src="iconos/billboard.png" alt="Icono Billboard">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Columnas Publicitarias y Monopolos</h3>
+            <p class="service-desc-short">
+              Ingeniería estructural, cálculo de cargas eólicas, fabricación de fuste metálico, bases de hormigón y montaje con izaje propio.
+            </p>
+            <ul class="service-features-list">
+              <li>Diseño a medida según vientos y geografía</li>
+              <li>Montaje llave en mano con grúas propias</li>
+              <li>Disponibilidad de espacios publicitarios instalados</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(6)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('estructuras')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 7: Montaje de Galpones -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="estructuras">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/galpon.jpeg" alt="Montaje de Galpones">
+            <span class="service-badge">Llave en Mano</span>
+            <div class="service-icon-floating">
+              <img src="iconos/box.png" alt="Icono Galpones">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Montaje de Galpones y Naves Industriales</h3>
+            <p class="service-desc-short">
+              Estructuras metálicas de alma llena o reticuladas para centros logísticos, plantas productivas y ampliaciones industriales de gran envergadura.
+            </p>
+            <ul class="service-features-list">
+              <li>Cálculo de cargas, memorias y planos ejecutivos</li>
+              <li>Fabricación con aceros y perfiles certificados</li>
+              <li>Montaje en obra con cuadrillas técnicas calificadas</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(7)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('galpones')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 8: Materiales Siderúrgicos -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="suministros">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/insumos construcc.jpeg" alt="Materiales Siderúrgicos">
+            <span class="service-badge">Mayorista</span>
+            <div class="service-icon-floating">
+              <img src="iconos/iron-bar.png" alt="Icono Siderúrgicos">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Materiales Siderúrgicos y Acero</h3>
+            <p class="service-desc-short">
+              Distribución de perfiles estructurales (IPN, UPN, C negro y galvanizado), tubos estructurales, chapas lisas, conformadas y mallas electrosoldadas.
+            </p>
+            <ul class="service-features-list">
+              <li>Chapas conformadas para cubiertas y cerramientos</li>
+              <li>Perfiles pesados y caños de primera calidad</li>
+              <li>Logística y entrega directa en obra o depósito</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(8)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('siderurgicos')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicio 9: Mantenimiento Industrial -->
+      <div class="col-md-6 col-lg-4 service-item" data-category="izaje">
+        <div class="service-box">
+          <div class="service-img-wrapper">
+            <img src="images/service-cards/mantenimiento.jpeg" alt="Mantenimiento de Puentes Grúa">
+            <span class="service-badge">Guardia Técnica</span>
+            <div class="service-icon-floating">
+              <img src="iconos/mechanic.png" alt="Icono Mantenimiento">
+            </div>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Mantenimiento de Puentes Grúa</h3>
+            <p class="service-desc-short">
+              Servicio preventivo y correctivo especializado en sistemas de elevación, minimizando paradas no planificadas y garantizando seguridad operativa.
+            </p>
+            <ul class="service-features-list">
+              <li>Inspección de cables, frenos, motores y tambores</li>
+              <li>Alineación de rieles, vigas carril y tableros eléctricos</li>
+              <li>Ensayos no destructivos y certificación operativa</li>
+            </ul>
+            <div class="service-card-actions">
+              <button class="btn-card-detail" onclick="openServiceModal(9)">
+                <i class="fas fa-eye me-1"></i> Ficha y Fotos
+              </button>
+              <a href="#cotizador" class="btn-card-quote" onclick="preselectService('mantenimiento')">
+                Cotizar <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LEAD MAGNET: ASISTENTE INTERACTIVO EN 3 CLICS -->
+<section id="cotizador" class="lead-magnet-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="wizard-box">
+          
+          <!-- Encabezado del Wizard -->
+          <div class="text-center mb-4">
+            <h2 class="wizard-question-title text-white">Asistente de Diagnóstico & Cotización Express</h2>
+            <p class="wizard-question-sub">
+              En solo 3 clics detectamos la solución técnica exacta para su planta y le asignamos prioridad con nuestro equipo de ingeniería.
+            </p>
+          </div>
+
+          <!-- Barra de Progreso -->
+          <div class="wizard-progress-wrapper">
+            <div class="wizard-steps-indicator">
+              <div class="step-node active" id="indicator1">
+                <div class="step-circle">1</div>
+                <span class="step-label">Solución</span>
+              </div>
+              <div class="step-node" id="indicator2">
+                <div class="step-circle">2</div>
+                <span class="step-label" id="step2IndicatorLabel">Detalle</span>
+              </div>
+              <div class="step-node" id="indicator3">
+                <div class="step-circle">3</div>
+                <span class="step-label" id="step3IndicatorLabel">Relevamiento</span>
+              </div>
+              <div class="step-node" id="indicator4">
+                <div class="step-circle"><i class="fas fa-check"></i></div>
+                <span class="step-label">Contacto</span>
+              </div>
+            </div>
+            <div class="wizard-bar">
+              <div class="wizard-bar-fill" id="wizardProgressFill"></div>
+            </div>
+          </div>
+
+          <!-- PASO 1: Tipo de Solución -->
+          <div class="wizard-step" id="step1">
+            <h3 class="h5 text-white mb-2 font-weight-bold">Paso 1 de 3: ¿Qué tipo de solución requiere su proyecto?</h3>
+            <p class="text-secondary small mb-3">Haga clic en la opción que mejor describa su necesidad principal:</p>
+            <div class="option-grid">
+              <div class="quiz-card" onclick="selectStep1('Montaje de Galpones y Naves', this)">
+                <div class="quiz-icon"><i class="fas fa-warehouse"></i></div>
+                <div class="quiz-title">Galpones y Naves</div>
+                <div class="quiz-desc">Construcción, ampliación o montaje estructural</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Puentes Grúa e Izaje', this)">
+                <div class="quiz-icon"><i class="fas fa-dolly"></i></div>
+                <div class="quiz-title">Puentes Grúa e Izaje</div>
+                <div class="quiz-desc">Equipos nuevos, pórticos, plumas o modernización</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Corte y Plegado CNC', this)">
+                <div class="quiz-icon"><i class="fas fa-industry"></i></div>
+                <div class="quiz-title">Corte y Plegado CNC</div>
+                <div class="quiz-desc">Mecanizado de chapas, piping o recipientes</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Básculas y Pesaje', this)">
+                <div class="quiz-icon"><i class="fas fa-weight-scale"></i></div>
+                <div class="quiz-title">Pesaje Industrial</div>
+                <div class="quiz-desc">Básculas de camiones, tolvas o calibración</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Pisos Industriales', this)">
+                <div class="quiz-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="quiz-title">Pisos Industriales</div>
+                <div class="quiz-desc">Epoxi, poliuretano o concreto pulido</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Suministros y Acero', this)">
+                <div class="quiz-icon"><i class="fas fa-cubes"></i></div>
+                <div class="quiz-title">Acero y Ferretería</div>
+                <div class="quiz-desc">Perfiles, chapas, herramientas por mayor</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Mantenimiento de Grúas', this)">
+                <div class="quiz-icon"><i class="fas fa-wrench"></i></div>
+                <div class="quiz-title">Mantenimiento de Grúas</div>
+                <div class="quiz-desc">Inspección técnica preventiva o correctiva</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASO 2: DINÁMICO SEGÚN SERVICIO -->
+          <div class="wizard-step d-none" id="step2">
+            <div class="mb-2 text-start">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(1)">
+                <i class="fas fa-arrow-left text-warning me-1"></i> Volver
+              </button>
+              <h3 class="h5 text-white mb-1" id="step2Title">Paso 2 de 3: ¿Cuál es el alcance de su proyecto?</h3>
+              <p class="text-secondary small mb-3" id="step2Subtitle">Seleccione las dimensiones o características técnicas requeridas:</p>
+            </div>
+            <div class="option-grid" id="step2OptionsGrid">
+              <!-- Renderizado dinámicamente -->
+            </div>
+          </div>
+
+          <!-- PASO 3: DINÁMICO SEGÚN SERVICIO -->
+          <div class="wizard-step d-none" id="step3">
+            <div class="mb-2 text-start">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(2)">
+                <i class="fas fa-arrow-left text-warning me-1"></i> Volver
+              </button>
+              <h3 class="h5 text-white mb-1" id="step3Title">Paso 3 de 3: ¿Cuenta con planos o relevamiento?</h3>
+              <p class="text-secondary small mb-3" id="step3Subtitle">Último clic para generar su diagnóstico técnico personalizado:</p>
+            </div>
+            <div class="option-grid" id="step3OptionsGrid">
+              <!-- Renderizado dinámicamente -->
+            </div>
+          </div>
+
+          <!-- PASO 4: RESULTADO Y CONVERSIÓN INMEDIATA -->
+          <div class="wizard-step d-none" id="stepResult">
+            <div class="mb-2 text-start">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(3)">
+                <i class="fas fa-arrow-left text-warning me-1"></i> Volver
+              </button>
+            </div>
+            <div class="match-result-box text-center">
+              <span class="match-badge"><i class="fas fa-circle-check"></i> Diagnóstico Completo y Viable</span>
+              <h3 class="text-white h4 font-weight-bold mb-3">¡Tenemos la solución exacta para su planta!</h3>
+              <p class="text-light mb-3">
+                Hemos pre-configurado su solicitud con las especificaciones indicadas:
+              </p>
+              
+              <div class="d-flex flex-wrap justify-content-center mb-3">
+                <span class="summary-pill" id="pillService">Servicio: <strong>-</strong></span>
+                <span class="summary-pill" id="pillUrgency">Urgencia: <strong>-</strong></span>
+                <span class="summary-pill" id="pillSpecs">Documentación: <strong>-</strong></span>
+              </div>
+              
+              <p class="small text-secondary mb-0">
+                <i class="fas fa-clock text-warning me-1"></i> Tiempo de respuesta estimado: <strong>Menos de 2 horas hábiles</strong> por un ingeniero asignado.
+              </p>
+            </div>
+
+            <div class="row g-3">
+              <!-- Opción 1: WhatsApp Inmediato -->
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-direction-column justify-content-between">
+                  <div>
+                    <h4 class="h6 text-white mb-2"><i class="fab fa-whatsapp text-success me-1"></i> Vía Rápida por WhatsApp</h4>
+                    <p class="small text-secondary mb-3">
+                      Envía tu resumen pre-armado con 1 clic al teléfono directo de ingeniería para coordinar presupuesto o visita.
+                    </p>
+                  </div>
+                  <a id="btnWhatsAppLead" href="#" target="_blank" class="btn-whatsapp-action">
+                    <i class="fab fa-whatsapp fs-5"></i> Enviar por WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Opción 2: Correo / Formulario Express -->
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-direction-column justify-content-between">
+                  <div>
+                    <h4 class="h6 text-white mb-2"><i class="fas fa-envelope text-warning me-1"></i> Vía Formal por Correo</h4>
+                    <p class="small text-secondary mb-3">
+                      Si prefieres recibir la cotización por correo electrónico con membrete y PDF, completa tus datos:
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-warning w-100 py-2 rounded-pill font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#emailLeadCollapse" aria-expanded="false">
+                    <i class="fas fa-envelope me-1"></i> Completar datos de contacto
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulario colapsable para enviar por correo -->
+            <div class="collapse mt-4" id="emailLeadCollapse">
+              <div class="card card-body bg-dark border-secondary">
+                <h5 class="text-white h6 mb-3">Formulario Express para Cotización Oficial</h5>
+                <form action="https://formsubmit.co/cjaconte@gmail.com" method="POST" id="leadMagnetEmailForm">
+                  <input type="hidden" name="_next" value="representacionesindustriales.com.ar/gracias.html">
+                  <input type="hidden" name="diagnostico_servicio" id="hiddenLeadService" value="">
+                  <input type="hidden" name="diagnostico_urgencia" id="hiddenLeadUrgency" value="">
+                  <input type="hidden" name="diagnostico_planos" id="hiddenLeadSpecs" value="">
+                  <div class="row g-2 mb-3">
+                    <div class="col-md-4">
+                      <input type="text" name="nombre" class="form-control form-control-modern" placeholder="Nombre y Apellido *" required>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" name="empresa" class="form-control form-control-modern" placeholder="Empresa / Planta *" required>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="tel" name="telefono" class="form-control form-control-modern" placeholder="Teléfono / WhatsApp *" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" name="email" class="form-control form-control-modern" placeholder="Correo electrónico corporativo *" required>
+                  </div>
+                  <div class="mb-3">
+                    <textarea name="mensaje_adicional" class="form-control form-control-modern" rows="2" placeholder="Detalles adicionales (tonelaje, metros cuadrados, ubicación de la obra, etc.)"></textarea>
+                  </div>
+                  <div class="text-end">
+                    <button type="submit" class="btn btn-primary-custom py-2 px-4">
+                      <i class="fas fa-paper-plane me-1"></i> Enviar Solicitud por Correo
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Botón de reiniciar -->
+            <div class="text-center mt-4">
+              <button class="btn btn-link text-secondary btn-sm text-decoration-none" onclick="resetWizard()">
+                <i class="fas fa-rotate-right me-1"></i> Reiniciar asistente y cotizar otro servicio
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUESTROS PROYECTOS -->
 <section id="proyectos">
-<div class="container">
-<h2 class="section-title">Nuestros Proyectos</h2>
-<div class="carousel slide project-carousel" data-bs-ride="carousel" id="projectCarousel">
-<div class="carousel-indicators">
-  <button class="active" data-bs-slide-to="0" data-bs-target="#projectCarousel" type="button" aria-label="Slide 1" aria-current="true"></button>
-  <button data-bs-slide-to="1" data-bs-target="#projectCarousel" type="button" aria-label="Slide 2"></button>
-  <button data-bs-slide-to="2" data-bs-target="#projectCarousel" type="button" aria-label="Slide 3"></button>
-  <button data-bs-slide-to="3" data-bs-target="#projectCarousel" type="button" aria-label="Slide 4"></button>
-  <button data-bs-slide-to="4" data-bs-target="#projectCarousel" type="button" aria-label="Slide 5"></button>
-</div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Casos de Éxito</span>
+      <h2 class="section-title-modern">Proyectos e Instalaciones Realizadas</h2>
+      <p class="section-subtitle-modern">
+        Registro fotográfico y audiovisual de montajes, pesajes y naves operativas entregadas a clientes exigentes.
+      </p>
+    </div>
 
-<div class="carousel-inner">
+    <div class="carousel slide project-carousel" data-bs-ride="carousel" id="projectCarousel">
+      <div class="carousel-indicators">
+        <button class="active" data-bs-slide-to="0" data-bs-target="#projectCarousel" type="button" aria-label="Slide 1" aria-current="true"></button>
+        <button data-bs-slide-to="1" data-bs-target="#projectCarousel" type="button" aria-label="Slide 2"></button>
+        <button data-bs-slide-to="2" data-bs-target="#projectCarousel" type="button" aria-label="Slide 3"></button>
+        <button data-bs-slide-to="3" data-bs-target="#projectCarousel" type="button" aria-label="Slide 4"></button>
+        <button data-bs-slide-to="4" data-bs-target="#projectCarousel" type="button" aria-label="Slide 5"></button>
+      </div>
 
-<div class="carousel-item active">
-  <video class="d-block w-100 video-ajustado" autoplay muted loop playsinline>
-   <source src="VIDEOS/PUENTEGRUA1.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
+      <div class="carousel-inner">
+        <!-- Video 1 -->
+        <div class="carousel-item active">
+          <video class="d-block w-100" autoplay muted loop playsinline>
+            <source src="VIDEOS/PUENTEGRUA1.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+          <div class="carousel-caption">
+            <h5>Puente Grúa de 10 Toneladas Instalado en MEFA Ingeniería</h5>
+            <p>Proyecto en San Lorenzo, Santa Fe: se completó con éxito la puesta en marcha con cálculo y ensayos de carga certificados.</p>
+          </div>
+        </div>
 
-  <div class="carousel-caption">
-    <h5>PUENTE GRÚA DE 10 TONELADAS INSTALADO EN MEFA INGENIERÍA</h5>
-    <p>Proyecto en San Lorenzo, Santa Fe: se completó con éxito la instalación del puente grúa de 10 Tn.</p>
+        <!-- Imagen Báscula -->
+        <div class="carousel-item">
+          <img alt="Báscula Camiones" class="d-block w-100" src="images/banner/1.2_clean.png">
+          <div class="carousel-caption">
+            <h5>Báscula para Camiones en Acceso Parque Industrial Bs. As.</h5>
+            <p>"La gestión de Conte Representaciones fue estupenda y nos ha ahorrado tiempo sin duda." — Víctor R., Director de Operaciones.</p>
+          </div>
+        </div>
+
+        <!-- Imagen Galpón -->
+        <div class="carousel-item">
+          <img alt="Montaje de Galpón" class="d-block w-100" src="images/banner/2.2.png"/>
+          <div class="carousel-caption">
+            <h5>Montaje de Galpón Industrial y Piso de Cemento Alisado</h5>
+            <p>"Es complejo encontrar soluciones que abarquen todas nuestras necesidades y CRI ha estado a la altura." — Eduardo C., Gerente de Planta.</p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="carousel-item">
+          <video class="d-block w-100" autoplay muted loop playsinline>
+            <source src="VIDEOS/PUENTEGRUA2.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+          <div class="carousel-caption">
+            <h5>Puente Grúa Nuevo en Constructora del Parque San Lorenzo</h5>
+            <p>Optimización sustancial en los tiempos de manipulación de perfiles y chapas pesadas.</p>
+          </div>
+        </div>
+
+        <!-- Roll Off -->
+        <div class="carousel-item">
+          <img alt="Batea Roll Off" class="d-block w-100" src="images/banner/camiones.png"/>
+          <div class="carousel-caption">
+            <h5>Bateas Tipo Roll Off Entregadas para Logística Pesada</h5>
+            <p>Capacidades de 20 a 30 m³ fabricadas íntegramente en chapa 1/8" reforzada para trabajo continuo y transporte de granel.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#projectCarousel" type="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#projectCarousel" type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
   </div>
-</div>
-
-<div class="carousel-item">
-<img alt="Puente Grua Rosario" class="d-block w-100" src="images/banner/1.2.png">
-<div class="carousel-caption">
-<h5>BÁSCULA PARA CAMIONES EN ACCESO PARQUE INDUSTRIAL Bs.As.</h5>
-<p>"La gestión de Conte Representaciones fue estupenda y nos ha ahorrado tiempo sin duda" - Victor.R - Director de Operaciones</p>
-</div>
-</div>
-
-<div class="carousel-item">
-<img alt="Poste publicitario santa fe" class="d-block w-100" src="images/banner/2.2.png"/>
-<div class="carousel-caption">
-<h5>MONTAJE DE GALPÓN Y CARPETA DE CEMENTO ALISADO</h5>
-<p>"Es complejo encontrar soluciones que abarquen todas nuestras necesidades y CRI ha estado a la altura." - Eduardo C. Gerente de la Nueva Planta</p>
-</div>
-</div>
-
-
-<div class="carousel-item">
-  <video class="d-block w-100 video-ajustado" autoplay muted loop playsinline>
-    <source src="VIDEOS/PUENTEGRUA2.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
-  <div class="carousel-caption">
-    <h5>PUENTE GRÚA NUEVO EN PARQUE INDUSTRIAL SAN LORENZO</h5>
-    <p>Este puente grúa fue instalado en una constructora del Parque Industrial de San Lorenzo, mejorando la eficiencia y seguridad en el manejo de materiales.</p>
-  </div>
-</div>
-<div class="carousel-item">
-  <img alt="Nuevo Roll Off Entregado" class="d-block w-100" src="images/banner/camiones.png"/>
-  <div class="carousel-caption">
-    <h5>Nuevo Roll Off Entregado</h5>
-    <p>Presentamos nuestra última batea tipo Roll Off, diseñada para un rendimiento robusto y confiable. Con capacidad de 20 a 30 m³ y fabricada íntegramente en chapa de 1/8", contenedor preparado para los trabajos más exigentes.</p>
-  </div>
-</div>
-<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#projectCarousel" type="button">
-<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#projectCarousel" type="button">
-<span aria-hidden="true" class="carousel-control-next-icon"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-</div>
 </section>
 
-<section class="bg-light" id="contacto">
-<div class="container">
-<h2 class="section-title">Contáctanos</h2>
-<div class="row">
-<div class="col-lg-8 mx-auto">
-<div class="contact-form">
-<form action="https://formsubmit.co/cjaconte@gmail.com" method="POST">
- <input type="hidden" name="_next" value="representacionesindustriales.com.ar/gracias.html">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="mb-3">
-        <label class="form-label" for="nombre">Nombre</label>
-        <input class="form-control" id="nombre" name="nombre" required type="text" />
-      </div>
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Atención Inmediata</span>
+      <h2 class="section-title-modern">Hablemos de su Próximo Proyecto</h2>
+      <p class="section-subtitle-modern">
+        Brindamos asesoramiento técnico personalizado, cotizaciones formales y relevamiento directo en planta.
+      </p>
     </div>
-    <div class="col-md-6">
-      <div class="mb-3">
-        <label class="form-label" for="empresa">Empresa</label>
-        <input class="form-control" id="empresa" name="empresa" type="text" />
+
+    <div class="row g-4">
+      <!-- Datos directos -->
+      <div class="col-lg-5">
+        <div class="contact-info-card">
+          <h3 class="h4 text-white font-weight-bold mb-4">Canales de Contacto Directo</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <strong class="d-block text-white">Ubicación</strong>
+              <span>Funes, Santa Fe, Argentina. Cobertura nacional.</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <strong class="d-block text-white">WhatsApp Directo</strong>
+              <a href="https://wa.me/5493413440179" target="_blank" class="text-warning text-decoration-none">
+                +54 9 341 3440179
+              </a>
+              <span class="d-block small text-secondary">Atención ágil de Lunes a Viernes 8:00 a 18:00</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong class="d-block text-white">Correo Electrónico</strong>
+              <a href="mailto:cjaconte@gmail.com" class="text-warning text-decoration-none">cjaconte@gmail.com</a>
+              <span class="d-block small text-secondary">Recepción de pliegos, planos y licitaciones</span>
+            </div>
+          </div>
+
+          <div class="p-3 mt-4 rounded bg-dark border border-secondary">
+            <p class="small text-secondary mb-2"><strong>¿Requiere visita técnica a planta?</strong></p>
+            <p class="small text-light mb-0">Coordinamos relevamientos en todo el cordón industrial del Gran Rosario, Santa Fe, Buenos Aires y Córdoba.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario estándar -->
+      <div class="col-lg-7">
+        <div class="contact-form-modern">
+          <h3 class="h4 font-weight-bold mb-3">Envíenos su Consulta Formal</h3>
+          <form action="https://formsubmit.co/cjaconte@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="representacionesindustriales.com.ar/gracias.html">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nombre">Nombre y Apellido *</label>
+                <input class="form-control form-control-modern" id="nombre" name="nombre" required type="text" placeholder="Ej: Ing. Carlos Pérez" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="empresa">Empresa / Razón Social *</label>
+                <input class="form-control form-control-modern" id="empresa" name="empresa" required type="text" placeholder="Ej: Industria Química S.A." />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="email">Correo Electrónico *</label>
+                <input class="form-control form-control-modern" id="email" name="email" required type="email" placeholder="correo@empresa.com" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="telefono">Teléfono / WhatsApp *</label>
+                <input class="form-control form-control-modern" id="telefono" name="telefono" required type="tel" placeholder="+54 9 ..." />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="mensaje">Detalle del Requerimiento o Consulta *</label>
+                <textarea class="form-control form-control-modern" id="mensaje" name="mensaje" required rows="4" placeholder="Indique tipo de estructura, dimensiones, capacidad de carga, plazos o especificaciones requeridas..."></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button class="btn-primary-custom w-100 justify-content-center" type="submit">
+                  <i class="fas fa-paper-plane"></i> Enviar Consulta a Ingeniería
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="mb-3">
-        <label class="form-label" for="email">Correo electrónico</label>
-        <input class="form-control" id="email" name="email" required type="email" />
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="mb-3">
-        <label class="form-label" for="telefono">Teléfono</label>
-        <input class="form-control" id="telefono" name="telefono" type="tel" />
-      </div>
-    </div>
-  </div>
-  <div class="mb-3">
-    <label class="form-label" for="mensaje">Mensaje</label>
-    <textarea class="form-control" id="mensaje" name="mensaje" required rows="5"></textarea>
-  </div>
-  <div class="text-center">
-    <button class="btn btn-primary" type="submit">Enviar consulta</button>
-  </div>
-</form>
-</div>
-</div>
-</div>
-</div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<div class="container">
-<div class="row">
-<div class="col-md-4 mb-4 mb-md-0">
-<h4>Conte Representaciones Industriales</h4>
-<p><i class="fas fa-map-marker-alt me-2"></i> Funes, Santa Fe, Argentina.</p>
-<p><i class="fas fa-phone me-2"></i> +54 9 3413440179</p>
-<p><i class="fas fa-envelope me-2"></i> cjaconte@gmail.com</p>
-</div>
-<div class="col-md-4 mb-4 mb-md-0">
-<h4>Enlaces rápidos</h4>
-<ul class="list-unstyled">
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#proyectos">Proyectos</a></li>
-<li><a href="#contacto">Contacto</a></li>
-<li><a href="javascript:void(0)">Política de Privacidad</a></li>
-<li><a href="javascript:void(0)">Términos de Uso</a></li>
-</ul>
-</div>
-<div class="col-md-4">
-<h4>Síguenos</h4>
-<div class="social-icons">
-<a href="javascript:void(0)"><i class="fab fa-facebook"></i></a>
-<a href="javascript:void(0)"><i class="fab fa-linkedin"></i></a>
-<a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-<a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-</div>
-<p class="mt-4">© 2025 Conte Representaciones Industriales. Todos los derechos reservados.</p>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-md-5">
+        <h4 class="text-white">Conte Representaciones Industriales</h4>
+        <p class="small">
+          Proveemos soluciones integrales y llave en mano para la industria metalúrgica, logística y productiva: desde ingeniería y cálculo estructural hasta fabricación, montaje y suministros siderúrgicos.
+        </p>
+        <p class="small text-secondary mb-0">
+          <i class="fas fa-map-marker-alt text-warning me-2"></i> Funes, Santa Fe, Argentina.
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h4 class="text-white">Navegación</h4>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#servicios">Servicios</a></li>
+          <li class="mb-2"><a href="#cotizador">Cotizador Express</a></li>
+          <li class="mb-2"><a href="#proyectos">Proyectos</a></li>
+          <li class="mb-2"><a href="#contacto">Contacto</a></li>
+          <li class="mb-2"><a href="gracias.html">Agradecimientos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-white">Contacto Rápido</h4>
+        <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i> +54 9 341 3440179</p>
+        <p class="small mb-3"><i class="fas fa-envelope text-warning me-2"></i> cjaconte@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://wa.me/5493413440179" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:cjaconte@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#contacto" title="Ubicación"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-top border-secondary pt-3 text-center small text-secondary">
+      © 2026 Conte Representaciones Industriales. Todos los derechos reservados.
+    </div>
+  </div>
 </footer>
 
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20hacer%20una%20consulta%20técnica%20sobre%20sus%20servicios." 
+   target="_blank" 
+   class="floating-whatsapp" 
+   title="Contactar por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-badge-pulse"></span>
+</a>
+
+<!-- MODAL DE FICHA TÉCNICA DINÁMICA -->
+<div class="modal fade" id="serviceTechModal" tabindex="-1" aria-labelledby="serviceModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content modal-content-tech">
+      <div class="modal-header border-secondary">
+        <div>
+          <span class="badge bg-warning text-dark mb-1" id="modalServiceTag">Ficha Técnica</span>
+          <h4 class="modal-title font-weight-bold" id="modalServiceTitle">Detalle del Servicio</h4>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        
+        <!-- Carrusel de fotos reales del servicio -->
+        <div id="modalServiceCarousel" class="carousel slide tech-modal-carousel mb-4" data-bs-ride="carousel">
+          <div class="carousel-indicators" id="modalCarouselIndicators"></div>
+          <div class="carousel-inner" id="modalCarouselInner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#modalServiceCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#modalServiceCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <div class="mb-3" id="modalNormativesBox"></div>
+
+        <h5 class="text-warning h6 font-weight-bold mb-2">Alcance de Ingeniería y Especificaciones:</h5>
+        <div class="text-light small mb-4" id="modalServiceDesc" style="line-height: 1.6;"></div>
+
+        <div class="p-3 rounded bg-dark border border-secondary d-flex flex-wrap align-items-center justify-content-between gap-2">
+          <div>
+            <span class="text-white font-weight-bold d-block small">¿Le interesa cotizar este servicio para su empresa?</span>
+            <span class="text-secondary small">Asignamos prioridad técnica de respuesta.</span>
+          </div>
+          <button class="btn btn-primary-custom py-2 px-3 small" id="btnModalQuote" data-bs-dismiss="modal">
+            <i class="fas fa-calculator me-1"></i> Cotizar este Servicio
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script id="app-script">
+<script>
+// BASE DE DATOS TÉCNICA DE LOS 9 SERVICIOS
+const servicesData = {
+  1: {
+    title: "Corte, Plegado y Cilindrado CNC",
+    tag: "Metalúrgica de Alta Precisión",
+    normatives: ["Normas ASME VIII", "Norma API", "Corte Láser CNC", "Espesores hasta 12mm"],
+    folder: "CORTE Y PLEGADO",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Realizamos ingeniería, fabricación y ensayos de recipientes sometidos a presión bajo normas ASME VIII y API. Diseñamos y construimos estructuras metálicas, piping prefabricado, accesos industriales (escaleras, pasarelas, plataformas) y repuestos críticos para plantas de Crushing, oleoquímicas y petroquímicas.</p>
+           <p>Somos especialistas en transporte de sólidos: fabricamos redlers, norias, helicoidales, caídas revestidas con ATPU, amortiguadores de flujo y cuchillas manuales o automatizadas. Integramos soluciones en aspiración industrial y control de polvo: ciclones, ductos con cerámica antidesgaste, ventiladores, chimeneas y sistemas de aspiración con filtros de manga o ciclónicos.</p>
+           <p>Contamos con tecnología de punta para corte láser CNC, plasma pantógrafo, plegado y cilindrado de chapas de hasta 12 mm en acero inoxidable o al carbono. También fabricamos gabinetes industriales especiales para instrumentación, adaptados a las necesidades de cada planta o proyecto.</p>`,
+    quoteKey: "corte"
+  },
+  2: {
+    title: "Puentes Grúa y Sistemas de Izaje",
+    tag: "Equipos de Elevación Industrial",
+    normatives: ["Cálculo Estructural", "Capacidad hasta 50 Tn", "Normas de Seguridad Vigentes", "Llave en Mano"],
+    folder: "IZAJE",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Diseñamos, fabricamos e instalamos puentes grúa a medida para industrias de todos los sectores. Integramos grúas pluma, pórticos, malacates y sistemas de izaje especializados, asegurando adaptación total a las necesidades operativas de cada planta. Nuestros proyectos incluyen cálculos estructurales, planos constructivos y ejecución integral.</p>
+           <p>Proveemos soluciones llave en mano, desde el diseño hasta el mantenimiento postinstalación. Brindamos soporte técnico continuo, modernización de equipos existentes y asesoramiento especializado para garantizar eficiencia, confiabilidad y cumplimiento normativo en todas las maniobras de elevación.</p>
+           <p>Complementamos nuestra oferta con ingeniería aplicada al desarrollo de máquinas especiales para elevación, automatización de procesos de carga y transporte de materiales con soluciones inteligentes adaptadas a cada entorno fabril.</p>`,
+    quoteKey: "izaje"
+  },
+  3: {
+    title: "Básculas y Sistemas de Pesaje Industrial",
+    tag: "Control de Peso y Dosificación",
+    normatives: ["Básculas de Camiones", "Integración SCADA / ERP", "Calibración Certificada", "Sensores de Alta Gama"],
+    folder: "pesaje",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Ofrecemos soluciones integrales de pesaje industrial diseñadas para brindar precisión, confiabilidad y trazabilidad en cada etapa del proceso productivo. Instalamos básculas de plataforma, básculas para camiones de gran porte, tolvas dosificadoras y sistemas de pesaje dinámico para líneas en movimiento.</p>
+           <p>Todos nuestros sistemas cuentan con tecnología robusta y sensores calibrados de alta sensibilidad, permitiendo control exacto de materias primas, productos terminados o cargas a granel. Ofrecemos además servicios de mantenimiento preventivo, calibración certificada y verificación periódica.</p>
+           <p>Complementamos nuestra oferta con integración directa con sistemas SCADA o ERP corporativos, y desarrollo de soluciones a medida para automatizar tareas de control de peso, mejorando la rentabilidad y minimizando mermas.</p>`,
+    quoteKey: "pesaje"
+  },
+  4: {
+    title: "Pisos Industriales de Alta Resistencia",
+    tag: "Pavimentos y Revestimientos",
+    normatives: ["Pisos Epóxicos", "Poliuretánicos", "Concreto Pulido", "Resistencia Química y Térmica"],
+    folder: "pisos",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Nos especializamos en la construcción y renovación de pisos industriales capaces de soportar tránsito intenso de autoelevadores, exposición química severa, humedad constante y abrasión. Ofrecemos soluciones en pisos epóxicos, de poliuretano, multicapa, y concreto pulido.</p>
+           <p>Abarcamos desde la preparación mecánica del sustrato (fresado/granallado) hasta el sellado final, asegurando máxima adherencia, terminaciones prolijas y durabilidad certificada.</p>
+           <p>Integramos áreas técnicas especializadas: <strong>Pisos Industriales</strong> para plantas y depósitos, <strong>Concretar</strong> para obras civiles pesadas, <strong>Pulex</strong> para pulido extremo de pisos de hormigón, e <strong>Infinity</strong> para pisos continuos decorativos.</p>`,
+    quoteKey: "pisos"
+  },
+  5: {
+    title: "Ferretería Industrial y Suministros",
+    tag: "Abastecimiento y Herramientas",
+    normatives: ["Stock Permanente", "Marcas Líderes", "Bulonería Pesada", "EPP y Soldadura"],
+    folder: "ferreteria",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Ofrecemos un amplio surtido de productos de ferretería pesada y corralón para atender las demandas continuas de la industria, la construcción y el taller metalúrgico. Trabajamos con marcas de primera línea y garantizamos asesoramiento técnico especializado.</p>
+           <p>Contamos con herramientas manuales y eléctricas, discos de corte y desbaste, bulonería de alta resistencia, alambres, soldadura MIG/TIG, elementos de protección personal (EPP), insumos para plomería industrial y carpintería metálica.</p>
+           <p>Stock permanente que permite respuestas inmediatas y abastecimiento ágil sin detener sus líneas operativas.</p>`,
+    quoteKey: "ferreteria"
+  },
+  6: {
+    title: "Columnas Publicitarias y Monopolos",
+    tag: "Estructuras de Comunicación Exterior",
+    normatives: ["Cálculo de Viento", "Bases de Hormigón", "Montaje con Grúa Propia", "Llave en Mano"],
+    folder: "POSTES PUBLICITARIOS",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Diseñamos, fabricamos y montamos columnas publicitarias metálicas de gran porte y alta resistencia, adaptadas a las condiciones geográficas y climáticas de cada emplazamiento.</p>
+           <p>Ofrecemos soluciones llave en mano que contemplan el estudio de suelo, cálculo de cargas eólicas, anclajes de precisión, fuste tubular o reticulado y elevación segura con equipos de izaje propios.</p>
+           <p>También comercializamos espacios publicitarios estratégicamente ubicados sobre columnas ya montadas en rutas y accesos clave de la región.</p>`,
+    quoteKey: "estructuras"
+  },
+  7: {
+    title: "Montaje de Galpones y Naves Industriales",
+    tag: "Construcción Metálica Pesada",
+    normatives: ["Estructuras a Medida", "Ingeniería de Detalle", "Acero Certificado", "Montaje Rápido"],
+    folder: "MONTAJE GALPONES",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Diseñamos, fabricamos y montamos estructuras metálicas industriales que combinan funcionalidad, seguridad estructural y rapidez constructiva. Desarrollamos naves a medida para talleres, almacenes logísticos y fábricas de proceso continuo.</p>
+           <p>Supervisamos cada etapa con ingenieros y soldadores calificados, asegurando un ensamble exacto y cumplimiento riguroso del cronograma de obra pactado.</p>
+           <p>Ofrecemos la provisión completa: desde la cimentación e insertos hasta el pórtico principal, cerramientos perimetrales, chapas traslúcidas y zinguería.</p>`,
+    quoteKey: "galpones"
+  },
+  8: {
+    title: "Materiales Siderúrgicos y Ferretería Mayorista",
+    tag: "Perfiles y Chapas de Acero",
+    normatives: ["Perfiles IPN/UPN/C", "Chapas Conformadas", "Caños Estructurales", "Entrega en Obra"],
+    folder: "construccion",
+    images: ["1.png", "2.png", "3.png", "4.png"],
+    desc: `<p>Distribución integral de productos de acero para la construcción y la industria pesada. Disponemos de chapas lisas, estampadas y acanaladas/trapezoidales para techos, perfiles estructurales (IPN, UPN, W, C negro y galvanizado), tubos estructurales redondos, cuadrados y rectangulares, y mallas electrosoldadas.</p>
+           <p>Precios altamente competitivos por atado o bobina, con logística propia para entrega directa en planta o pie de obra.</p>`,
+    quoteKey: "siderurgicos"
+  },
+  9: {
+    title: "Mantenimiento Industrial de Puentes Grúa",
+    tag: "Servicio Técnico Especializado",
+    normatives: ["Guardia y Asistencia", "Inspección de Seguridad", "Repuestos Críticos", "Reducción de Paradas"],
+    folder: "mantenimientoi",
+    images: ["1.png", "3.png", "1.png", "3.png"],
+    desc: `<p>Servicio técnico preventivo y correctivo diseñado para garantizar la operatividad y la seguridad de sus equipos de izaje. Realizamos revisiones mecánicas, eléctricas y estructurales bajo normas IRAM y estándares internacionales.</p>
+           <p>Incluye revisión de polipastos, tambores, cables de acero, testeras, ganchos, botoneras y comandos a distancia, sistemas de traslación y tableros con variadores de frecuencia.</p>
+           <p>Asistencia técnica programada para paradas de planta o intervenciones urgentes en plantas industriales.</p>`,
+    quoteKey: "mantenimiento"
+  }
+};
+
+// FILTRO DE SERVICIOS
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    this.classList.add("active");
+    const filter = this.getAttribute("data-filter");
+    
+    document.querySelectorAll(".service-item").forEach(item => {
+      if (filter === "all" || item.getAttribute("data-category") === filter) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+});
+
+// ABRIR MODAL DETALLADO
+function openServiceModal(id) {
+  const service = servicesData[id];
+  if (!service) return;
+
+  document.getElementById("modalServiceTitle").textContent = service.title;
+  document.getElementById("modalServiceTag").textContent = service.tag;
+  document.getElementById("modalServiceDesc").innerHTML = service.desc;
+
+  // Normativas
+  const normBox = document.getElementById("modalNormativesBox");
+  normBox.innerHTML = service.normatives.map(n => `<span class="normative-pill"><i class="fas fa-check me-1"></i> ${n}</span>`).join("");
+
+  // Carrusel de imágenes reales
+  const indicatorsBox = document.getElementById("modalCarouselIndicators");
+  const innerBox = document.getElementById("modalCarouselInner");
+  indicatorsBox.innerHTML = "";
+  innerBox.innerHTML = "";
+
+  service.images.forEach((imgName, index) => {
+    const activeClass = index === 0 ? "active" : "";
+    indicatorsBox.innerHTML += `<button type="button" data-bs-target="#modalServiceCarousel" data-bs-slide-to="${index}" class="${activeClass}"></button>`;
+    innerBox.innerHTML += `
+      <div class="carousel-item ${activeClass}">
+        <img src="images/${service.folder}/${imgName}" class="d-block w-100" alt="${service.title} Foto ${index+1}">
+      </div>`;
+  });
+
+  // Botón cotizar del modal
+  document.getElementById("btnModalQuote").onclick = function() {
+    preselectService(service.quoteKey);
+    const target = document.querySelector("#cotizador");
+    if (target) {
+      window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
+    }
+  };
+
+  const modal = new bootstrap.Modal(document.getElementById("serviceTechModal"));
+  modal.show();
+}
+
+// LÓGICA DEL LEAD MAGNET / WIZARD
+// BASE DE DATOS DE FLUJOS DINÁMICOS DEL WIZARD (ESPECÍFICO POR SERVICIO)
+const wizardFlows = {
+  "Montaje de Galpones y Naves": {
+    step2Title: "Paso 2 de 3: ¿Qué tipo de nave o estructura necesita?",
+    step2Subtitle: "Seleccione las dimensiones aproximadas o el tipo de obra:",
+    step2Options: [
+      { title: "Galpón Mediano (hasta 600 m²)", desc: "Depósito, taller o tinglado parabólico", icon: "fa-warehouse" },
+      { title: "Nave Industrial (> 1.000 m²)", desc: "Centro logístico, planta fabril o alma llena", icon: "fa-city" },
+      { title: "Ampliación de Estructura", desc: "Aleros, cerramientos o extensión de galpón", icon: "fa-arrows-left-right-to-line" },
+      { title: "Estructura Metálica Especial", desc: "Diseño y cálculo a medida llave en mano", icon: "fa-draw-polygon" }
+    ],
+    step3Title: "Paso 3 de 3: Estado de documentación y terreno",
+    step3Subtitle: "Indique si ya cuenta con planos o necesita relevamiento:",
+    step3Options: [
+      { title: "Tengo Planos y Memorias", desc: "Listo para cotizar sobre archivos CAD o PDF", icon: "fa-file-signature" },
+      { title: "Terreno Nivelado sin Planos", desc: "Requiero anteproyecto e ingeniería completa", icon: "fa-compass-drafting" },
+      { title: "Requiero Relevamiento en Planta", desc: "Coordinar visita de un ingeniero a obra", icon: "fa-ruler-combined" }
+    ]
+  },
+  "Puentes Grúa e Izaje": {
+    step2Title: "Paso 2 de 3: ¿Qué capacidad de elevación requiere?",
+    step2Subtitle: "Seleccione el tonelaje y tipo de equipo de izaje:",
+    step2Options: [
+      { title: "Hasta 5 Toneladas (Monoviga)", desc: "Ideal para talleres y naves de manipulación media", icon: "fa-weight-hanging" },
+      { title: "De 5 a 15 Toneladas (Biviga)", desc: "Para servicio pesado en siderurgia y montaje", icon: "fa-dolly" },
+      { title: "Más de 20 Toneladas / Pórtico", desc: "Grandes capacidades o traslación a la intemperie", icon: "fa-truck-moving" },
+      { title: "Modernización / Equipo Especial", desc: "Actualización de polipasto o grúa pluma giratoria", icon: "fa-screwdriver-wrench" }
+    ],
+    step3Title: "Paso 3 de 3: Infraestructura en su nave",
+    step3Subtitle: "Indique si dispone de ménsulas o requiere columnas:",
+    step3Options: [
+      { title: "Nave con Viga Carril Existente", desc: "Ménsulas listas para montar el puente", icon: "fa-bars-staggered" },
+      { title: "Requiere Columnas y Viga Carril", desc: "Provisión e instalación estructural completa", icon: "fa-trowel-bricks" },
+      { title: "Relevamiento Técnico en Planta", desc: "Necesitamos evaluar la luz entre apoyos y altura", icon: "fa-ruler-combined" }
+    ]
+  },
+  "Corte y Plegado CNC": {
+    step2Title: "Paso 2 de 3: ¿Qué proceso y espesor precisa?",
+    step2Subtitle: "Seleccione el servicio metalúrgico principal:",
+    step2Options: [
+      { title: "Corte Láser CNC / Plasma", desc: "Alta precisión en acero al carbono e inoxidable", icon: "fa-crosshairs" },
+      { title: "Plegado y Cilindrado (hasta 12mm)", desc: "Conformado de virolas, conos y chapas pesadas", icon: "fa-circle-notch" },
+      { title: "Piping y Recipientes ASME VIII", desc: "Spools de cañería, ductos o recipientes a presión", icon: "fa-arrows-split-up-and-left" },
+      { title: "Piezas Seriadas / Redlers", desc: "Producción continua de piezas para maquinaria", icon: "fa-boxes-stacked" }
+    ],
+    step3Title: "Paso 3 de 3: Formato de diseño disponible",
+    step3Subtitle: "¿Dispone de archivos digitales o muestra?",
+    step3Options: [
+      { title: "Archivos CAD / DXF / DWG", desc: "Corte directo con anidado optimizado", icon: "fa-file-code" },
+      { title: "Croquis con Medidas o Muestra", desc: "Digitalización previa por nuestro equipo", icon: "fa-file-pdf" },
+      { title: "Ingeniería y Desarrollo Completo", desc: "Diseño mecánico y planos constructivos", icon: "fa-pen-ruler" }
+    ]
+  },
+  "Básculas y Pesaje": {
+    step2Title: "Paso 2 de 3: ¿Qué solución de pesaje busca?",
+    step2Subtitle: "Seleccione el tipo de aplicación industrial:",
+    step2Options: [
+      { title: "Báscula para Camiones (hasta 80 Tn)", desc: "De hormigón o metálica para pesaje de flota", icon: "fa-truck" },
+      { title: "Báscula de Plataforma / Tolva", desc: "Control de recepción, despacho o dosificación", icon: "fa-weight-scale" },
+      { title: "Pesaje Dinámico en Cinta", desc: "Monitoreo continuo de flujo a granel", icon: "fa-arrows-spin" },
+      { title: "Calibración y Servicio INTI", desc: "Mantenimiento periódico y verificación legal", icon: "fa-certificate" }
+    ],
+    step3Title: "Paso 3 de 3: Requisitos de integración",
+    step3Subtitle: "¿Requiere vinculación con sus sistemas?",
+    step3Options: [
+      { title: "Conexión a ERP / Software SCADA", desc: "Automatización de pesadas y trazabilidad", icon: "fa-network-wired" },
+      { title: "Indicador Autónomo con Ticketera", desc: "Operación estándar sin conexión externa", icon: "fa-print" },
+      { title: "Revisión Técnica en Planta", desc: "Diagnóstico de celdas de carga y apoyos", icon: "fa-microchip" }
+    ]
+  },
+  "Pisos Industriales": {
+    step2Title: "Paso 2 de 3: Tipo de piso y exigencia operativa",
+    step2Subtitle: "Seleccione el acabado y resistencia requerida:",
+    step2Options: [
+      { title: "Piso Epóxico / Poliuretano", desc: "Resistencia química, lavable y libre de polvo", icon: "fa-flask" },
+      { title: "Hormigón Pulido Diamantado", desc: "Máxima dureza para autoelevadores y logística", icon: "fa-gem" },
+      { title: "Grado Alimenticio / Frigorífico", desc: "Antideslizante con barrera antimicrobiana", icon: "fa-shield-halved" },
+      { title: "Bacheo y Reparación de Juntas", desc: "Puesta a punto urgente de losas dañadas", icon: "fa-road-barrier" }
+    ],
+    step3Title: "Paso 3 de 3: Superficie estimada",
+    step3Subtitle: "Indique los metros cuadrados a intervenir:",
+    step3Options: [
+      { title: "Hasta 300 m² (Sector / Taller)", desc: "Aplicación rápida con mínima interrupción", icon: "fa-border-all" },
+      { title: "De 300 a 1.000 m² (Depósito)", desc: "Rendimiento óptimo para áreas operativas", icon: "fa-chart-area" },
+      { title: "Más de 1.000 m² (Nave Completa)", desc: "Cuadrillas especializadas de alto rendimiento", icon: "fa-expand" },
+      { title: "Requiero Evaluación de Sustrato", desc: "Inspección técnica para definir imprimación", icon: "fa-magnifying-glass" }
+    ]
+  },
+  "Suministros y Acero": {
+    step2Title: "Paso 2 de 3: ¿Qué materiales necesita cotizar?",
+    step2Subtitle: "Seleccione el grupo de insumos principales:",
+    step2Options: [
+      { title: "Perfiles Estructurales (IPN, UPN, C)", desc: "Perfiles de alma llena y conformados en frío", icon: "fa-bars" },
+      { title: "Chapas para Techo y Cerramientos", desc: "Acanaladas, trapezoidales, aislantes y zinguería", icon: "fa-square" },
+      { title: "Caños Estructurales y Mallas", desc: "Tubos redondos, cuadrados y mallas electrosoldadas", icon: "fa-grip-lines-vertical" },
+      { title: "Ferretería Pesada y Soldadura", desc: "Bulonería 8.8, discos, electrodos y EPP", icon: "fa-toolbox" }
+    ],
+    step3Title: "Paso 3 de 3: Modalidad de compra y logística",
+    step3Subtitle: "¿Cuál es el volumen o frecuencia del pedido?",
+    step3Options: [
+      { title: "Compra Mayorista por Paquete/Bobina", desc: "Máximo descuento por volumen de compra", icon: "fa-boxes-packing" },
+      { title: "Abastecimiento Mensual para Planta", desc: "Cuenta corriente o provisión programada", icon: "fa-calendar-check" },
+      { title: "Pedido Inmediato con Entrega en Obra", desc: "Despacho con camión a pie de instalación", icon: "fa-truck-fast" }
+    ]
+  },
+  "Mantenimiento de Grúas": {
+    step2Title: "Paso 2 de 3: ¿Cuál es el motivo de la asistencia?",
+    step2Subtitle: "Seleccione la necesidad del equipo de elevación:",
+    step2Options: [
+      { title: "Parada de Planta / Urgencia Técnica", desc: "Falla eléctrica, freno o motor fuera de servicio", icon: "fa-triangle-exclamation text-danger" },
+      { title: "Mantenimiento Preventivo Programado", desc: "Revisión integral para evitar paradas futuras", icon: "fa-clipboard-check" },
+      { title: "Alineación de Vías y Cables", desc: "Cambio de cables de acero, poleas y rieles", icon: "fa-arrows-to-dot" },
+      { title: "Certificación y Protocolo ART", desc: "Ensayos no destructivos y aptitud de carga", icon: "fa-file-shield" }
+    ],
+    step3Title: "Paso 3 de 3: Plazo de respuesta requerido",
+    step3Subtitle: "¿Con qué celeridad necesita la visita técnica?",
+    step3Options: [
+      { title: "Urgente: Dentro de las 24 hs", desc: "Prioridad máxima con guardia técnica", icon: "fa-clock text-warning" },
+      { title: "Dentro de la Semana en Curso", desc: "Coordinación técnica flexible", icon: "fa-calendar-day" },
+      { title: "Programar para Parada de Planta", desc: "Intervención planificada con repuestos listos", icon: "fa-calendar-week" }
+    ]
+  }
+};
+
+// LÓGICA DEL LEAD MAGNET / WIZARD
+let wizardData = {
+  service: "",
+  urgency: "",
+  specs: ""
+};
+
+function selectStep1(value, cardElement) {
+  wizardData.service = value;
+  document.querySelectorAll("#step1 .quiz-card").forEach(c => c.classList.remove("selected"));
+  cardElement.classList.add("selected");
+
+  // Configurar Step 2 dinámico
+  const flow = wizardFlows[value] || wizardFlows["Montaje de Galpones y Naves"];
+  document.getElementById("step2Title").textContent = flow.step2Title;
+  document.getElementById("step2Subtitle").textContent = flow.step2Subtitle;
+
+  const step2Grid = document.getElementById("step2OptionsGrid");
+  step2Grid.innerHTML = flow.step2Options.map(opt => `
+    <div class="quiz-card" onclick="selectStep2('${opt.title.replace(/'/g, "\\'")}', this)">
+      <div class="quiz-icon"><i class="fas ${opt.icon}"></i></div>
+      <div class="quiz-title">${opt.title}</div>
+      <div class="quiz-desc">${opt.desc}</div>
+    </div>
+  `).join("");
+
+  setTimeout(() => {
+    goToStep(2);
+  }, 220);
+}
+
+function selectStep2(value, cardElement) {
+  wizardData.urgency = value;
+  document.querySelectorAll("#step2 .quiz-card").forEach(c => c.classList.remove("selected"));
+  cardElement.classList.add("selected");
+
+  // Configurar Step 3 dinámico
+  const flow = wizardFlows[wizardData.service] || wizardFlows["Montaje de Galpones y Naves"];
+  document.getElementById("step3Title").textContent = flow.step3Title;
+  document.getElementById("step3Subtitle").textContent = flow.step3Subtitle;
+
+  const step3Grid = document.getElementById("step3OptionsGrid");
+  step3Grid.innerHTML = flow.step3Options.map(opt => `
+    <div class="quiz-card" onclick="selectStep3('${opt.title.replace(/'/g, "\\'")}', this)">
+      <div class="quiz-icon"><i class="fas ${opt.icon}"></i></div>
+      <div class="quiz-title">${opt.title}</div>
+      <div class="quiz-desc">${opt.desc}</div>
+    </div>
+  `).join("");
+
+  setTimeout(() => {
+    goToStep(3);
+  }, 220);
+}
+
+function selectStep3(value, cardElement) {
+  wizardData.specs = value;
+  document.querySelectorAll("#step3 .quiz-card").forEach(c => c.classList.remove("selected"));
+  cardElement.classList.add("selected");
+  setTimeout(() => {
+    showResultStep();
+  }, 220);
+}
+
+function goToStep(stepNumber) {
+  document.querySelectorAll(".wizard-step").forEach(step => step.classList.add("d-none"));
+  const targetStep = document.getElementById(`step${stepNumber}`);
+  if (targetStep) targetStep.classList.remove("d-none");
+
+  // Barra de progreso y nodos
+  const progressFill = document.getElementById("wizardProgressFill");
+  const nodes = [1, 2, 3, 4];
+  nodes.forEach(n => {
+    const node = document.getElementById(`indicator${n}`);
+    node.classList.remove("active");
+    if (n < stepNumber) {
+      node.classList.add("completed");
+    } else if (n === stepNumber) {
+      node.classList.add("active");
+    } else {
+      node.classList.remove("completed");
+    }
+  });
+
+  if (stepNumber === 1) progressFill.style.width = "33%";
+  if (stepNumber === 2) progressFill.style.width = "66%";
+  if (stepNumber === 3) progressFill.style.width = "90%";
+}
+
+function showResultStep() {
+  document.querySelectorAll(".wizard-step").forEach(step => step.classList.add("d-none"));
+  document.getElementById("stepResult").classList.remove("d-none");
+
+  const progressFill = document.getElementById("wizardProgressFill");
+  progressFill.style.width = "100%";
+  
+  [1, 2, 3, 4].forEach(n => {
+    const node = document.getElementById(`indicator${n}`);
+    if (n <= 3) node.classList.add("completed");
+    if (n === 4) node.classList.add("active");
+  });
+
+  // Rellenar pills
+  document.getElementById("pillService").innerHTML = `Servicio: <strong>${wizardData.service}</strong>`;
+  document.getElementById("pillUrgency").innerHTML = `Detalle técnico: <strong>${wizardData.urgency}</strong>`;
+  document.getElementById("pillSpecs").innerHTML = `Relevamiento: <strong>${wizardData.specs}</strong>`;
+
+  // Campos ocultos del formulario por correo
+  document.getElementById("hiddenLeadService").value = wizardData.service;
+  document.getElementById("hiddenLeadUrgency").value = wizardData.urgency;
+  document.getElementById("hiddenLeadSpecs").value = wizardData.specs;
+
+  // Enlace WhatsApp dinámico con texto codificado
+  const waMsg = `¡Hola Conte Representaciones Industriales! Completé el cotizador en la web:\n- Servicio: ${wizardData.service}\n- Detalle: ${wizardData.urgency}\n- Relevamiento: ${wizardData.specs}\n\nQuisiera coordinar una cotización técnica prioritaria.`;
+  const waUrl = `https://wa.me/5493413440179?text=${encodeURIComponent(waMsg)}`;
+  document.getElementById("btnWhatsAppLead").href = waUrl;
+}
+
+function resetWizard() {
+  wizardData = { service: "", urgency: "", specs: "" };
+  document.querySelectorAll(".quiz-card").forEach(c => c.classList.remove("selected"));
+  goToStep(1);
+}
+
+function preselectService(key) {
+  const map = {
+    corte: "Corte y Plegado CNC",
+    izaje: "Puentes Grúa e Izaje",
+    pesaje: "Básculas y Pesaje",
+    pisos: "Pisos Industriales",
+    ferreteria: "Suministros y Acero",
+    estructuras: "Montaje de Galpones y Naves",
+    galpones: "Montaje de Galpones y Naves",
+    siderurgicos: "Suministros y Acero",
+    mantenimiento: "Mantenimiento de Grúas"
+  };
+
+  const serviceName = map[key] || "Corte y Plegado CNC";
+  
+  // Buscar la card correspondiente en step 1 y dispararla
+  let foundCard = null;
+  document.querySelectorAll("#step1 .quiz-card").forEach(card => {
+    if (card.querySelector(".quiz-title").textContent.includes(serviceName.split(" ")[0])) {
+      foundCard = card;
+    }
+  });
+
+  if (foundCard) {
+    selectStep1(serviceName, foundCard);
+  } else {
+    wizardData.service = serviceName;
+    goToStep(2);
+  }
+}
+
 // Smooth scrolling para links internos
-document.querySelectorAll("a[href^=\"#\"]").forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
-    e.preventDefault();
     const targetId = this.getAttribute("href");
+    if (targetId === "#") return;
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
+      e.preventDefault();
       window.scrollTo({
         top: targetElement.offsetTop - 70,
         behavior: "smooth"
@@ -1355,172 +2380,6 @@ document.querySelectorAll("a[href^=\"#\"]").forEach(anchor => {
     }
   });
 });
-
-// Función para expandir/colapsar tarjetas
-function toggleCard(card) {
-  const isExpanded = card.classList.contains("expanded");
-  const link = card.querySelector(".service-link");
-
-  // Cerrar todas las tarjetas expandidas
-  document.querySelectorAll(".service-card.expanded").forEach(expandedCard => {
-    expandedCard.classList.remove("expanded");
-    const detail = expandedCard.querySelector(".service-detail");
-    detail.classList.remove("active");
-    detail.classList.add("d-none");
-    const col = expandedCard.closest(".col-lg-4");
-    if (col) col.classList.remove("expanded-col");
-
-    // Restaurar el enlace debajo del título
-    const title = expandedCard.querySelector(".service-title");
-    const movedLink = expandedCard.querySelector(".service-link");
-    if (title && movedLink) {
-      title.insertAdjacentElement("afterend", movedLink);
-    }
-
-    const linkReset = expandedCard.querySelector(".service-link");
-    if (linkReset) linkReset.textContent = "Más info";
-  });
-
-  // Si no estaba expandida, expandirla
-  if (!isExpanded) {
-    const col = card.closest(".col-lg-4");
-    if (col) col.classList.add("expanded-col");
-    card.classList.add("expanded");
-
-    const detail = card.querySelector(".service-detail");
-    detail.classList.remove("d-none");
-    setTimeout(() => {
-      detail.classList.add("active");
-    }, 10);
-
-    if (link) link.textContent = "Menos info";
-
-    // Mover el enlace al final del texto expandido
-    const expandedText = card.querySelector(".expanded-text");
-    if (expandedText && link) {
-      expandedText.appendChild(link);
-    }
-
-    setTimeout(() => {
-      card.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }, 100);
-  }
-}
-
-
-// Click en “Más info”
-document.querySelectorAll(".service-link").forEach(link => {
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleCard(this.closest(".service-card"));
-  });
-});
-
-// Click en tarjeta completa (excepto enlaces/carousel)
-document.querySelectorAll(".service-card").forEach(card => {
-  card.addEventListener("click", function(e) {
-    if (
-      e.target.classList.contains("service-link") ||
-      e.target.closest(".service-detail") ||
-      e.target.closest(".carousel-control-prev") ||
-      e.target.closest(".carousel-control-next") ||
-      e.target.closest(".carousel-indicators")
-    ) return;
-
-    toggleCard(this);
-  });
-});
-
-// Cerrar al hacer clic fuera
-document.addEventListener("click", function(event) {
-  const expandedCard = document.querySelector(".service-card.expanded");
-  if (expandedCard && !expandedCard.contains(event.target)) {
-    const detail = expandedCard.querySelector(".service-detail");
-    detail.classList.remove("active");
-    setTimeout(() => {
-      detail.classList.add("d-none");
-      expandedCard.classList.remove("expanded");
-      const col = expandedCard.closest(".col-lg-4");
-      if (col) col.classList.remove("expanded-col");
-
-      const link = expandedCard.querySelector(".service-link");
-      if (link) link.textContent = "Más info";
-    }, 500);
-  }
-});
-
-// Cerrar con Escape
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    const expandedCard = document.querySelector(".service-card.expanded");
-    if (expandedCard) {
-      const detail = expandedCard.querySelector(".service-detail");
-      detail.classList.remove("active");
-      setTimeout(() => {
-        detail.classList.add("d-none");
-        expandedCard.classList.remove("expanded");
-        const col = expandedCard.closest(".col-lg-4");
-        if (col) col.classList.remove("expanded-col");
-
-        const link = expandedCard.querySelector(".service-link");
-        if (link) link.textContent = "Más info";
-      }, 500);
-    }
-  }
-});
-
-  const container = document.querySelector('.slider-container');
-  const track = container.querySelector('.slider-track');
-
-  // Al entrar el cursor, duplicamos la duración (más lento)
-  container.addEventListener('mouseenter', () => {
-    track.style.animationDuration = '30s';
-  });
-
-  // Al quitar el cursor, volvemos a la velocidad normal
-  container.addEventListener('mouseleave', () => {
-    track.style.animationDuration = '15s';
-  });
-  
-
 </script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.slider-container');
-    const track     = container.querySelector('.slider-track');
-
-    // Definimos la animación (misma que antes):
-    const animation = track.animate(
-      [
-        { transform: 'translateX(0)' },
-        { transform: 'translateX(-33.3333%)' }
-      ],
-      {
-        duration: 8000,    // 8 s en realidad, pero luego ajustamos playbackRate
-        iterations: Infinity,
-        easing: 'linear'
-      }
-    );
-
-    // Al crearse, le damos playbackRate 0.8 para que empiece más lento que 1:
-    animation.playbackRate = 0.6;  // → bloque de 8 iconos en 8s ÷ 0.8 = 10s
-
-    // Al pasar el cursor, bajamos a 0.4 (muy lento):
-    container.addEventListener('mouseenter', () => {
-      animation.playbackRate = 0.3; // → bloque en 8s ÷ 0.4 = 20s
-    });
-
-    // Al sacar el cursor, volvemos a 0.8:
-    container.addEventListener('mouseleave', () => {
-      animation.playbackRate = 0.8;
-    });
-  });
-</script>
-
-
 </body>
 </html>

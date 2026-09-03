@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVCEZWJLBT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KVCEZWJLBT');
+</script> 
+<link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+<title>Cotización Express para Industrias | Conte Representaciones Industriales</title>
+<meta name="description" content="Cotice su proyecto de galpones, puentes grúa, corte y plegado CNC o pesaje industrial en solo 3 clics. Respuesta técnica en menos de 24 horas."/>
+<!-- Evitar indexación en buscadores para uso exclusivo de campañas de pauta (Facebook Ads / Google Ads) -->
+<meta name="robots" content="noindex, nofollow"/>
+
+<!-- Fonts & Frameworks -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+<style>
+:root {
+  --primary: #e8c753;
+  --primary-hover: #d8b642;
+  --primary-glow: rgba(232, 199, 83, 0.35);
+  --dark-bg: #0f1115;
+  --dark-card: #181b22;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #2b303a;
+  background-color: #0b0d10;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* LANDING HEADER (SIN ENLACES DE FUGA) */
+.landing-navbar {
+  padding: 0.9rem 0;
+  background: rgba(15, 17, 21, 0.98);
+  border-bottom: 1px solid rgba(232, 199, 83, 0.2);
+}
+.site-title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.site-subtitle {
+  font-size: 0.7rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  display: block;
+}
+
+.btn-header-wa {
+  background: #25d366;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.25s ease;
+}
+.btn-header-wa:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+}
+
+/* HERO LANDING */
+.landing-hero {
+  position: relative;
+  background: linear-gradient(180deg, #12151c 0%, #0b0d10 100%);
+  padding: 3.5rem 0 2.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.landing-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(232, 199, 83, 0.12);
+  border: 1px solid rgba(232, 199, 83, 0.4);
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.landing-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.18;
+  max-width: 820px;
+  margin: 0 auto 1.2rem;
+}
+.landing-title span {
+  color: var(--primary);
+}
+.landing-desc {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  max-width: 680px;
+  margin: 0 auto 2rem;
+  line-height: 1.55;
+}
+
+/* TRUST BADGES BAR */
+.trust-badges-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.trust-badge-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #e2e8f0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.trust-badge-item i {
+  color: var(--primary);
+}
+
+/* WIZARD CONTAINER */
+.wizard-box {
+  background: rgba(24, 27, 34, 0.98);
+  border: 1px solid rgba(232, 199, 83, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+.wizard-question-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+}
+.wizard-question-sub {
+  color: #a0aec0;
+  font-size: 0.92rem;
+  margin-bottom: 1.6rem;
+}
+
+.wizard-progress-wrapper {
+  margin-bottom: 2rem;
+}
+.wizard-steps-indicator {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+.step-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 2;
+}
+.step-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #252a35;
+  border: 2px solid #3c4353;
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.step-node.active .step-circle {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #121418;
+  box-shadow: 0 0 14px var(--primary-glow);
+}
+.step-node.completed .step-circle {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #ffffff;
+}
+.step-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #718096;
+}
+.step-node.active .step-label {
+  color: var(--primary);
+}
+.wizard-bar {
+  height: 4px;
+  background: #252a35;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wizard-bar-fill {
+  height: 100%;
+  width: 33%;
+  background: linear-gradient(90deg, var(--primary) 0%, #22c55e 100%);
+  transition: width 0.35s ease;
+}
+
+/* CARDS DEL WIZARD */
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+.quiz-card {
+  background: #1f232c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1.2rem 0.9rem;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+.quiz-card:hover {
+  background: #282e3a;
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+.quiz-card.selected {
+  background: rgba(232, 199, 83, 0.14);
+  border-color: var(--primary);
+  box-shadow: 0 0 16px rgba(232, 199, 83, 0.3);
+}
+.quiz-icon {
+  font-size: 1.7rem;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+.quiz-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.quiz-desc {
+  font-size: 0.76rem;
+  color: #a0aec0;
+  line-height: 1.35;
+}
+
+/* RESULTADO MATCH */
+.match-result-box {
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+.summary-pill {
+  background: #15181f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: #e2e8f0;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.summary-pill strong {
+  color: var(--primary);
+}
+
+.btn-whatsapp-action {
+  background: #25d366;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 0.85rem 1.6rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  width: 100%;
+}
+.btn-whatsapp-action:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+}
+
+/* SOCIAL PROOF & GALLERY */
+.social-proof-section {
+  padding: 4rem 0;
+  background: #12151c;
+  color: #ffffff;
+}
+.proof-card {
+  background: #1a1e27;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  height: 100%;
+}
+.proof-photo {
+  height: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #000;
+  position: relative;
+}
+.proof-photo img,
+.proof-photo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.proof-photo video.video-crop {
+  transform: scale(1.95);
+  transform-origin: 88% center;
+}
+
+/* FLOATING WA */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #ffffff !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+  z-index: 9999;
+  text-decoration: none;
+}
+.whatsapp-badge-pulse {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  background-color: #ff3b30;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: pulsePing 2s infinite;
+}
+@keyframes pulsePing {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(255, 59, 48, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
+}
+
+@media (max-width: 768px) {
+  .landing-title { font-size: 2rem; }
+  .wizard-box { padding: 1.4rem; }
+  .option-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER MINIMALISTA (SIN FUGAS DE TRÁFICO) -->
+<header class="landing-navbar sticky-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center gap-2">
+      <img src="images/LOGOCSINNOMBRE.png" alt="Conte Logo" style="max-height: 42px;">
+      <div>
+        <span class="site-title d-block">CONTE</span>
+        <span class="site-subtitle">Representaciones Industriales</span>
+      </div>
+    </div>
+    <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20vi%20su%20publicación%20y%20quisiera%20solicitar%20presupuesto." 
+       target="_blank" 
+       class="btn-header-wa">
+      <i class="fab fa-whatsapp fs-5"></i> 
+      <span class="d-none d-sm-inline">WhatsApp Directo</span>
+    </a>
+  </div>
+</header>
+
+<!-- HERO CON LLAMADO A LA ACCIÓN INMEDIATO -->
+<section class="landing-hero">
+  <div class="container">
+    <div class="landing-hero-tag">
+      <i class="fas fa-certificate"></i> Fabricación, Montaje e Ingeniería en Toda Argentina
+    </div>
+    <h1 class="landing-title">
+      Cotice su Proyecto Industrial<br/>
+      <span>en Solo 3 Clics con Respuesta Inmediata</span>
+    </h1>
+    <p class="landing-desc">
+      Montaje de Galpones y Naves, Puentes Grúa de hasta 50 Tn, Corte y Plegado CNC, Pisos Industriales y Básculas de Camiones con cálculo y respaldo técnico certificado.
+    </p>
+
+    <!-- Sellos de confianza -->
+    <div class="trust-badges-bar">
+      <div class="trust-badge-item"><i class="fas fa-check-circle"></i> Normas ASME VIII & API</div>
+      <div class="trust-badge-item"><i class="fas fa-check-circle"></i> +250 Obras Entregadas</div>
+      <div class="trust-badge-item"><i class="fas fa-check-circle"></i> Relevamiento Técnico en Planta</div>
+      <div class="trust-badge-item"><i class="fas fa-clock"></i> Presupuesto en &lt; 24hs</div>
+    </div>
+
+    <!-- EL COTIZADOR EXPRESS INTEGRADO -->
+    <div class="row justify-content-center mt-3">
+      <div class="col-lg-10">
+        <div class="wizard-box">
+          
+          <div class="mb-4">
+            <h2 class="wizard-question-title">Asistente de Diagnóstico Técnico</h2>
+            <p class="wizard-question-sub">
+              Seleccione sus requerimientos para calcular viabilidad, plazos de cuadrilla y presupuesto:
+            </p>
+          </div>
+
+          <!-- Barra de Progreso -->
+          <div class="wizard-progress-wrapper">
+            <div class="wizard-steps-indicator">
+              <div class="step-node active" id="indicator1">
+                <div class="step-circle">1</div>
+                <span class="step-label">Solución</span>
+              </div>
+              <div class="step-node" id="indicator2">
+                <div class="step-circle">2</div>
+                <span class="step-label">Detalle</span>
+              </div>
+              <div class="step-node" id="indicator3">
+                <div class="step-circle">3</div>
+                <span class="step-label">Relevamiento</span>
+              </div>
+              <div class="step-node" id="indicator4">
+                <div class="step-circle"><i class="fas fa-check"></i></div>
+                <span class="step-label">Contacto</span>
+              </div>
+            </div>
+            <div class="wizard-bar">
+              <div class="wizard-bar-fill" id="wizardProgressFill"></div>
+            </div>
+          </div>
+
+          <!-- PASO 1 -->
+          <div class="wizard-step" id="step1">
+            <h3 class="h6 text-white mb-2 font-weight-bold">Paso 1 de 3: ¿Qué solución principal necesita?</h3>
+            <div class="option-grid">
+              <div class="quiz-card" onclick="selectStep1('Montaje de Galpones y Naves', this)">
+                <div class="quiz-icon"><i class="fas fa-warehouse"></i></div>
+                <div class="quiz-title">Galpones y Naves</div>
+                <div class="quiz-desc">Construcción, ampliación o montaje estructural</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Puentes Grúa e Izaje', this)">
+                <div class="quiz-icon"><i class="fas fa-dolly"></i></div>
+                <div class="quiz-title">Puentes Grúa e Izaje</div>
+                <div class="quiz-desc">Equipos nuevos, pórticos o modernización</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Corte y Plegado CNC', this)">
+                <div class="quiz-icon"><i class="fas fa-industry"></i></div>
+                <div class="quiz-title">Corte y Plegado CNC</div>
+                <div class="quiz-desc">Mecanizado de chapas, piping o recipientes</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Básculas y Pesaje', this)">
+                <div class="quiz-icon"><i class="fas fa-weight-scale"></i></div>
+                <div class="quiz-title">Pesaje Industrial</div>
+                <div class="quiz-desc">Básculas de camiones o tolvas dosificadoras</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Pisos Industriales', this)">
+                <div class="quiz-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="quiz-title">Pisos Industriales</div>
+                <div class="quiz-desc">Epóxicos o concreto pulido alto tránsito</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Suministros y Acero', this)">
+                <div class="quiz-icon"><i class="fas fa-cubes"></i></div>
+                <div class="quiz-title">Acero y Ferretería</div>
+                <div class="quiz-desc">Perfiles, chapas o insumos mayoristas</div>
+              </div>
+              <div class="quiz-card" onclick="selectStep1('Mantenimiento de Grúas', this)">
+                <div class="quiz-icon"><i class="fas fa-wrench"></i></div>
+                <div class="quiz-title">Mantenimiento de Grúas</div>
+                <div class="quiz-desc">Parada de planta o mantenimiento preventivo</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASO 2: DINÁMICO -->
+          <div class="wizard-step d-none" id="step2">
+            <div class="mb-2 text-start">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(1)">
+                <i class="fas fa-arrow-left text-warning me-1"></i> Volver
+              </button>
+              <h3 class="h6 text-white mb-1" id="step2Title">Paso 2 de 3: Detalle del requerimiento</h3>
+              <p class="text-secondary small mb-3" id="step2Subtitle">Seleccione las dimensiones o características técnicas requeridas:</p>
+            </div>
+            <div class="option-grid" id="step2OptionsGrid"></div>
+          </div>
+
+          <!-- PASO 3: DINÁMICO -->
+          <div class="wizard-step d-none" id="step3">
+            <div class="mb-2 text-start">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(2)">
+                <i class="fas fa-arrow-left text-warning me-1"></i> Volver
+              </button>
+              <h3 class="h6 text-white mb-1" id="step3Title">Paso 3 de 3: Documentación y visita técnica</h3>
+              <p class="text-secondary small mb-3" id="step3Subtitle">Último clic para completar su diagnóstico:</p>
+            </div>
+            <div class="option-grid" id="step3OptionsGrid"></div>
+          </div>
+
+          <!-- PASO 4: RESULTADO -->
+          <div class="wizard-step d-none" id="stepResult">
+            <div class="mb-2 text-start">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(3)">
+                <i class="fas fa-arrow-left text-warning me-1"></i> Volver
+              </button>
+            </div>
+            <div class="match-result-box text-center">
+              <span class="badge bg-success text-white px-3 py-2 rounded-pill mb-2"><i class="fas fa-circle-check"></i> Diagnóstico Completo</span>
+              <h3 class="text-white h5 font-weight-bold mb-2">¡Proyecto pre-configurado con éxito!</h3>
+              <p class="text-light small mb-3">Resumen de sus especificaciones técnicas:</p>
+              
+              <div class="d-flex flex-wrap justify-content-center mb-3">
+                <span class="summary-pill" id="pillService">Servicio: <strong>-</strong></span>
+                <span class="summary-pill" id="pillUrgency">Detalle: <strong>-</strong></span>
+                <span class="summary-pill" id="pillSpecs">Relevamiento: <strong>-</strong></span>
+              </div>
+              
+              <p class="small text-secondary mb-0">
+                <i class="fas fa-clock text-warning me-1"></i> Prioridad asignada: respuesta en menos de 2 horas hábiles.
+              </p>
+            </div>
+
+            <div class="row g-3">
+              <!-- WhatsApp -->
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="h6 text-white mb-2"><i class="fab fa-whatsapp text-success me-1"></i> Contacto Inmediato por WhatsApp</h4>
+                    <p class="small text-secondary mb-3">
+                      Envíe su resumen con 1 clic al ingeniero de turno para coordinar cotización o visita.
+                    </p>
+                  </div>
+                  <a id="btnWhatsAppLead" href="#" target="_blank" class="btn-whatsapp-action">
+                    <i class="fab fa-whatsapp fs-5"></i> Enviar Cotización por WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <!-- Correo -->
+              <div class="col-md-6">
+                <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="h6 text-white mb-2"><i class="fas fa-envelope text-warning me-1"></i> Presupuesto Oficial Membretado</h4>
+                    <p class="small text-secondary mb-3">
+                      Si requiere que enviemos la cotización formal por correo electrónico:
+                    </p>
+                  </div>
+                  <button class="btn btn-outline-warning w-100 py-2 rounded-pill font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#emailLeadCollapse" aria-expanded="false">
+                    <i class="fas fa-envelope me-1"></i> Completar datos de empresa
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulario colapsable -->
+            <div class="collapse mt-3" id="emailLeadCollapse">
+              <div class="card card-body bg-dark border-secondary">
+                <h5 class="text-white h6 mb-3">Solicitud de Cotización Membretada</h5>
+                <form action="https://formsubmit.co/cjaconte@gmail.com" method="POST">
+                  <input type="hidden" name="_next" value="representacionesindustriales.com.ar/gracias.html">
+                  <input type="hidden" name="diagnostico_servicio" id="hiddenLeadService" value="">
+                  <input type="hidden" name="diagnostico_urgencia" id="hiddenLeadUrgency" value="">
+                  <input type="hidden" name="diagnostico_planos" id="hiddenLeadSpecs" value="">
+                  <div class="row g-2 mb-3">
+                    <div class="col-md-4">
+                      <input type="text" name="nombre" class="form-control" placeholder="Nombre y Apellido *" required>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" name="empresa" class="form-control" placeholder="Empresa / Planta *" required>
+                    </div>
+                    <div class="col-md-4">
+                      <input type="tel" name="telefono" class="form-control" placeholder="Teléfono *" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Correo electrónico corporativo *" required>
+                  </div>
+                  <div class="text-end">
+                    <button type="submit" class="btn btn-warning font-weight-bold px-4 rounded-pill">
+                      <i class="fas fa-paper-plane me-1"></i> Solicitar Presupuesto Oficial
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="text-center mt-3">
+              <button class="btn btn-link text-secondary btn-sm text-decoration-none" onclick="resetWizard()">
+                <i class="fas fa-rotate-right me-1"></i> Cotizar otra solución
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF: CASOS DE ÉXITO REALES -->
+<section class="social-proof-section">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="text-warning small text-uppercase font-weight-bold">Experiencia Comprobada</span>
+      <h2 class="h3 font-weight-bold text-white">Obras y Montajes Recientes</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="proof-card">
+          <div class="proof-photo">
+            <img src="images/banner/1.2_cropped.png" alt="Báscula para Camiones">
+          </div>
+          <h3 class="h6 text-white font-weight-bold text-uppercase">BÁSCULA PARA CAMIONES EN ACCESO PARQUE INDUSTRIAL</h3>
+          <p class="small text-secondary mb-0">
+            Instalación integral de báscula de hormigón para pesaje de flota pesada y control de materias primas con sensores de alta precisión certificados.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="proof-card">
+          <div class="proof-photo">
+            <img src="images/banner/camiones.png" alt="Nuevo Roll Off Entregado">
+          </div>
+          <h3 class="h6 text-white font-weight-bold text-uppercase">Nuevo Roll Off Entregado</h3>
+          <p class="small text-secondary mb-0">
+            Presentamos nuestra última batea tipo Roll Off, diseñada para un rendimiento robusto y confiable. Con capacidad de 20 a 30 m³ y fabricada íntegramente en chapa de 1/8", contenedor preparado para los trabajos más exigentes.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="proof-card">
+          <div class="proof-photo">
+            <video class="w-100 h-100 video-crop" autoplay muted loop playsinline>
+              <source src="VIDEOS/PUENTEGRUA1.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
+            </video>
+          </div>
+          <h3 class="h6 text-white font-weight-bold text-uppercase">PUENTE GRÚA DE 10 TONELADAS INSTALADO EN MEFA INGENIERÍA</h3>
+          <p class="small text-secondary mb-0">
+            Proyecto en San Lorenzo, Santa Fe: se completó con éxito la instalación del puente grúa de 10 Tn con cálculo estructural y pruebas de carga.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA FINAL DE PÁGINA -->
+    <div class="text-center mt-5 p-4 rounded bg-dark border border-secondary">
+      <h3 class="h4 text-white font-weight-bold mb-2">¿Prefiere hablar directamente con un ingeniero de planta?</h3>
+      <p class="text-secondary small mb-3">Atendemos consultas técnicas y licitaciones de todo el país.</p>
+      <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20conversar%20con%20un%20ingeniero%20sobre%20un%20proyecto." target="_blank" class="btn btn-success px-4 py-2 rounded-pill font-weight-bold">
+        <i class="fab fa-whatsapp fs-5 me-1"></i> Iniciar Chat por WhatsApp (+54 9 341 3440179)
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER SIMPLE -->
+<footer class="py-3 bg-black text-center text-secondary small border-top border-secondary">
+  <div class="container">
+    © 2026 Conte Representaciones Industriales. Funes, Santa Fe, Argentina. Todos los derechos reservados.
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20solicitar%20presupuesto." 
+   target="_blank" 
+   class="floating-whatsapp" 
+   title="Contactar por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-badge-pulse"></span>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// BASE DE DATOS DE FLUJOS DINÁMICOS DEL WIZARD (ESPECÍFICO POR SERVICIO)
+const wizardFlows = {
+  "Montaje de Galpones y Naves": {
+    step2Title: "Paso 2 de 3: ¿Qué tipo de nave o estructura necesita?",
+    step2Subtitle: "Seleccione las dimensiones aproximadas o el tipo de obra:",
+    step2Options: [
+      { title: "Galpón Mediano (hasta 600 m²)", desc: "Depósito, taller o tinglado parabólico", icon: "fa-warehouse" },
+      { title: "Nave Industrial (> 1.000 m²)", desc: "Centro logístico, planta fabril o alma llena", icon: "fa-city" },
+      { title: "Ampliación de Estructura", desc: "Aleros, cerramientos o extensión de galpón", icon: "fa-arrows-left-right-to-line" },
+      { title: "Estructura Metálica Especial", desc: "Diseño y cálculo a medida llave en mano", icon: "fa-draw-polygon" }
+    ],
+    step3Title: "Paso 3 de 3: Estado de documentación y terreno",
+    step3Subtitle: "Indique si ya cuenta con planos o necesita relevamiento:",
+    step3Options: [
+      { title: "Tengo Planos y Memorias", desc: "Listo para cotizar sobre archivos CAD o PDF", icon: "fa-file-signature" },
+      { title: "Terreno Nivelado sin Planos", desc: "Requiero anteproyecto e ingeniería completa", icon: "fa-compass-drafting" },
+      { title: "Requiero Relevamiento en Planta", desc: "Coordinar visita de un ingeniero a obra", icon: "fa-ruler-combined" }
+    ]
+  },
+  "Puentes Grúa e Izaje": {
+    step2Title: "Paso 2 de 3: ¿Qué capacidad de elevación requiere?",
+    step2Subtitle: "Seleccione el tonelaje y tipo de equipo de izaje:",
+    step2Options: [
+      { title: "Hasta 5 Toneladas (Monoviga)", desc: "Ideal para talleres y naves de manipulación media", icon: "fa-weight-hanging" },
+      { title: "De 5 a 15 Toneladas (Biviga)", desc: "Para servicio pesado en siderurgia y montaje", icon: "fa-dolly" },
+      { title: "Más de 20 Toneladas / Pórtico", desc: "Grandes capacidades o traslación a la intemperie", icon: "fa-truck-moving" },
+      { title: "Modernización / Equipo Especial", desc: "Actualización de polipasto o grúa pluma giratoria", icon: "fa-screwdriver-wrench" }
+    ],
+    step3Title: "Paso 3 de 3: Infraestructura en su nave",
+    step3Subtitle: "Indique si dispone de ménsulas o requiere columnas:",
+    step3Options: [
+      { title: "Nave con Viga Carril Existente", desc: "Ménsulas listas para montar el puente", icon: "fa-bars-staggered" },
+      { title: "Requiere Columnas y Viga Carril", desc: "Provisión e instalación estructural completa", icon: "fa-trowel-bricks" },
+      { title: "Relevamiento Técnico en Planta", desc: "Necesitamos evaluar la luz entre apoyos y altura", icon: "fa-ruler-combined" }
+    ]
+  },
+  "Corte y Plegado CNC": {
+    step2Title: "Paso 2 de 3: ¿Qué proceso y espesor precisa?",
+    step2Subtitle: "Seleccione el servicio metalúrgico principal:",
+    step2Options: [
+      { title: "Corte Láser CNC / Plasma", desc: "Alta precisión en acero al carbono e inoxidable", icon: "fa-crosshairs" },
+      { title: "Plegado y Cilindrado (hasta 12mm)", desc: "Conformado de virolas, conos y chapas pesadas", icon: "fa-circle-notch" },
+      { title: "Piping y Recipientes ASME VIII", desc: "Spools de cañería, ductos o recipientes a presión", icon: "fa-arrows-split-up-and-left" },
+      { title: "Piezas Seriadas / Redlers", desc: "Producción continua de piezas para maquinaria", icon: "fa-boxes-stacked" }
+    ],
+    step3Title: "Paso 3 de 3: Formato de diseño disponible",
+    step3Subtitle: "¿Dispone de archivos digitales o muestra?",
+    step3Options: [
+      { title: "Archivos CAD / DXF / DWG", desc: "Corte directo con anidado optimizado", icon: "fa-file-code" },
+      { title: "Croquis con Medidas o Muestra", desc: "Digitalización previa por nuestro equipo", icon: "fa-file-pdf" },
+      { title: "Ingeniería y Desarrollo Completo", desc: "Diseño mecánico y planos constructivos", icon: "fa-pen-ruler" }
+    ]
+  },
+  "Básculas y Pesaje": {
+    step2Title: "Paso 2 de 3: ¿Qué solución de pesaje busca?",
+    step2Subtitle: "Seleccione el tipo de aplicación industrial:",
+    step2Options: [
+      { title: "Báscula para Camiones (hasta 80 Tn)", desc: "De hormigón o metálica para pesaje de flota", icon: "fa-truck" },
+      { title: "Báscula de Plataforma / Tolva", desc: "Control de recepción, despacho o dosificación", icon: "fa-weight-scale" },
+      { title: "Pesaje Dinámico en Cinta", desc: "Monitoreo continuo de flujo a granel", icon: "fa-arrows-spin" },
+      { title: "Calibración y Servicio INTI", desc: "Mantenimiento periódico y verificación legal", icon: "fa-certificate" }
+    ],
+    step3Title: "Paso 3 de 3: Requisitos de integración",
+    step3Subtitle: "¿Requiere vinculación con sus sistemas?",
+    step3Options: [
+      { title: "Conexión a ERP / Software SCADA", desc: "Automatización de pesadas y trazabilidad", icon: "fa-network-wired" },
+      { title: "Indicador Autónomo con Ticketera", desc: "Operación estándar sin conexión externa", icon: "fa-print" },
+      { title: "Revisión Técnica en Planta", desc: "Diagnóstico de celdas de carga y apoyos", icon: "fa-microchip" }
+    ]
+  },
+  "Pisos Industriales": {
+    step2Title: "Paso 2 de 3: Tipo de piso y exigencia operativa",
+    step2Subtitle: "Seleccione el acabado y resistencia requerida:",
+    step2Options: [
+      { title: "Piso Epóxico / Poliuretano", desc: "Resistencia química, lavable y libre de polvo", icon: "fa-flask" },
+      { title: "Hormigón Pulido Diamantado", desc: "Máxima dureza para autoelevadores y logística", icon: "fa-gem" },
+      { title: "Grado Alimenticio / Frigorífico", desc: "Antideslizante con barrera antimicrobiana", icon: "fa-shield-halved" },
+      { title: "Bacheo y Reparación de Juntas", desc: "Puesta a punto urgente de losas dañadas", icon: "fa-road-barrier" }
+    ],
+    step3Title: "Paso 3 de 3: Superficie estimada",
+    step3Subtitle: "Indique los metros cuadrados a intervenir:",
+    step3Options: [
+      { title: "Hasta 300 m² (Sector / Taller)", desc: "Aplicación rápida con mínima interrupción", icon: "fa-border-all" },
+      { title: "De 300 a 1.000 m² (Depósito)", desc: "Rendimiento óptimo para áreas operativas", icon: "fa-chart-area" },
+      { title: "Más de 1.000 m² (Nave Completa)", desc: "Cuadrillas especializadas de alto rendimiento", icon: "fa-expand" },
+      { title: "Requiero Evaluación de Sustrato", desc: "Inspección técnica para definir imprimación", icon: "fa-magnifying-glass" }
+    ]
+  },
+  "Suministros y Acero": {
+    step2Title: "Paso 2 de 3: ¿Qué materiales necesita cotizar?",
+    step2Subtitle: "Seleccione el grupo de insumos principales:",
+    step2Options: [
+      { title: "Perfiles Estructurales (IPN, UPN, C)", desc: "Perfiles de alma llena y conformados en frío", icon: "fa-bars" },
+      { title: "Chapas para Techo y Cerramientos", desc: "Acanaladas, trapezoidales, aislantes y zinguería", icon: "fa-square" },
+      { title: "Caños Estructurales y Mallas", desc: "Tubos redondos, cuadrados y mallas electrosoldadas", icon: "fa-grip-lines-vertical" },
+      { title: "Ferretería Pesada y Soldadura", desc: "Bulonería 8.8, discos, electrodos y EPP", icon: "fa-toolbox" }
+    ],
+    step3Title: "Paso 3 de 3: Modalidad de compra y logística",
+    step3Subtitle: "¿Cuál es el volumen o frecuencia del pedido?",
+    step3Options: [
+      { title: "Compra Mayorista por Paquete/Bobina", desc: "Máximo descuento por volumen de compra", icon: "fa-boxes-packing" },
+      { title: "Abastecimiento Mensual para Planta", desc: "Cuenta corriente o provisión programada", icon: "fa-calendar-check" },
+      { title: "Pedido Inmediato con Entrega en Obra", desc: "Despacho con camión a pie de instalación", icon: "fa-truck-fast" }
+    ]
+  },
+  "Mantenimiento de Grúas": {
+    step2Title: "Paso 2 de 3: ¿Cuál es el motivo de la asistencia?",
+    step2Subtitle: "Seleccione la necesidad del equipo de elevación:",
+    step2Options: [
+      { title: "Parada de Planta / Urgencia Técnica", desc: "Falla eléctrica, freno o motor fuera de servicio", icon: "fa-triangle-exclamation text-danger" },
+      { title: "Mantenimiento Preventivo Programado", desc: "Revisión integral para evitar paradas futuras", icon: "fa-clipboard-check" },
+      { title: "Alineación de Vías y Cables", desc: "Cambio de cables de acero, poleas y rieles", icon: "fa-arrows-to-dot" },
+      { title: "Certificación y Protocolo ART", desc: "Ensayos no destructivos y aptitud de carga", icon: "fa-file-shield" }
+    ],
+    step3Title: "Paso 3 de 3: Plazo de respuesta requerido",
+    step3Subtitle: "¿Con qué celeridad necesita la visita técnica?",
+    step3Options: [
+      { title: "Urgente: Dentro de las 24 hs", desc: "Prioridad máxima con guardia técnica", icon: "fa-clock text-warning" },
+      { title: "Dentro de la Semana en Curso", desc: "Coordinación técnica flexible", icon: "fa-calendar-day" },
+      { title: "Programar para Parada de Planta", desc: "Intervención planificada con repuestos listos", icon: "fa-calendar-week" }
+    ]
+  }
+};
+
+let wizardData = { service: "", urgency: "", specs: "" };
+
+function selectStep1(value, cardElement) {
+  wizardData.service = value;
+  document.querySelectorAll("#step1 .quiz-card").forEach(c => c.classList.remove("selected"));
+  cardElement.classList.add("selected");
+
+  const flow = wizardFlows[value] || wizardFlows["Montaje de Galpones y Naves"];
+  document.getElementById("step2Title").textContent = flow.step2Title;
+  document.getElementById("step2Subtitle").textContent = flow.step2Subtitle;
+
+  const step2Grid = document.getElementById("step2OptionsGrid");
+  step2Grid.innerHTML = flow.step2Options.map(opt => `
+    <div class="quiz-card" onclick="selectStep2('${opt.title.replace(/'/g, "\\'")}', this)">
+      <div class="quiz-icon"><i class="fas ${opt.icon}"></i></div>
+      <div class="quiz-title">${opt.title}</div>
+      <div class="quiz-desc">${opt.desc}</div>
+    </div>
+  `).join("");
+
+  setTimeout(() => { goToStep(2); }, 200);
+}
+
+function selectStep2(value, cardElement) {
+  wizardData.urgency = value;
+  document.querySelectorAll("#step2 .quiz-card").forEach(c => c.classList.remove("selected"));
+  cardElement.classList.add("selected");
+
+  const flow = wizardFlows[wizardData.service] || wizardFlows["Montaje de Galpones y Naves"];
+  document.getElementById("step3Title").textContent = flow.step3Title;
+  document.getElementById("step3Subtitle").textContent = flow.step3Subtitle;
+
+  const step3Grid = document.getElementById("step3OptionsGrid");
+  step3Grid.innerHTML = flow.step3Options.map(opt => `
+    <div class="quiz-card" onclick="selectStep3('${opt.title.replace(/'/g, "\\'")}', this)">
+      <div class="quiz-icon"><i class="fas ${opt.icon}"></i></div>
+      <div class="quiz-title">${opt.title}</div>
+      <div class="quiz-desc">${opt.desc}</div>
+    </div>
+  `).join("");
+
+  setTimeout(() => { goToStep(3); }, 200);
+}
+
+function selectStep3(value, cardElement) {
+  wizardData.specs = value;
+  document.querySelectorAll("#step3 .quiz-card").forEach(c => c.classList.remove("selected"));
+  cardElement.classList.add("selected");
+  setTimeout(() => { showResultStep(); }, 200);
+}
+
+function goToStep(stepNumber) {
+  document.querySelectorAll(".wizard-step").forEach(step => step.classList.add("d-none"));
+  const targetStep = document.getElementById(`step${stepNumber}`);
+  if (targetStep) targetStep.classList.remove("d-none");
+
+  const progressFill = document.getElementById("wizardProgressFill");
+  const nodes = [1, 2, 3, 4];
+  nodes.forEach(n => {
+    const node = document.getElementById(`indicator${n}`);
+    node.classList.remove("active");
+    if (n < stepNumber) node.classList.add("completed");
+    else if (n === stepNumber) node.classList.add("active");
+    else node.classList.remove("completed");
+  });
+
+  if (stepNumber === 1) progressFill.style.width = "33%";
+  if (stepNumber === 2) progressFill.style.width = "66%";
+  if (stepNumber === 3) progressFill.style.width = "90%";
+}
+
+function showResultStep() {
+  document.querySelectorAll(".wizard-step").forEach(step => step.classList.add("d-none"));
+  document.getElementById("stepResult").classList.remove("d-none");
+
+  const progressFill = document.getElementById("wizardProgressFill");
+  progressFill.style.width = "100%";
+  
+  [1, 2, 3, 4].forEach(n => {
+    const node = document.getElementById(`indicator${n}`);
+    if (n <= 3) node.classList.add("completed");
+    if (n === 4) node.classList.add("active");
+  });
+
+  document.getElementById("pillService").innerHTML = `Servicio: <strong>${wizardData.service}</strong>`;
+  document.getElementById("pillUrgency").innerHTML = `Detalle: <strong>${wizardData.urgency}</strong>`;
+  document.getElementById("pillSpecs").innerHTML = `Relevamiento: <strong>${wizardData.specs}</strong>`;
+
+  document.getElementById("hiddenLeadService").value = wizardData.service;
+  document.getElementById("hiddenLeadUrgency").value = wizardData.urgency;
+  document.getElementById("hiddenLeadSpecs").value = wizardData.specs;
+
+  const waMsg = `¡Hola Conte Representaciones Industriales! Vi la publicación y completé el cotizador:\n- Servicio: ${wizardData.service}\n- Detalle: ${wizardData.urgency}\n- Relevamiento: ${wizardData.specs}\n\nQuisiera coordinar una cotización técnica.`;
+  const waUrl = `https://wa.me/5493413440179?text=${encodeURIComponent(waMsg)}`;
+  document.getElementById("btnWhatsAppLead").href = waUrl;
+}
+
+function resetWizard() {
+  wizardData = { service: "", urgency: "", specs: "" };
+  document.querySelectorAll(".quiz-card").forEach(c => c.classList.remove("selected"));
+  goToStep(1);
+}
+</script>
+</body>
+</html>
