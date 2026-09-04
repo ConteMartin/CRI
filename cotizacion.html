@@ -8,13 +8,24 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KVCEZWJLBT');
+
+  // Evento de tracking de conversiones de WhatsApp
+  function trackWaClick(buttonLocation) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'click_whatsapp', {
+        'event_category': 'Conversion WhatsApp',
+        'event_label': buttonLocation,
+        'value': 1
+      });
+    }
+  }
 </script> 
 <link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
 
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 <title>Cotización Express para Industrias | Conte Representaciones Industriales</title>
-<meta name="description" content="Cotice su proyecto de galpones, puentes grúa, corte y plegado CNC o pesaje industrial en solo 3 clics. Respuesta técnica en menos de 24 horas."/>
+<meta name="description" content="Cotice su proyecto de galpones, puentes grúa, corte y plegado CNC o pesaje industrial en solo 3 clics o por WhatsApp directo. Respuesta técnica de ingeniería en el día."/>
 <!-- Evitar indexación en buscadores para uso exclusivo de campañas de pauta (Facebook Ads / Google Ads) -->
 <meta name="robots" content="noindex, nofollow"/>
 
@@ -34,6 +45,8 @@
   --dark-card: #181b22;
   --radius-md: 14px;
   --radius-lg: 20px;
+  --wa-color: #25d366;
+  --wa-hover: #20bd5a;
 }
 
 body {
@@ -48,20 +61,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* LANDING HEADER (SIN ENLACES DE FUGA) */
+/* LANDING HEADER */
 .landing-navbar {
-  padding: 0.9rem 0;
+  padding: 0.85rem 0;
   background: rgba(15, 17, 21, 0.98);
-  border-bottom: 1px solid rgba(232, 199, 83, 0.2);
+  border-bottom: 1px solid rgba(232, 199, 83, 0.25);
+  backdrop-filter: blur(10px);
 }
 .site-title {
-  font-weight: 700;
+  font-weight: 800;
   color: #ffffff;
-  font-size: 1.1rem;
-  line-height: 1.2;
+  font-size: 1.15rem;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
 }
 .site-subtitle {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -69,30 +84,55 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.btn-header-wa {
-  background: #25d366;
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 0.5rem 1.1rem;
+/* BOTÓN IR A LA WEB */
+.btn-header-web {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(232, 199, 83, 0.4);
+  color: #f1f5f9 !important;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.9rem;
   border-radius: 50px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
   transition: all 0.25s ease;
 }
+.btn-header-web:hover {
+  background: rgba(232, 199, 83, 0.18);
+  border-color: var(--primary);
+  color: var(--primary) !important;
+  transform: translateY(-1px);
+}
+
+/* BOTÓN WHATSAPP HEADER */
+.btn-header-wa {
+  background: var(--wa-color);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.84rem;
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
 .btn-header-wa:hover {
-  background: #20bd5a;
+  background: var(--wa-hover);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
 
 /* HERO LANDING */
 .landing-hero {
   position: relative;
-  background: linear-gradient(180deg, #12151c 0%, #0b0d10 100%);
-  padding: 3.5rem 0 2.5rem;
+  background: linear-gradient(180deg, #131722 0%, #0b0d10 100%);
+  padding: 3rem 0 2.5rem;
   color: #ffffff;
   text-align: center;
 }
@@ -103,29 +143,29 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(232, 199, 83, 0.12);
   border: 1px solid rgba(232, 199, 83, 0.4);
   color: var(--primary);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 700;
   padding: 0.35rem 1rem;
   border-radius: 50px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
 }
 .landing-title {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-weight: 800;
   line-height: 1.18;
-  max-width: 820px;
+  max-width: 860px;
   margin: 0 auto 1.2rem;
 }
 .landing-title span {
   color: var(--primary);
 }
 .landing-desc {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: #cbd5e1;
-  max-width: 680px;
-  margin: 0 auto 2rem;
+  max-width: 720px;
+  margin: 0 auto 1.8rem;
   line-height: 1.55;
 }
 
@@ -134,15 +174,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 0.9rem;
   margin-bottom: 2rem;
 }
 .trust-badge-item {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.45rem 1rem;
+  padding: 0.45rem 0.95rem;
   border-radius: 8px;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: #e2e8f0;
   display: inline-flex;
   align-items: center;
@@ -152,29 +192,97 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
 }
 
+/* VÍA RÁPIDA WHATSAPP BANNER (CRO SOLVER) */
+.quick-wa-banner {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.14) 0%, rgba(24, 27, 34, 0.96) 60%, rgba(18, 21, 28, 0.98) 100%);
+  border: 1.5px solid rgba(37, 211, 102, 0.45);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.8rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(37, 211, 102, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.quick-wa-banner::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.pulse-status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--wa-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 10px var(--wa-color);
+  animation: pulseDot 1.8s infinite;
+}
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.btn-fast-wa {
+  background: var(--wa-color);
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 0.75rem 1.4rem;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  transition: all 0.25s ease;
+  text-align: left;
+}
+.btn-fast-wa:hover {
+  background: var(--wa-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.6);
+}
+.btn-fast-title {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+.btn-fast-sub {
+  display: block;
+  font-size: 0.74rem;
+  opacity: 0.92;
+  font-weight: 500;
+}
+
 /* WIZARD CONTAINER */
 .wizard-box {
   background: rgba(24, 27, 34, 0.98);
   border: 1px solid rgba(232, 199, 83, 0.3);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
+  padding: 2.3rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
   text-align: left;
 }
 .wizard-question-title {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
   color: #ffffff;
 }
 .wizard-question-sub {
   color: #a0aec0;
   font-size: 0.92rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .wizard-progress-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 .wizard-steps-indicator {
   display: flex;
@@ -239,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 1rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 .quiz-card {
   background: #1f232c;
@@ -283,15 +391,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* RESULTADO MATCH */
 .match-result-box {
-  background: rgba(34, 197, 94, 0.08);
-  border: 1px solid rgba(34, 197, 94, 0.3);
+  background: rgba(34, 197, 94, 0.09);
+  border: 1px solid rgba(34, 197, 94, 0.35);
   border-radius: var(--radius-md);
   padding: 1.6rem;
   margin-bottom: 1.8rem;
 }
 .summary-pill {
   background: #15181f;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 0.45rem 0.85rem;
   border-radius: 8px;
   font-size: 0.82rem;
@@ -304,14 +412,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-whatsapp-action {
-  background: #25d366;
+  background: var(--wa-color);
   color: #ffffff !important;
   font-weight: 700;
-  padding: 0.85rem 1.6rem;
+  padding: 0.9rem 1.6rem;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1.05rem;
   border: none;
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
@@ -321,9 +429,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .btn-whatsapp-action:hover {
-  background: #20bd5a;
+  background: var(--wa-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 10px 32px rgba(37, 211, 102, 0.6);
 }
 
 /* SOCIAL PROOF & GALLERY */
@@ -336,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #1a1e27;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
+  padding: 1.4rem;
   height: 100%;
 }
 .proof-photo {
@@ -359,14 +467,52 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: 88% center;
 }
 
-/* FLOATING WA */
-.floating-whatsapp {
+/* FLOATING WA & TOOLTIP BUBBLE */
+.floating-whatsapp-container {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.floating-wa-bubble {
+  background: #ffffff;
+  color: #111827;
+  padding: 8px 14px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  font-size: 0.8rem;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: floatBubble 3s ease-in-out infinite;
+  text-decoration: none;
+  border: 1px solid rgba(37, 211, 102, 0.4);
+}
+.floating-wa-bubble:hover {
+  color: #111827;
+}
+.floating-wa-badge {
+  background: var(--wa-color);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+@keyframes floatBubble {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.floating-whatsapp {
   width: 60px;
   height: 60px;
-  background-color: #25d366;
+  background-color: var(--wa-color);
   color: #ffffff !important;
   border-radius: 50%;
   display: flex;
@@ -374,8 +520,12 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   font-size: 32px;
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
-  z-index: 9999;
   text-decoration: none;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+.floating-whatsapp:hover {
+  transform: scale(1.08);
 }
 .whatsapp-badge-pulse {
   position: absolute;
@@ -394,31 +544,119 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
 }
 
+/* STICKY BOTTOM BAR FOR MOBILE */
+.mobile-bottom-bar {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .landing-title { font-size: 2rem; }
-  .wizard-box { padding: 1.4rem; }
-  .option-grid { grid-template-columns: 1fr; }
+  body {
+    padding-bottom: 74px; /* Espacio para que la barra no tape contenido */
+  }
+  .landing-title { 
+    font-size: 1.95rem; 
+  }
+  .wizard-box { 
+    padding: 1.3rem; 
+  }
+  .option-grid { 
+    grid-template-columns: 1fr; 
+  }
+  
+  /* Ajuste de posición del botón flotante en móvil */
+  .floating-whatsapp-container {
+    bottom: 82px;
+    right: 18px;
+  }
+  .floating-wa-bubble {
+    display: none; /* En móvil la barra inferior ya cubre el llamado directo */
+  }
+
+  /* BARRA FIJA INFERIOR EN CELULARES */
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(13, 16, 21, 0.98);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(232, 199, 83, 0.3);
+    padding: 0.55rem 0.8rem;
+    z-index: 9998;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+  }
+  .btn-mobile-bar-web {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(232, 199, 83, 0.4);
+    color: #f1f5f9;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.6rem 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+  }
+  .btn-mobile-bar-wa {
+    flex: 2;
+    background: var(--wa-color);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    white-space: nowrap;
+  }
 }
 </style>
 </head>
 <body>
 
-<!-- HEADER MINIMALISTA (SIN FUGAS DE TRÁFICO) -->
+<!-- HEADER PRINCIPAL CON BOTÓN A LA WEB Y WHATSAPP -->
 <header class="landing-navbar sticky-top">
   <div class="container d-flex align-items-center justify-content-between">
-    <div class="d-flex align-items-center gap-2">
-      <img src="images/LOGOCSINNOMBRE.png" alt="Conte Logo" style="max-height: 42px;">
+    <!-- Logotipo y Nombre con enlace al Sitio Web -->
+    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none" title="Ir al Sitio Web Institucional">
+      <img src="images/LOGOCSINNOMBRE.png" alt="Conte Logo" style="max-height: 40px;">
       <div>
         <span class="site-title d-block">CONTE</span>
         <span class="site-subtitle">Representaciones Industriales</span>
       </div>
-    </div>
-    <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20vi%20su%20publicación%20y%20quisiera%20solicitar%20presupuesto." 
-       target="_blank" 
-       class="btn-header-wa">
-      <i class="fab fa-whatsapp fs-5"></i> 
-      <span class="d-none d-sm-inline">WhatsApp Directo</span>
     </a>
+
+    <!-- Botones de Acción Superior -->
+    <div class="d-flex align-items-center gap-2">
+      <!-- Botón Ir a la Web -->
+      <a href="index.html" class="btn-header-web" title="Ver catálogo completo de obras y servicios en la web">
+        <i class="fas fa-globe text-warning"></i>
+        <span class="d-none d-sm-inline">Ver Sitio Web</span>
+        <span class="d-sm-none">Web</span>
+      </a>
+
+      <!-- Botón WhatsApp Directo -->
+      <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20vi%20su%20publicación%20y%20quisiera%20solicitar%20presupuesto." 
+         target="_blank" 
+         class="btn-header-wa"
+         onclick="trackWaClick('Header WhatsApp Directo')">
+        <i class="fab fa-whatsapp fs-5"></i> 
+        <span>WhatsApp</span>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -430,7 +668,7 @@ h1, h2, h3, h4, h5, h6 {
     </div>
     <h1 class="landing-title">
       Cotice su Proyecto Industrial<br/>
-      <span>en Solo 3 Clics con Respuesta Inmediata</span>
+      <span>en Solo 3 Clics o por WhatsApp Directo</span>
     </h1>
     <p class="landing-desc">
       Montaje de Galpones y Naves, Puentes Grúa de hasta 50 Tn, Corte y Plegado CNC, Pisos Industriales y Básculas de Camiones con cálculo y respaldo técnico certificado.
@@ -444,8 +682,51 @@ h1, h2, h3, h4, h5, h6 {
       <div class="trust-badge-item"><i class="fas fa-clock"></i> Presupuesto en &lt; 24hs</div>
     </div>
 
+    <!-- BANNER VÍA RÁPIDA DE WHATSAPP (PARA VISITAS DE ANUNCIOS QUE NO QUIEREN FORMULARIOS) -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10">
+        <div class="quick-wa-banner">
+          <div class="row align-items-center g-3">
+            <div class="col-md-7 text-md-start text-center">
+              <div class="d-inline-flex align-items-center gap-2 mb-1">
+                <span class="pulse-status-dot"></span>
+                <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-2 py-1 rounded-pill small fw-bold">
+                  <i class="fab fa-whatsapp me-1"></i> Asesoría Técnica Inmediata
+                </span>
+              </div>
+              <h3 class="h5 text-white fw-bold mb-1">¿Tenés una consulta puntual o planos para cotizar?</h3>
+              <p class="text-light text-opacity-75 small mb-0">
+                Atención directa con el <strong>Ing. Cristian Conte</strong>. Envianos medidas, croquis o dudas y te respondemos en el día.
+              </p>
+            </div>
+            <div class="col-md-5 text-md-end text-center">
+              <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20vi%20la%20publicación%20y%20quisiera%20hacer%20una%20consulta%20técnica%20directa." 
+                 target="_blank" 
+                 class="btn-fast-wa"
+                 onclick="trackWaClick('Hero Fast WhatsApp Banner')">
+                <i class="fab fa-whatsapp fs-4"></i>
+                <div>
+                  <span class="btn-fast-title">Chatear por WhatsApp</span>
+                  <span class="btn-fast-sub">+54 9 341 344-0179</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPARADOR CONTEXTUAL -->
+    <div class="row justify-content-center mb-3">
+      <div class="col-lg-10 text-center">
+        <span class="text-secondary small text-uppercase font-weight-bold" style="letter-spacing: 1px;">
+          — O configure su requerimiento con nuestro cotizador interactivo —
+        </span>
+      </div>
+    </div>
+
     <!-- EL COTIZADOR EXPRESS INTEGRADO -->
-    <div class="row justify-content-center mt-3">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="wizard-box">
           
@@ -521,14 +802,32 @@ h1, h2, h3, h4, h5, h6 {
                 <div class="quiz-desc">Parada de planta o mantenimiento preventivo</div>
               </div>
             </div>
+
+            <!-- Ayuda rápida para no perder el prospecto -->
+            <div class="p-3 rounded bg-dark bg-opacity-50 border border-secondary border-opacity-50 text-center">
+              <span class="small text-secondary me-2">
+                <i class="fas fa-info-circle text-warning me-1"></i> ¿Su proyecto requiere desarrollo especial a medida?
+              </span>
+              <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20tengo%20un%20proyecto%20industrial%20especial%20para%20cotizar." 
+                 target="_blank" 
+                 class="btn btn-sm btn-outline-success rounded-pill px-3 mt-2 mt-sm-0"
+                 onclick="trackWaClick('Step 1 Direct Help')">
+                <i class="fab fa-whatsapp me-1"></i> Consultar por WhatsApp
+              </a>
+            </div>
           </div>
 
           <!-- PASO 2: DINÁMICO -->
           <div class="wizard-step d-none" id="step2">
-            <div class="mb-2 text-start">
-              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(1)">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill" onclick="goToStep(1)">
                 <i class="fas fa-arrow-left text-warning me-1"></i> Volver
               </button>
+              <a href="#" id="step2DirectWaLink" target="_blank" class="small text-success text-decoration-none fw-bold" onclick="trackWaClick('Step 2 Direct Link')">
+                <i class="fab fa-whatsapp me-1"></i> Cotizar este rubro por WhatsApp &rarr;
+              </a>
+            </div>
+            <div class="mb-2 text-start">
               <h3 class="h6 text-white mb-1" id="step2Title">Paso 2 de 3: Detalle del requerimiento</h3>
               <p class="text-secondary small mb-3" id="step2Subtitle">Seleccione las dimensiones o características técnicas requeridas:</p>
             </div>
@@ -537,10 +836,15 @@ h1, h2, h3, h4, h5, h6 {
 
           <!-- PASO 3: DINÁMICO -->
           <div class="wizard-step d-none" id="step3">
-            <div class="mb-2 text-start">
-              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill mb-2" onclick="goToStep(2)">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <button class="btn btn-sm btn-outline-secondary text-light px-3 py-1 rounded-pill" onclick="goToStep(2)">
                 <i class="fas fa-arrow-left text-warning me-1"></i> Volver
               </button>
+              <a href="#" id="step3DirectWaLink" target="_blank" class="small text-success text-decoration-none fw-bold" onclick="trackWaClick('Step 3 Direct Link')">
+                <i class="fab fa-whatsapp me-1"></i> Enviar datos hasta aquí por WhatsApp &rarr;
+              </a>
+            </div>
+            <div class="mb-2 text-start">
               <h3 class="h6 text-white mb-1" id="step3Title">Paso 3 de 3: Documentación y visita técnica</h3>
               <p class="text-secondary small mb-3" id="step3Subtitle">Último clic para completar su diagnóstico:</p>
             </div>
@@ -573,15 +877,18 @@ h1, h2, h3, h4, h5, h6 {
             <div class="row g-3">
               <!-- WhatsApp -->
               <div class="col-md-6">
-                <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-column justify-content-between">
+                <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-column justify-content-between shadow">
                   <div>
-                    <h4 class="h6 text-white mb-2"><i class="fab fa-whatsapp text-success me-1"></i> Contacto Inmediato por WhatsApp</h4>
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 px-2 py-1 rounded-pill small fw-bold mb-2">
+                      <i class="fab fa-whatsapp me-1"></i> Canal Recomendado y Rápido
+                    </span>
+                    <h4 class="h6 text-white mb-2 font-weight-bold">Enviar Resumen a un Ingeniero</h4>
                     <p class="small text-secondary mb-3">
-                      Envíe su resumen con 1 clic al ingeniero de turno para coordinar cotización o visita.
+                      Al tocar se abrirá WhatsApp con el resumen de su proyecto listo para coordinar cotización o visita a planta.
                     </p>
                   </div>
-                  <a id="btnWhatsAppLead" href="#" target="_blank" class="btn-whatsapp-action">
-                    <i class="fab fa-whatsapp fs-5"></i> Enviar Cotización por WhatsApp
+                  <a id="btnWhatsAppLead" href="#" target="_blank" class="btn-whatsapp-action" onclick="trackWaClick('Wizard Step 4 Final Button')">
+                    <i class="fab fa-whatsapp fs-4"></i> Enviar Cotización por WhatsApp
                   </a>
                 </div>
               </div>
@@ -590,9 +897,12 @@ h1, h2, h3, h4, h5, h6 {
               <div class="col-md-6">
                 <div class="p-3 rounded bg-dark border border-secondary text-center h-100 d-flex flex-column justify-content-between">
                   <div>
-                    <h4 class="h6 text-white mb-2"><i class="fas fa-envelope text-warning me-1"></i> Presupuesto Oficial Membretado</h4>
+                    <span class="badge bg-warning bg-opacity-25 text-warning border border-warning border-opacity-50 px-2 py-1 rounded-pill small fw-bold mb-2">
+                      <i class="fas fa-file-invoice me-1"></i> Canal Administrativo
+                    </span>
+                    <h4 class="h6 text-white mb-2 font-weight-bold">Presupuesto Formal Membretado</h4>
                     <p class="small text-secondary mb-3">
-                      Si requiere que enviemos la cotización formal por correo electrónico:
+                      Si requiere que enviemos una cotización formal en PDF membretado por correo corporativo:
                     </p>
                   </div>
                   <button class="btn btn-outline-warning w-100 py-2 rounded-pill font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#emailLeadCollapse" aria-expanded="false">
@@ -648,12 +958,15 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </section>
 
-<!-- SOCIAL PROOF: CASOS DE ÉXITO REALES -->
+<!-- SOCIAL PROOF: CASOS DE ÉXITO REALES Y ENLACE A LA WEB -->
 <section class="social-proof-section">
   <div class="container">
     <div class="text-center mb-4">
       <span class="text-warning small text-uppercase font-weight-bold">Experiencia Comprobada</span>
       <h2 class="h3 font-weight-bold text-white">Obras y Montajes Recientes</h2>
+      <p class="text-secondary small max-w-600 mx-auto">
+        Conozca parte de nuestras instalaciones industriales activas en parques logísticos y plantas fabriles.
+      </p>
     </div>
 
     <div class="row g-4">
@@ -676,7 +989,7 @@ h1, h2, h3, h4, h5, h6 {
           </div>
           <h3 class="h6 text-white font-weight-bold text-uppercase">Nuevo Roll Off Entregado</h3>
           <p class="small text-secondary mb-0">
-            Presentamos nuestra última batea tipo Roll Off, diseñada para un rendimiento robusto y confiable. Con capacidad de 20 a 30 m³ y fabricada íntegramente en chapa de 1/8", contenedor preparado para los trabajos más exigentes.
+            Batea tipo Roll Off diseñada para rendimiento robusto. Capacidad de 20 a 30 m³ y fabricada íntegramente en chapa de 1/8" para los trabajos más exigentes.
           </p>
         </div>
       </div>
@@ -691,39 +1004,95 @@ h1, h2, h3, h4, h5, h6 {
           </div>
           <h3 class="h6 text-white font-weight-bold text-uppercase">PUENTE GRÚA DE 10 TONELADAS INSTALADO EN MEFA INGENIERÍA</h3>
           <p class="small text-secondary mb-0">
-            Proyecto en San Lorenzo, Santa Fe: se completó con éxito la instalación del puente grúa de 10 Tn con cálculo estructural y pruebas de carga.
+            Proyecto en San Lorenzo, Santa Fe: se completó con éxito la instalación del puente grúa de 10 Tn con cálculo estructural y pruebas de carga.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- CTA FINAL DE PÁGINA -->
-    <div class="text-center mt-5 p-4 rounded bg-dark border border-secondary">
-      <h3 class="h4 text-white font-weight-bold mb-2">¿Prefiere hablar directamente con un ingeniero de planta?</h3>
-      <p class="text-secondary small mb-3">Atendemos consultas técnicas y licitaciones de todo el país.</p>
-      <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20conversar%20con%20un%20ingeniero%20sobre%20un%20proyecto." target="_blank" class="btn btn-success px-4 py-2 rounded-pill font-weight-bold">
-        <i class="fab fa-whatsapp fs-5 me-1"></i> Iniciar Chat por WhatsApp (+54 9 341 3440179)
+    <!-- BOTÓN PARA IR A LA WEB PRINCIPAL DESDE LA GALERÍA -->
+    <div class="text-center mt-4">
+      <a href="index.html#obras" class="btn btn-outline-warning rounded-pill px-4 py-2 font-weight-bold">
+        <i class="fas fa-globe me-2"></i> Ver Catálogo Completo de Obras y Servicios en la Web Principal
       </a>
+    </div>
+
+    <!-- CTA FINAL DE PÁGINA -->
+    <div class="text-center mt-5 p-4 rounded bg-dark border border-secondary shadow-lg">
+      <h3 class="h4 text-white font-weight-bold mb-2">¿Prefiere hablar directamente con un ingeniero de planta?</h3>
+      <p class="text-secondary small mb-3">Atendemos consultas técnicas, visitas a planta y licitaciones en toda Argentina.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20conversar%20con%20un%20ingeniero%20sobre%20un%20proyecto." 
+           target="_blank" 
+           class="btn btn-success px-4 py-2 rounded-pill font-weight-bold"
+           onclick="trackWaClick('Footer Big WhatsApp Button')">
+          <i class="fab fa-whatsapp fs-5 me-1"></i> Iniciar Chat por WhatsApp (+54 9 341 3440179)
+        </a>
+        <a href="index.html" class="btn btn-outline-light px-4 py-2 rounded-pill font-weight-bold">
+          <i class="fas fa-home me-1"></i> Ir al Sitio Web Institucional
+        </a>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- FOOTER SIMPLE -->
-<footer class="py-3 bg-black text-center text-secondary small border-top border-secondary">
+<!-- FOOTER CON ENLACES INSTITUCIONALES -->
+<footer class="py-4 bg-black text-center text-secondary small border-top border-secondary">
   <div class="container">
-    © 2026 Conte Representaciones Industriales. Funes, Santa Fe, Argentina. Todos los derechos reservados.
+    <div class="row align-items-center g-3 mb-2">
+      <div class="col-md-4 text-md-start">
+        <a href="index.html" class="text-warning text-decoration-none fw-bold">
+          <i class="fas fa-globe me-1"></i> representacionesindustriales.com.ar
+        </a>
+      </div>
+      <div class="col-md-4 text-center">
+        <a href="https://wa.me/5493413440179" target="_blank" class="text-light text-decoration-none">
+          <i class="fab fa-whatsapp text-success me-1"></i> +54 9 341 3440179
+        </a>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <span class="text-secondary"><i class="fas fa-location-dot text-warning me-1"></i> Funes / Rosario, Santa Fe, Argentina</span>
+      </div>
+    </div>
+    <div class="border-top border-dark pt-2 text-muted" style="font-size: 0.78rem;">
+      © 2026 Conte Representaciones Industriales. Todos los derechos reservados.
+    </div>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20solicitar%20presupuesto." 
-   target="_blank" 
-   class="floating-whatsapp" 
-   title="Contactar por WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-  <span class="whatsapp-badge-pulse"></span>
-</a>
+<!-- FLOATING WHATSAPP CON BURBUJA DE ASISTENCIA -->
+<div class="floating-whatsapp-container">
+  <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20tengo%20una%20consulta%20técnica." 
+     target="_blank" 
+     class="floating-wa-bubble"
+     onclick="trackWaClick('Floating Bubble Click')">
+    <span class="floating-wa-badge">Online</span>
+    <span>¿Consultas o planos? <strong>Chateá con un ingeniero</strong></span>
+  </a>
+
+  <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20solicitar%20presupuesto." 
+     target="_blank" 
+     class="floating-whatsapp" 
+     title="Contactar por WhatsApp"
+     onclick="trackWaClick('Floating WA Button')">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-badge-pulse"></span>
+  </a>
+</div>
+
+<!-- BARRA FIJA INFERIOR EXCLUSIVA PARA MÓVILES (MÁXIMA CONVERSIÓN EN ANUNCIOS) -->
+<div class="mobile-bottom-bar">
+  <a href="index.html" class="btn-mobile-bar-web">
+    <i class="fas fa-globe text-warning"></i> Ver Web
+  </a>
+  <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20vi%20la%20publicación%20y%20quiero%20cotizar%20un%20proyecto." 
+     target="_blank" 
+     class="btn-mobile-bar-wa"
+     onclick="trackWaClick('Mobile Sticky Bar WhatsApp')">
+    <i class="fab fa-whatsapp fs-5"></i> Cotizar por WhatsApp
+  </a>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -862,6 +1231,10 @@ function selectStep1(value, cardElement) {
   document.getElementById("step2Title").textContent = flow.step2Title;
   document.getElementById("step2Subtitle").textContent = flow.step2Subtitle;
 
+  // Actualizar enlace directo de WhatsApp en paso 2
+  const directWaMsg2 = `Hola Conte Representaciones, me interesa cotizar: ${value}. ¿Podemos conversar?`;
+  document.getElementById("step2DirectWaLink").href = `https://wa.me/5493413440179?text=${encodeURIComponent(directWaMsg2)}`;
+
   const step2Grid = document.getElementById("step2OptionsGrid");
   step2Grid.innerHTML = flow.step2Options.map(opt => `
     <div class="quiz-card" onclick="selectStep2('${opt.title.replace(/'/g, "\\'")}', this)">
@@ -882,6 +1255,10 @@ function selectStep2(value, cardElement) {
   const flow = wizardFlows[wizardData.service] || wizardFlows["Montaje de Galpones y Naves"];
   document.getElementById("step3Title").textContent = flow.step3Title;
   document.getElementById("step3Subtitle").textContent = flow.step3Subtitle;
+
+  // Actualizar enlace directo de WhatsApp en paso 3
+  const directWaMsg3 = `Hola Conte Representaciones, requiero cotización de ${wizardData.service} (${value}). ¿Cómo coordinamos?`;
+  document.getElementById("step3DirectWaLink").href = `https://wa.me/5493413440179?text=${encodeURIComponent(directWaMsg3)}`;
 
   const step3Grid = document.getElementById("step3OptionsGrid");
   step3Grid.innerHTML = flow.step3Options.map(opt => `

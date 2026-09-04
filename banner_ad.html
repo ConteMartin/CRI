@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRI Ad Banner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+    body {
+      width: 1080px;
+      height: 1080px;
+      background: radial-gradient(circle at 50% 20%, #1a202c 0%, #0d1117 70%, #080a0d 100%);
+      color: #ffffff;
+      padding: 45px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      border: 3px solid #e8c753;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(232, 199, 83, 0.3);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .brand img {
+      height: 75px;
+      filter: drop-shadow(0 4px 12px rgba(232, 199, 83, 0.4));
+    }
+    .brand-text h1 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .brand-text p {
+      font-size: 17px;
+      font-weight: 600;
+      color: #e8c753;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+    .tag-badge {
+      background: rgba(232, 199, 83, 0.15);
+      border: 1.5px solid #e8c753;
+      color: #e8c753;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* HERO CALLOUT */
+    .hero-box {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .pill-highlight {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(232, 199, 83, 0.25), rgba(232, 199, 83, 0.08));
+      border: 1px solid rgba(232, 199, 83, 0.5);
+      color: #fce881;
+      padding: 8px 24px;
+      border-radius: 30px;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: 42px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #ffffff;
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* GRID OF SERVICE CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin: 10px 0;
+    }
+    .card {
+      background: rgba(26, 32, 44, 0.85);
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      border-left: 5px solid #e8c753;
+      border-radius: 16px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .card-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 12px;
+      background: rgba(232, 199, 83, 0.15);
+      border: 1px solid rgba(232, 199, 83, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: #e8c753;
+      flex-shrink: 0;
+    }
+    .card-content h3 {
+      font-size: 21px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .card-content p {
+      font-size: 15px;
+      color: #a0aec0;
+      font-weight: 500;
+    }
+
+    /* CTA FOOTER */
+    .cta-container {
+      background: linear-gradient(90deg, #e8c753 0%, #f6d860 50%, #e8c753 100%);
+      border-radius: 50px;
+      padding: 22px 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(232, 199, 83, 0.4);
+      margin-top: 10px;
+    }
+    .cta-text {
+      color: #0d1117;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    /* GUARANTEES */
+    .guarantees {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding-top: 15px;
+      font-size: 15px;
+      color: #cbd5e0;
+      font-weight: 700;
+    }
+    .guarantees span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .guarantees i {
+      color: #48bb78;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="brand">
+      <img src="images/LOGOCSINNOMBRE.png" alt="CRI Logo">
+      <div class="brand-text">
+        <h1>CONTE REPRESENTACIONES INDUSTRIALES</h1>
+        <p>Fabricación, Montajes e Ingeniería en toda Argentina</p>
+      </div>
+    </div>
+    <div class="tag-badge">
+      <i class="fa-solid fa-shield-halved"></i> Obras Certificadas
+    </div>
+  </div>
+
+  <!-- HERO CALLOUT -->
+  <div class="hero-box">
+    <div class="pill-highlight">
+      <i class="fa-solid fa-bolt"></i> ASISTENTE DE DIAGNÓSTICO EN 3 CLICS
+    </div>
+    <div class="hero-title">
+      ¿Qué solución necesita su planta? <span>Cotice al Instante</span>
+    </div>
+  </div>
+
+  <!-- 6 INTERACTIVE SERVICE CARDS WITH REAL GOLD ICONS -->
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-warehouse"></i></div>
+      <div class="card-content">
+        <h3>Galpones y Naves</h3>
+        <p>Montaje estructural llave en mano</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-dolly"></i></div>
+      <div class="card-content">
+        <h3>Puentes Grúa e Izaje</h3>
+        <p>Equipos certificados hasta 50 Tn</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-gear"></i></div>
+      <div class="card-content">
+        <h3>Corte y Plegado CNC</h3>
+        <p>Mecanizado láser, plasma y piping</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <div class="card-content">
+        <h3>Básculas de Camiones</h3>
+        <p>Pesaje industrial de 80 Tn homologado</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+      <div class="card-content">
+        <h3>Pisos Industriales</h3>
+        <p>Epoxi y hormigón pulido alto tránsito</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+      <div class="card-content">
+        <h3>Suministros y Acero</h3>
+        <p>Perfiles, chapas y ferretería técnica</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-container">
+    <div class="cta-text">
+      <i class="fa-solid fa-arrow-pointer"></i> TOQUE AQUÍ Y COMPLETE SU COTIZACIÓN EN 1 MINUTO
+    </div>
+  </div>
+
+  <!-- GUARANTEES -->
+  <div class="guarantees">
+    <span><i class="fa-solid fa-circle-check"></i> Cálculo Estructural</span>
+    <span><i class="fa-solid fa-circle-check"></i> Normas ASME & INTI</span>
+    <span><i class="fa-solid fa-circle-check"></i> Relevamiento Técnico en Planta</span>
+    <span><i class="fa-solid fa-circle-check"></i> Respuesta en &lt; 24hs</span>
+  </div>
+
+</body>
+</html>
