@@ -8,7 +8,41 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-KVCEZWJLBT');
-</script> 
+
+  // Evento de tracking de conversiones de WhatsApp (Google Analytics + Meta Pixel)
+  function trackWaClick(buttonLocation) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'click_whatsapp', {
+        'event_category': 'Conversion WhatsApp',
+        'event_label': buttonLocation,
+        'value': 1
+      });
+    }
+    if (typeof fbq === 'function') {
+      fbq('trackCustom', 'ClickWhatsApp', {
+        button_location: buttonLocation
+      });
+    }
+  }
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1074182098348328');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1074182098348328&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="KFCH7v5fUozNyl" async></script>
 <link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
 
@@ -1587,7 +1621,7 @@ footer a:hover {
                       Envía tu resumen pre-armado con 1 clic al teléfono directo de ingeniería para coordinar presupuesto o visita.
                     </p>
                   </div>
-                  <a id="btnWhatsAppLead" href="#" target="_blank" class="btn-whatsapp-action">
+                  <a id="btnWhatsAppLead" href="#" target="_blank" class="btn-whatsapp-action" onclick="trackWaClick('Cotizador Final WhatsApp')">
                     <i class="fab fa-whatsapp fs-5"></i> Enviar por WhatsApp
                   </a>
                 </div>
@@ -1773,7 +1807,7 @@ footer a:hover {
             <div class="contact-icon-box"><i class="fab fa-whatsapp"></i></div>
             <div>
               <strong class="d-block text-white">WhatsApp Directo</strong>
-              <a href="https://wa.me/5493413440179" target="_blank" class="text-warning text-decoration-none">
+              <a href="https://wa.me/5493413440179" target="_blank" class="text-warning text-decoration-none" onclick="trackWaClick('Contacto WhatsApp Directo')">
                 +54 9 341 3440179
               </a>
               <span class="d-block small text-secondary">Atención ágil de Lunes a Viernes 8:00 a 18:00</span>
@@ -1864,7 +1898,7 @@ footer a:hover {
         <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i> +54 9 341 3440179</p>
         <p class="small mb-3"><i class="fas fa-envelope text-warning me-2"></i> cjaconte@gmail.com</p>
         <div class="social-icons">
-          <a href="https://wa.me/5493413440179" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/5493413440179" target="_blank" title="WhatsApp" onclick="trackWaClick('Footer Social WhatsApp')"><i class="fab fa-whatsapp"></i></a>
           <a href="mailto:cjaconte@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
           <a href="#contacto" title="Ubicación"><i class="fas fa-map-marker-alt"></i></a>
         </div>
@@ -1880,7 +1914,8 @@ footer a:hover {
 <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20hacer%20una%20consulta%20técnica%20sobre%20sus%20servicios." 
    target="_blank" 
    class="floating-whatsapp" 
-   title="Contactar por WhatsApp">
+   title="Contactar por WhatsApp"
+   onclick="trackWaClick('Floating WhatsApp')">
   <i class="fab fa-whatsapp"></i>
   <span class="whatsapp-badge-pulse"></span>
 </a>
