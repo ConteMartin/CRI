@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVCEZWJLBT"></script>
 <script>
@@ -55,8 +57,6 @@ src="https://www.facebook.com/tr?id=1074182098348328&ev=PageView&noscript=1"
  
 <link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
 
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 <title>Cotización Express para Industrias | Conte Representaciones Industriales</title>
 <meta name="description" content="Cotice su proyecto de galpones, puentes grúa, corte y plegado CNC o pesaje industrial en solo 3 clics o por WhatsApp directo. Respuesta técnica de ingeniería en el día."/>
 <!-- Evitar indexación en buscadores para uso exclusivo de campañas de pauta (Facebook Ads / Google Ads) -->
@@ -584,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   body {
-    padding-bottom: 74px; /* Espacio para que la barra no tape contenido */
+    padding-bottom: calc(74px + env(safe-area-inset-bottom, 0px)); /* Espacio para que la barra no tape contenido */
   }
   .landing-title { 
     font-size: 1.95rem; 
@@ -596,13 +596,9 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr; 
   }
   
-  /* Ajuste de posición del botón flotante en móvil */
+  /* En móvil la barra fija inferior ya provee acceso directo a WhatsApp y a la web; ocultamos el contenedor flotante para máxima limpieza */
   .floating-whatsapp-container {
-    bottom: 82px;
-    right: 18px;
-  }
-  .floating-wa-bubble {
-    display: none; /* En móvil la barra inferior ya cubre el llamado directo */
+    display: none !important;
   }
 
   /* BARRA FIJA INFERIOR EN CELULARES */
@@ -616,6 +612,7 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(12px);
     border-top: 1px solid rgba(232, 199, 83, 0.3);
     padding: 0.55rem 0.8rem;
+    padding-bottom: calc(0.55rem + env(safe-area-inset-bottom, 0px));
     z-index: 9998;
     align-items: center;
     gap: 0.6rem;

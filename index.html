@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVCEZWJLBT"></script>
 <script>
@@ -54,10 +56,7 @@ src="https://www.facebook.com/tr?id=1074182098348328&ev=PageView&noscript=1"
 </script>
 
 <link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
-
-<meta charset="utf-8"/>
 <link rel="preload" as="image" href="images/Banner1-PostesIndustriales.JPG">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 <title>Conte Representaciones Industriales | Soluciones Integrales para la Industria</title>
 <meta name="description" content="Especialistas en montaje de galpones, corte y plegado CNC, puentes grúa, sistemas de izaje, pesaje industrial, pisos de alta resistencia y suministros metalúrgicos."/>
 
@@ -220,33 +219,61 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
 }
-.hero-desc {
-  font-size: 1.2rem;
-  color: #cbd5e1;
-  max-width: 680px;
+
+/* HERO SOLUTIONS LIST */
+.hero-solutions-container {
+  max-width: 860px;
   margin: 0 auto 2.2rem;
-  line-height: 1.6;
 }
-.hero-features {
+.hero-solutions-header {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #e8c753;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.hero-solutions-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  gap: 0.65rem;
 }
-.hero-feature-item {
+.hero-solution-pill {
+  background: rgba(18, 22, 30, 0.82);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(232, 199, 83, 0.35);
+  color: #f1f5f9 !important;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.95rem;
-  color: #e2e8f0;
-  background: rgba(255, 255, 255, 0.06);
-  padding: 0.4rem 0.9rem;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 0.55rem;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-.hero-feature-item i {
-  color: var(--primary);
+.hero-solution-pill i {
+  color: #e8c753;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+}
+.hero-solution-pill:hover {
+  background: rgba(232, 199, 83, 0.22);
+  border-color: #e8c753;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 199, 83, 0.35);
+}
+.hero-solution-pill:hover i {
+  transform: scale(1.15);
 }
 
 .btn-primary-custom {
@@ -1027,11 +1054,63 @@ footer a:hover {
   .wizard-box { padding: 1.8rem; }
   .project-carousel .carousel-item { height: 380px; }
 }
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 3.5rem 0 2.2rem;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+  }
+}
 @media (max-width: 576px) {
-  .hero-title { font-size: 2rem; }
+  .hero {
+    padding: 2.2rem 0 1.8rem;
+  }
+  .hero-badge {
+    margin-bottom: 0.7rem;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .hero-title { 
+    font-size: 1.75rem; 
+    line-height: 1.22;
+    margin-bottom: 0.9rem;
+  }
+  .hero-solutions-container {
+    margin-bottom: 1.2rem;
+  }
+  .hero-solutions-header {
+    font-size: 0.74rem;
+    margin-bottom: 0.55rem;
+  }
+  .hero-solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem;
+  }
+  .hero-solution-pill {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    gap: 0.35rem;
+    line-height: 1.2;
+  }
+  .hero-solution-pill i {
+    font-size: 0.82rem;
+  }
   .stat-number { font-size: 2rem; }
   .option-grid { grid-template-columns: 1fr; }
   .project-carousel .carousel-item { height: 300px; }
+  .btn-whatsapp-hero, .btn-primary-custom {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.92rem;
+    padding: 0.75rem 1.1rem;
+  }
 }
 
 /* BOTON WHATSAPP DESTACADO EN HERO */
@@ -1065,10 +1144,11 @@ footer a:hover {
 
 @media (max-width: 768px) {
   body {
-    padding-bottom: 74px;
+    padding-bottom: calc(74px + env(safe-area-inset-bottom, 0px));
   }
+  /* En móvil la barra fija inferior ya provee acceso directo a WhatsApp; ocultamos el icono flotante para evitar duplicación y bloqueo visual */
   .floating-whatsapp {
-    bottom: 85px !important;
+    display: none !important;
   }
   .mobile-bottom-bar {
     display: flex;
@@ -1080,6 +1160,7 @@ footer a:hover {
     backdrop-filter: blur(12px);
     border-top: 1px solid rgba(232, 199, 83, 0.4);
     padding: 0.6rem 0.8rem;
+    padding-bottom: calc(0.6rem + env(safe-area-inset-bottom, 0px));
     z-index: 9999;
     align-items: center;
     gap: 0.6rem;
@@ -1166,14 +1247,37 @@ footer a:hover {
       Ingeniería, Montaje y Suministros<br/>
       <span>para la Industria Argentina</span>
     </h1>
-    <p class="hero-desc">
-      Desde corte y plegado CNC, naves industriales y puentes grúa hasta pisos de alta resistencia y pesaje de precisión. Respondemos con respaldo técnico y cumplimiento en todo el país.
-    </p>
-    
-    <div class="hero-features">
-      <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Normas ASME VIII & API</div>
-      <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Relevamiento Técnico en Planta</div>
-      <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Respuesta en menos de 24hs</div>
+    <!-- LISTA DE SOLUCIONES INDUSTRIALES -->
+    <div class="hero-solutions-container">
+      <div class="hero-solutions-header">
+        <i class="fas fa-layer-group"></i> Soluciones que Ofrecemos:
+      </div>
+      <div class="hero-solutions-grid">
+        <a href="#cotizador" onclick="preselectService('galpones')" class="hero-solution-pill" title="Cotizar Galpones y Naves">
+          <i class="fas fa-warehouse"></i> <span>Galpones y Naves</span>
+        </a>
+        <a href="#cotizador" onclick="preselectService('izaje')" class="hero-solution-pill" title="Cotizar Puentes Grúa e Izaje">
+          <i class="fas fa-dolly"></i> <span>Puentes Grúa e Izaje</span>
+        </a>
+        <a href="#cotizador" onclick="preselectService('corte')" class="hero-solution-pill" title="Cotizar Corte y Plegado CNC">
+          <i class="fas fa-industry"></i> <span>Corte y Plegado CNC</span>
+        </a>
+        <a href="#cotizador" onclick="preselectService('pesaje')" class="hero-solution-pill" title="Cotizar Básculas y Pesaje">
+          <i class="fas fa-weight-scale"></i> <span>Pesaje Industrial</span>
+        </a>
+        <a href="#cotizador" onclick="preselectService('pisos')" class="hero-solution-pill" title="Cotizar Pisos Industriales">
+          <i class="fas fa-layer-group"></i> <span>Pisos Industriales</span>
+        </a>
+        <a href="#cotizador" onclick="preselectService('mantenimiento')" class="hero-solution-pill" title="Cotizar Mantenimiento Industrial">
+          <i class="fas fa-wrench"></i> <span>Mantenimiento de Grúas</span>
+        </a>
+        <a href="#cotizador" onclick="preselectService('siderurgicos')" class="hero-solution-pill" title="Cotizar Acero y Ferretería">
+          <i class="fas fa-cubes"></i> <span>Acero y Ferretería</span>
+        </a>
+        <a href="#servicios" class="hero-solution-pill" title="Ver Cartelería y Columnas Publicitarias">
+          <i class="fas fa-rectangle-ad"></i> <span>Columnas Publicitarias</span>
+        </a>
+      </div>
     </div>
 
     <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
