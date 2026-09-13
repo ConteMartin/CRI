@@ -53,10 +53,10 @@ src="https://www.facebook.com/tr?id=1074182098348328&ev=PageView&noscript=1"
     })(window, document, "clarity", "script", "yhs0f2cdpx");
 </script>
 
-<script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="KFCH7v5fUozNyl" async></script>
 <link rel="icon" href="iconos/favicon.ico" type="image/x-icon" />
 
 <meta charset="utf-8"/>
+<link rel="preload" as="image" href="images/Banner1-PostesIndustriales.JPG">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 <title>Conte Representaciones Industriales | Soluciones Integrales para la Industria</title>
 <meta name="description" content="Especialistas en montaje de galpones, corte y plegado CNC, puentes grúa, sistemas de izaje, pesaje industrial, pisos de alta resistencia y suministros metalúrgicos."/>
@@ -1033,6 +1033,92 @@ footer a:hover {
   .option-grid { grid-template-columns: 1fr; }
   .project-carousel .carousel-item { height: 300px; }
 }
+
+/* BOTON WHATSAPP DESTACADO EN HERO */
+.btn-whatsapp-hero {
+  background: #22c55e;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.4);
+  transition: all 0.3s ease;
+  border: 2px solid #22c55e;
+}
+.btn-whatsapp-hero:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(34, 197, 94, 0.6);
+  color: #ffffff !important;
+}
+
+/* BARRA FIJA INFERIOR EXCLUSIVA PARA MOVILES (MAXIMA CONVERSION EN TRAFICO PAGO) */
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 74px;
+  }
+  .floating-whatsapp {
+    bottom: 85px !important;
+  }
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(13, 16, 21, 0.98);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(232, 199, 83, 0.4);
+    padding: 0.6rem 0.8rem;
+    z-index: 9999;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.7);
+  }
+  .btn-mobile-bar-cotizar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(232, 199, 83, 0.5);
+    color: #e8c753 !important;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.65rem 0.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  .btn-mobile-bar-wa {
+    flex: 1.8;
+    background: #22c55e;
+    color: #ffffff !important;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.65rem 0.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.35);
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1090,12 +1176,12 @@ footer a:hover {
       <div class="hero-feature-item"><i class="fas fa-check-circle"></i> Respuesta en menos de 24hs</div>
     </div>
 
-    <div class="d-flex flex-wrap justify-content-center gap-3">
-      <a class="btn-primary-custom" href="#cotizador">
-        <i class="fas fa-bolt"></i> Cotizador & Asesor Express
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+      <a class="btn-whatsapp-hero" href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20quisiera%20asesoramiento%20y%20cotizaci%C3%B3n%20para%20un%20proyecto." target="_blank" onclick="trackWaClick('Hero WhatsApp Directo')">
+        <i class="fab fa-whatsapp"></i> Hablar con un Ingeniero por WhatsApp
       </a>
-      <a class="btn-outline-custom" href="#servicios">
-        <i class="fas fa-layer-group"></i> Explorar Servicios
+      <a class="btn-primary-custom" href="#cotizador">
+        <i class="fas fa-bolt"></i> Cotizador Online en 3 Clics
       </a>
     </div>
   </div>
@@ -2434,5 +2520,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 </script>
+
+<!-- BARRA INFERIOR FIJA MOVIL DE CONVERSION DIRECTA -->
+<div class="mobile-bottom-bar">
+  <a href="#cotizador" class="btn-mobile-bar-cotizar">
+    <i class="fas fa-calculator"></i> Cotizador
+  </a>
+  <a href="https://wa.me/5493413440179?text=Hola%20Conte%20Representaciones,%20vi%20su%20publicaci%C3%B3n%20y%20quiero%20cotizar%20un%20proyecto." 
+     target="_blank" 
+     class="btn-mobile-bar-wa"
+     onclick="trackWaClick('Barra Movil Inferior WhatsApp')">
+    <i class="fab fa-whatsapp fs-5"></i> WhatsApp Directo
+  </a>
+</div>
+
 </body>
 </html>
